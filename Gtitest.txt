@@ -1,5 +1,0 @@
-This is another test......from the local repository.
-Added this line at GIThub repository.
-
-
-I added this 3rd line locally.
