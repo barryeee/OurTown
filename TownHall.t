@@ -1,0 +1,53 @@
+#charset "us-ascii"
+#include <adv3.h>
+#include <en_us.h>
+
+TownHall: Room 
+    name = '<font color="#008800">Town Hall</font>'
+    desc = "<hr/>You see a typical, seedy-looking public office. Everything in it looks a hundred years old or more. The walls are dingy and in need of a new coat of paint. The windows have not been washed ... ever!"
+  
+    east = NorthMainStreet
+    down = Jail
+    south = WestBroadway
+;
+
+TownHallCounter: Surface 
+    name = 'Town Hall Counter' 
+    vocabWords = 'counter' 
+    location = TownHall
+    desc = "An old wooden counter, dented and worn from centuries of use and abuse."
+    inRoomDesc = "a wooden counter is at one end of the room."
+;
+
+SilverBell: Thing
+        name = 'Silver Bell'
+        desc = "A small, silver bell, of the kind used everywhere to summon a clerk who has somehow disappeared."
+        vocabWords = 'bell/Bell'
+        location = TownHallCounter
+    
+    actionDobjRing
+    {
+     "The silver bell makes a pleasant, tinkling sound."; 
+    }
+;
+/* DEFINE A NEW VERB */
+    DefineTAction(Ring);
+    VerbRule(Ring) 'ring' singleDobj : RingAction verbPhrase = 'ring/ringing (what)'
+    ;
+
+/* When creating a new verb, you'll want to modify the Thing class so as to provide
+   default handling for the command. The defaults specified here will be used except
+   on objects for which you define explicit handling of the command. */
+   
+/*modify Thing
+    dobjFor(Ring)
+    {
+        preCond = [touchObj];
+        action() { mainReport(okayRingMsg); };        
+    }
+    
+    okayRingMsg = '{You/he} ring{s} {the dobj/him} but not much happens as a
+        result. '
+    
+    shouldNotBreakMsg = 'Only amateurs go round breaking things unnecessarily. '    
+    ;*/
