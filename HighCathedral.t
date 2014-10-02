@@ -17,12 +17,11 @@ HighCathedral: Room
     location = HighCathedral
      actionDobjFeel
         {
-        "That was an incredibly stupid thing to do!<br />";
-        "<font color=\"#00ffff\">Having touched the statue, you fall to your knees as an oily, black cloud fills the room.<br />
+        "<bold>That was an incredibly stupid thing to do!</bold><br />";
+        "Having touched the statue, you fall to your knees as an oily, black cloud fills the room.<br />
         A huge, foreboding, angelic figure, wrapped in a cloak of darkness, stands before you.
         At least 10 feet in height, he peers down at you as if you were a tiny bug.
-        Without saying a word, he touches you with his massive finger and you both disappear in a cloud of smoke which smells faintly of lavender. <br />     
-        </font>";
+        Without saying a word, he touches you with his massive finger and you both disappear in a cloud of smoke which smells faintly of lavender. <br />";
         totheAbyss();
         }
 ;
@@ -42,4 +41,7 @@ HighCathedral: Room
    
 ;
 + ornateKey: Key 'ornate key' 'ornate key'
+    "The key is made of brass, old and tarnished. 
+    It is quite ornate in its design, reflecting a level of craftsmanship no longer seen in this day and age.
+    A closer inspection reveals a gruesome pattern of skeletons covering the the enire surface of the key."
 ;
