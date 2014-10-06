@@ -4,8 +4,7 @@
 
 /* "Endora's Mansion", located... "
 Created by Laurie Starr
-Created on September 18, 2014
-Maintenance Log----------------
+Created on September 18, 2014 
 github test October 6, 2014
 */
 

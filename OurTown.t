@@ -73,8 +73,12 @@ gameMain: GameMainDef
     initialPlayerChar = me
     showIntro()
     {
-        "<font color=\"yellow\">Welcome to Our Town. It's a quirky little place, with unexpected characters showing up all the time.<br>";
-        "Although it appears to nothing more than a quaint, oudated little rual town in the Midwest, apperances can be deceiving. Take nothing for granted as you wander the streets. Be careful when entering a building. Most residents don't care much for unexpected visitors.<br><br></font>";
+        "<font color=\"yellow\">Welcome to...<br /><br />";
+        "<center><font face=\"Arial\" size=\"70\">Our Town</font></center><br /><br />";
+
+
+        "It's a quirky little place, with unexpected characters showing up all the time.<br/>";
+        "Although it appears to nothing more than a quaint, oudated little rual town in the Midwest, apperances can be deceiving. Take nothing for granted as you wander the streets. Be careful when entering a building. Most residents don't care much for unexpected visitors.<br /><br /></font>";
     }
 ;
 
