@@ -18,8 +18,8 @@ versionInfo: GameID
                   Barry Eichelberger</a>'
     version = '1'
     authorEmail = 'Barry Eichelberger <eichelbergerb@nicc.edu>'
-    desc = 'Demonstration Project for Fall 2013 Progamming Support class.'
-    htmlDesc = 'Demonstration Project for Fall 2013 Progamming Support class.'
+    desc = 'Demonstration Project for Progamming Support class.'
+    htmlDesc = 'Demonstration Project for Progamming Support class.'
 
     /* 
      *   other bibliographic tags you might want to set include:
@@ -40,7 +40,7 @@ versionInfo: GameID
     showCredit()
     {
         /* show our credits */
-        "Put credits for the game here. ";
+        "Created by the Programming Support Class at Northeast Iowa Community College.";
 
         /* 
          *   The game credits are displayed first, but the library will
@@ -53,10 +53,10 @@ versionInfo: GameID
     }
     showAbout()
     {
-        "Put information for players here.  Many authors like to mention
-        any unusual commands here, along with background information on
-        the game (for example, the author might mention that the game
-        was created as an entry for a particular competition). ";
+        "This game was created as an exercise for the Programming Support Class at Northeast Iowa Community College. ";
+        "It is similar in design and format to one of the earliest interactive fiction creations titled Zork. ";
+        "Commands are fairly straight forward. The plot and goal of this game is anything but straight forward! ";
+        "It is a work in progress. Nothing is ever truly finished here. Take everything with a grain of salt.";
     }
     
 ;
@@ -74,11 +74,14 @@ gameMain: GameMainDef
     showIntro()
     {
         "<font color=\"yellow\">Welcome to...<br /><br />";
-        "<center><font face=\"Arial\" size=\"70\">Our Town</font></center><br /><br />";
+        "<center><font face=\"Comic Sans MS\" size=\"100\" >Our Town</font></center><br /><br />";
 
 
         "It's a quirky little place, with unexpected characters showing up all the time.<br/>";
-        "Although it appears to nothing more than a quaint, oudated little rual town in the Midwest, apperances can be deceiving. Take nothing for granted as you wander the streets. Be careful when entering a building. Most residents don't care much for unexpected visitors.<br /><br /></font>";
+        "Although it appears to nothing more than a quaint, oudated little rual town in the Midwest, apperances can be deceiving. 
+        Take nothing for granted as you wander the streets. 
+        Be careful when entering a building. 
+        Most residents don't care much for unexpected visitors.<br /><br /></font>";
     }
 ;
 

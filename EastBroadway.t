@@ -18,6 +18,9 @@ Maintenance Log--------------
 11/13/2013 added Header Comments
 09/25/2014 renamed from Catheral Gate to Cemetery Gate and changed object type
     to door and merged with East Broadway. BE
+10/02/2014 made the gate a lockable object and created ornateKey to unlock it. BE
+10/07/2014 added a point to the unlock verb for the gate. 
+    Points are only awared the first time the gate is unlocked. BE
 */
    
 + CemeteryGate: LockableWithKey, Door  
@@ -25,4 +28,21 @@ Maintenance Log--------------
         '<font color="#00ff00">Cemetery Gate</font>'
     "A black steel gate hulks before you, creaking in the wind. In pointed steel lettering, you see the words, Our Town Cemetery, jutting from the top of the gate. Beyond the gate, you are able to see the outlines of tombstones, a grim audience forever waiting near the old church. The gate is secured with an ornate lock."
     keyList = [ornateKey]
+    dobjFor(Unlock)
+    {
+        
+               action() 
+             { 
+                if (ornateKey.location == me)
+                    {
+                       achievement.awardPointsOnce(); 
+                       
+                    }
+                 inherited; 
+             } 
+        
+
+    }   
+   achievement : Achievement { +3 "unlocking the Cemetery Gate" } 
+
  ;
