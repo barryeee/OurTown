@@ -6,7 +6,7 @@ EastBroadway: OutdoorRoom
     roomName = '<font color="#00ff00">East Broadway</font>'
     destName = '<font color="#00ff00">East Broadway</font>'
     desc = "<hr/>a bricked-paved street which leads to the Inn of 7 Sorrows on
-        the South, the Town Cemetery on the east and the Town Square on the West."
+        the South, the Cemetery Gate, leading to the Town Cemetery on the east and the Town Square on the West."
 
     west = TownSquare
     east = CemeteryGate
@@ -20,7 +20,8 @@ Maintenance Log--------------
     to door and merged with East Broadway. BE
 10/02/2014 made the gate a lockable object and created ornateKey to unlock it. BE
 10/07/2014 added a point to the unlock verb for the gate. 
-    Points are only awared the first time the gate is unlocked. BE
+    Points are only awared the first time the gate is unlocked. 
+    Changed the description. BE
 */
    
 + CemeteryGate: LockableWithKey, Door  
@@ -30,8 +31,7 @@ Maintenance Log--------------
     keyList = [ornateKey]
     dobjFor(Unlock)
     {
-        
-               action() 
+             action() 
              { 
                 if (ornateKey.location == me)
                     {
@@ -40,8 +40,6 @@ Maintenance Log--------------
                     }
                  inherited; 
              } 
-        
-
     }   
    achievement : Achievement { +3 "unlocking the Cemetery Gate" } 
 
