@@ -51,3 +51,9 @@ SilverBell: Thing
     
     shouldNotBreakMsg = 'Only amateurs go round breaking things unnecessarily. '    
     ;*/
+
++ rustyKey: Key 'rusty key' 'rusty key'
+    "The key is made of iron. It is very heavy and completely covered with rust.
+    The key has seen a lot use in the past, as it is quite worn."
+    location = TownHallCounter
+;
