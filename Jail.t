@@ -2,7 +2,8 @@
 #include <adv3.h>
 #include <en_us.h>
 /* 
- *   The Jail Author: Barry 
+ *   The Jail 
+ *   Author: Barry Eichelberger
  *   Date: 10-05-2013 
  *   Desc: the Jail is the entrance to
  *   the underground maze, beneath the city.

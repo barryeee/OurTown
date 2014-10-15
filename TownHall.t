@@ -1,7 +1,10 @@
 #charset "us-ascii"
 #include <adv3.h>
 #include <en_us.h>
-
+/*    Town Hall
+*     Author: Barry Eichelberger
+*     Date:   10/01/2013
+*/     
 TownHall: Room 
     name = '<font color="#008800">Town Hall</font>'
     desc = "<hr/>You see a typical, seedy-looking public office. Everything in it looks a hundred years old or more. The walls are dingy and in need of a new coat of paint. The windows have not been washed ... ever!"
