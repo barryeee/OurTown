@@ -5,7 +5,9 @@
 *     Author: Barry Eichelberger
 *     Date:   10/01/2013
 *       Maintenance Log
-*       10/22/2014 Changed name of Town Hall Counter to Old Wooden Counter, name is now more descriptive. BE
+-- 10/22/2014 Changed name of Town Hall Counter to Old Wooden Counter, name is now more descriptive. BE
+-- 10/23/2014 Changed the syntax for the bell and the key to conform with standard practices. 
+--            Used '+' signs to indicate the bell and key will part of (located on) the counter. BE
 */     
 TownHall: Room 
     name = '<font color="#008800">Town Hall</font>'
@@ -24,16 +26,21 @@ OldWoodenCounter: Surface
     inRoomDesc = "a wooden counter is at one end of the room."
 ;
 
-SilverBell: Thing
++SilverBell: Thing
         name = 'Silver Bell'
         desc = "A small, silver bell, of the kind used everywhere to summon a clerk who has somehow disappeared."
         vocabWords = 'bell/Bell'
-        location = OldWoodenCounter
+        //location = OldWoodenCounter
     
     actionDobjRing
     {
      "The silver bell makes a pleasant, tinkling sound."; 
     }
+;
++ rustyKey: Key 'rusty key' 'rusty key'
+    "The key is made of iron. It is very heavy and completely covered with rust.
+    The key has seen a lot use in the past, as it is quite worn."
+    //location = OldWoodenCounter
 ;
 /* DEFINE A NEW VERB */
     DefineTAction(Ring);
@@ -57,8 +64,4 @@ SilverBell: Thing
     shouldNotBreakMsg = 'Only amateurs go round breaking things unnecessarily. '    
     ;*/
 
-+ rustyKey: Key 'rusty key' 'rusty key'
-    "The key is made of iron. It is very heavy and completely covered with rust.
-    The key has seen a lot use in the past, as it is quite worn."
-    location = OldWoodenCounter
-;
+
