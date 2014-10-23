@@ -4,6 +4,8 @@
 /*    Town Hall
 *     Author: Barry Eichelberger
 *     Date:   10/01/2013
+*       Maintenance Log
+*       10/22/2014 Changed name of Town Hall Counter to Old Wooden Counter, name is now more descriptive. BE
 */     
 TownHall: Room 
     name = '<font color="#008800">Town Hall</font>'
@@ -14,8 +16,8 @@ TownHall: Room
     south = WestBroadway
 ;
 
-TownHallCounter: Surface 
-    name = 'Town Hall Counter' 
+OldWoodenCounter: Surface 
+    name = 'Old Wooden Counter' 
     vocabWords = 'counter' 
     location = TownHall
     desc = "An old wooden counter, dented and worn from centuries of use and abuse."
@@ -26,7 +28,7 @@ SilverBell: Thing
         name = 'Silver Bell'
         desc = "A small, silver bell, of the kind used everywhere to summon a clerk who has somehow disappeared."
         vocabWords = 'bell/Bell'
-        location = TownHallCounter
+        location = OldWoodenCounter
     
     actionDobjRing
     {
@@ -58,5 +60,5 @@ SilverBell: Thing
 + rustyKey: Key 'rusty key' 'rusty key'
     "The key is made of iron. It is very heavy and completely covered with rust.
     The key has seen a lot use in the past, as it is quite worn."
-    location = TownHallCounter
+    location = OldWoodenCounter
 ;
