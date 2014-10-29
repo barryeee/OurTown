@@ -41,7 +41,10 @@ versionInfo: GameID
     {
         /* show our credits */
         "Created by the Programming Support Class at Northeast Iowa Community College.";
-
+        "BE - Barry Eichelberger, Instructor";
+        "BV - Brian Vorwald, Fall 2013";
+        "GL - Grayson Leigh, Fall 2013";
+        "LS - Laurie Starr, Falle 2014";
         /* 
          *   The game credits are displayed first, but the library will
          *   display additional credits for library modules.  It's a good
