@@ -8,40 +8,64 @@
 -- 10/22/2014 Changed name of Town Hall Counter to Old Wooden Counter, name is now more descriptive. BE
 -- 10/23/2014 Changed the syntax for the bell and the key to conform with standard practices. 
 --            Used '+' signs to indicate the bell and key will part of (located on) the counter. BE
+-- 10/28/2014 Added Stone Steps Down to the Jail. BE
 */     
 TownHall: Room 
     name = '<font color="#008800">Town Hall</font>'
-    desc = "<hr/>You see a typical, seedy-looking public office. Everything in it looks a hundred years old or more. The walls are dingy and in need of a new coat of paint. The windows have not been washed ... ever!"
+    desc = "<hr/>You see a typical, seedy-looking public office. 
+        Everything in it looks a hundred years old or more. 
+        The walls are dingy and in need of a new coat of paint. 
+        The windows have not been washed ... ever!
+        To the north are a set of stone steps, leading down to the Jail"
+        
   
     east = NorthMainStreet
-    down = Jail
+    down = StoneStepsDown
+    north = StoneStepsDown
     south = WestBroadway
 ;
++StoneStepsDown: TravelWithMessage, StairwayDown, StopEventList ->StoneStepsUp
+	'Stone Steps'
+        'Stone Steps'
+        "<p>The old granite steps lead down to the Jail.</p>"
+    eventList =  
+  [ 
+    new function 
+    { 
+      "<p>You desend a long flight of narow, well-worn stone steps. 
+      The steps are damp and covered with slime, making them treacherous to navigate.</p>";
+       
+    }, 
+    '<p>You descend the steps again. </p>' 
+  ]   
+     
+ ;
 
-OldWoodenCounter: Surface 
++OldWoodenCounter: Surface 
     name = 'Old Wooden Counter' 
     vocabWords = 'counter' 
-    location = TownHall
     desc = "An old wooden counter, dented and worn from centuries of use and abuse."
     inRoomDesc = "a wooden counter is at one end of the room."
 ;
 
-+SilverBell: Thing
+++SilverBell: Thing
         name = 'Silver Bell'
         desc = "A small, silver bell, of the kind used everywhere to summon a clerk who has somehow disappeared."
         vocabWords = 'bell/Bell'
-        //location = OldWoodenCounter
     
     actionDobjRing
     {
      "The silver bell makes a pleasant, tinkling sound."; 
     }
 ;
-+ rustyKey: Key 'rusty key' 'rusty key'
+
+++ rustyKey: Key 'rusty key' 'rusty key'
     "The key is made of iron. It is very heavy and completely covered with rust.
     The key has seen a lot use in the past, as it is quite worn."
     //location = OldWoodenCounter
 ;
+
+    
 /* DEFINE A NEW VERB */
     DefineTAction(Ring);
     VerbRule(Ring) 'ring' singleDobj : RingAction verbPhrase = 'ring/ringing (what)'

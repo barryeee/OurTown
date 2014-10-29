@@ -10,6 +10,7 @@
  *      Maintenance Log:
  * 10/07/2014 Changed Description. 
  *      Merged in room description from Jail Cellar written by Grayson Leigh. BE
+ * 10/28/2014 Added Stone Steps up to town hall. BE
  */
 
 Jail: Room
@@ -18,28 +19,37 @@ Jail: Room
         The only light comes from a single, guttering torch. 
         A wall of iron bars separate the northern half of the room from the rest, serving as a cramped cell."
 
-    up = TownHall
+    up = StoneStepsUp
     north = CellDoor
 ;
++StoneStepsUp: StairwayUp
+    'stone steps' 'stone steps'
+    "The old granite steps lead up to Town Hall."
+    noteTraversal(traveler)  
+  {  
+        "<P>You climb up the slippery stairs to the Town Hall.</p>" ;
+  } 
+ 
+; 
 
-+ CellDoor: LockableWithKey, Door  
-	'<font color="#00ff00">Cell Door</font>'
-        '<font color="#00ff00">Cell Door</font>'
-    "<hr/>The Cell Door is made of sturdy iron bars. There is a rusty-looking lock which secures the cell."
+;
++ CellDoor: LockableWithKey, Door
+'Cell Door'
+'Cell Door'
+"The Cell Door is made of sturdy iron bars. There is a rusty-looking lock which secures the cell."
+
     keyList = [rustyKey]
+
     dobjFor(Unlock)
-    {
-             action() 
-             { 
-                if (rustyKey.location == me)
-                    {
-                       achievement.awardPointsOnce(); 
-                       
-                    }
-                 inherited; 
-             } 
-    }   
-   achievement : Achievement { +3 "unlocking the Cell Door" } 
-
- ;
-
+{
+    action()
+        {
+        if (rustyKey.location == me)
+        {
+        achievement.awardPointsOnce();
+        }
+        inherited;
+        }
+}
+    achievement : Achievement { +3 "unlocking the Cell Door" }
+    ;
