@@ -79,8 +79,8 @@
 			<dock index="1" id="22" port="w" />
 		</line>
 		<line id="30" style="dashed" startText="down" midText="To the Jail" endText="up">
-			<dock index="0" id="8" port="w" />
-			<point index="1" x="-320" y="-96" />
+			<dock index="0" id="8" port="n" />
+			<point index="1" x="-160" y="-224" />
 		</line>
 	</map>
 	<settings>
