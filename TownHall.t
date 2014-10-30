@@ -9,6 +9,7 @@
 -- 10/23/2014 Changed the syntax for the bell and the key to conform with standard practices. 
 --            Used '+' signs to indicate the bell and key will part of (located on) the counter. BE
 -- 10/28/2014 Added Stone Steps Down to the Jail. BE
+-- 10/29/2014 Added eventlist to steps, 1 in 3 trips ends in death. BE
 */     
 TownHall: Room 
     name = '<font color="#008800">Town Hall</font>'
@@ -24,21 +25,25 @@ TownHall: Room
     north = StoneStepsDown
     south = WestBroadway
 ;
-+StoneStepsDown: TravelWithMessage, StairwayDown, StopEventList ->StoneStepsUp
++StoneStepsDown: TravelWithMessage, StairwayDown, RandomEventList ->StoneStepsUp
 	'Stone Steps'
         'Stone Steps'
         "<p>The old granite steps lead down to the Jail.</p>"
-    eventList =  
+   eventList =  
   [ 
     new function 
     { 
-      "<p>You desend a long flight of narow, well-worn stone steps. 
-      The steps are damp and covered with slime, making them treacherous to navigate.</p>";
-       
+      "<p>You desend a long flight of narow, well-worn stone steps. <br>
+      The steps are damp and covered with slime, making them treacherous to navigate.<br>
+      Unfortunately, the shoes your are wearing are not up to the task.<br>
+      You slip and fall down the stairs, breaking your neck when you land at the bottom.</p>";
+       finishGameMsg(ftDeath, finishOptionFullScore);
     }, 
-    '<p>You descend the steps again. </p>' 
+    '<p>You descend the steps to the Jail. </p>',
+    '<p>You desend a long flight of narow, well-worn stone steps. <br>
+      The steps are damp and covered with slime, making them treacherous to navigate.'
   ]   
-     
+
  ;
 
 +OldWoodenCounter: Surface 
