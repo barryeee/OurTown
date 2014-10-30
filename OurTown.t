@@ -13,7 +13,7 @@
 versionInfo: GameID
     IFID = '69462502-a9b7-4112-9ce0-6b300d602969'
     name = 'Our Town'
-    byline = 'by Barry Eichelberger'
+    byline = 'by Barry Eichelberger, et al.'
     htmlByline = 'by <a href="mailto:eichelbergerb@nicc.edu">
                   Barry Eichelberger</a>'
     version = '1'
@@ -41,10 +41,10 @@ versionInfo: GameID
     {
         /* show our credits */
         "Created by the Programming Support Class at Northeast Iowa Community College.";
-        "BE - Barry Eichelberger, Instructor";
-        "BV - Brian Vorwald, Fall 2013";
-        "GL - Grayson Leigh, Fall 2013";
-        "LS - Laurie Starr, Falle 2014";
+        "<br>BE - Barry Eichelberger, Instructor";
+        "<br>BV - Brian Vorwald, Fall 2013";
+        "<br>GL - Grayson Leigh, Fall 2013";
+        "<br>LS - Laurie Starr, Fall 2014";
         /* 
          *   The game credits are displayed first, but the library will
          *   display additional credits for library modules.  It's a good
