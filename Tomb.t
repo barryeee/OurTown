@@ -7,7 +7,8 @@ Created by Brian Vorwald
 Created on September 28, 2013
 Maintenance Log----------------
 11/13/2013 added Header Comments
-10/31/2014 Added engraving on wall. BE    
+10/31/2014 Added engraving on wall. BE 
+11/03/2014 Changed the number of warriors from 6 to 4. BE
 */
 Tomb: Room
 	name = '<font color="#008800">The Tomb</font>'
@@ -18,19 +19,19 @@ Tomb: Room
             You look around the room, and on the floor is an old, wooden trap 
             door. It is loose, and one of the hinges is broken off. The door 
             itself is rotted, and appears ready to crumble away at the slightest
-            touch. You notice writing chiseled in the wall of the tomb."
+            touch. You notice some kind of engraving chiseled in the wall of the tomb."
 	
     north = TownCemetery
     south = BelowtheTomb
     down = BelowtheTomb
 ;
 
-+Engraving: Thing, Readable 
++Decoration
     name = 'Engraving on Tomb Wall' 
     vocabWords = 'Engraving'
-    desc = "The jagged letters are difficult to read, and appear to be as old as the tomb.<br>"
-    readDesc = "Let all who enter beware.<br>
+    desc = "The jagged letters are difficult to read, and appear to be as old as the tomb.<br><br>
+        <font color=\"880000\">Let all who enter beware.<br>
         The bloodiest battle on earth happened here.<br> 
         The dead they know, of the sins from the ones below.<br> 
-        And if our gods show you mercy,never again will the six unleash their fury."
+        And if our gods show you mercy,never again will the Four unleash their fury.</font>"
 ;
