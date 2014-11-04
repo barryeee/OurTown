@@ -2,8 +2,7 @@
 
 #include <adv3.h>
 #include <en_us.h>
-/* Dig a Room  called "Below the Tomb", located down of "The Tomb".
--- Dig in down, creating exits in both directions.
+/*"Below the Tomb", located down from "The Tomb".
 --Created by Brian Vorwald
 --Created on September 28. 2013
 --Maintenance Log-------------
@@ -13,19 +12,46 @@
 --Added the color yellow to the key  object
 --11/13/2013 
 -- Added Header Comments
--- 10/23/2014 BE
--- changed the description. Stone crypts have replaced the wooden caskets.
+-- 10/23/2014 Changed the description. Stone crypts have replaced the wooden caskets. BE
+-- 11/03/2014 Added individual crpyts. BE
     -------------------------------*/
 
 
-BelowtheTomb: Room '<font color="#008800">Below the Tomb</font>'
-    "<font color=\"00ffff\">You land in a dark cave, with the only light coming from the torches above.
+BelowtheTomb: Room '<font color="#880000">Below the Tomb</font>'
+    "You land in a dark cave, with the only light coming from the torches above.
     Dimly lit, there does not appear to be a path. Instead, the flickering light
-    casts shadows against six stone crypts, which line the walls in front of you. Three crypts on each side, they lay
-    silent and ominous before you. One of the lids appears to be loose.</font>"
+    casts shadows against four stone crypts, which line the walls in front of you. The crypts lay
+    silent and ominous before you, aligned in a row against the south wall. One of the crypts lies open, with its lid laying on the floor ."
 
     north = Tomb
     up = Tomb
 ;
 
++graniteCrypt: OpenableContainer 'granite crypt' 'granite crypt'
+    "It is an ancient crypt, carved out of a single piece of black granite. "
+   initiallyOpen = true
+    weight = 10000
+    material = adventium
+;
 
++marbleCrypt: OpenableContainer 'marble crypt' 'marble crypt'
+    "It is an ancient crypt, carved out of a single piece of white marble. "
+   initiallyOpen = nil
+    weight = 10000
+        material = adventium
+    
+;
+
++jasperCrypt: OpenableContainer 'jasper crypt' 'jasper crypt'
+    "It is an ancient crypt, carved out of a single piece of red jasper. "
+   initiallyOpen = nil
+    weight = 10000
+        material = adventium
+;
+
++malachiteCrypt: OpenableContainer 'malachite crypt' 'malachite crypt'
+    "It is an ancient crypt, carved out of a single piece of green malachite. "
+   initiallyOpen = nil
+    weight = 10000
+        material = adventium
+;
