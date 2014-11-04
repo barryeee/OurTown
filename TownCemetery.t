@@ -30,7 +30,8 @@ Maintenance Log--------------
 09/25/2014 renamed from Catheral Gate to Cemetery Gate and changed object type to door and merged with TownCemetery. BE
 */
     
-+ CemeteryGate2: Door ->CemeteryGate 'gate' 'gate'  
++ CemeteryGate2: LockableWithKey, Door ->CemeteryGate 'gate' 'gate' 
+    keyList = [ornateKey]
 	  
  
  ;
