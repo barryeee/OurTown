@@ -22,7 +22,7 @@ Tomb: Room
             touch. You notice some kind of engraving chiseled in the wall of the tomb."
 	
     north = TownCemetery
-    south = BelowtheTomb
+    
     down = BelowtheTomb
 ;
 
