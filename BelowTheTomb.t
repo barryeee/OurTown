@@ -23,18 +23,20 @@ BelowtheTomb: Room '<font color="#880000">Below the Tomb</font>'
     casts shadows against four stone crypts, which line the walls in front of you. The crypts lay
     silent and ominous before you, aligned in a row against the south wall. One of the crypts lies open, with its lid laying on the floor ."
 
-    north = Tomb
+   
     up = Tomb
 ;
 
-+graniteCrypt: OpenableContainer 'granite crypt' 'granite crypt'
++graniteCrypt: Openable, Booth 'granite crypt' 'granite crypt'
     "It is an ancient crypt, carved out of a single piece of black granite. "
    initiallyOpen = true
     weight = 10000
     material = adventium
 ;
 
-+marbleCrypt: OpenableContainer 'marble crypt' 'marble crypt'
+
+;
++marbleCrypt: Openable, Booth 'marble crypt' 'marble crypt'
     "It is an ancient crypt, carved out of a single piece of white marble. "
    initiallyOpen = nil
     weight = 10000
@@ -42,14 +44,14 @@ BelowtheTomb: Room '<font color="#880000">Below the Tomb</font>'
     
 ;
 
-+jasperCrypt: OpenableContainer 'jasper crypt' 'jasper crypt'
++jasperCrypt: Openable, Booth 'jasper crypt' 'jasper crypt'
     "It is an ancient crypt, carved out of a single piece of red jasper. "
    initiallyOpen = nil
     weight = 10000
         material = adventium
 ;
 
-+malachiteCrypt: OpenableContainer 'malachite crypt' 'malachite crypt'
++malachiteCrypt: Openable, Booth 'malachite crypt' 'malachite crypt'
     "It is an ancient crypt, carved out of a single piece of green malachite. "
    initiallyOpen = nil
     weight = 10000
