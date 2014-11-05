@@ -32,7 +32,6 @@ Jail: Room
  
 ; 
 
-;
 + CellDoor: LockableWithKey, Door
 'Cell Door'
 'Cell Door'
