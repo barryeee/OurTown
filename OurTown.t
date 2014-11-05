@@ -9,6 +9,8 @@
  *   
  *   IMPORTANT - You should customize some of the text below, as marked:
  *   the name of your game, your byline, and so on.  
+ *
+ *   11/04/2014 - Set weightCapacity property for player to 150. BE
  */
 versionInfo: GameID
     IFID = '69462502-a9b7-4112-9ce0-6b300d602969'
@@ -41,7 +43,7 @@ versionInfo: GameID
     {
         /* show our credits */
         "Created by the Programming Support Class at Northeast Iowa Community College.";
-        "<br>BE - Barry Eichelberger, Instructor";
+        "<br>BE - Barry Eichelberger, Instructor, Fall 2013 - 2014";
         "<br>BV - Brian Vorwald, Fall 2013";
         "<br>GL - Grayson Leigh, Fall 2013";
         "<br>LS - Laurie Starr, Fall 2014";
@@ -63,7 +65,7 @@ versionInfo: GameID
     }
     
 ;
-
+/* totheAbyss - a function which allows the player to be relocated to the Abyss, where he/she dies immediately*/
 function totheAbyss ( )
 {
     me.moveIntoForTravel(theAbyss);
@@ -92,4 +94,5 @@ gameMain: GameMainDef
 
 me: Actor
     location = TownSquare
+    weightCapacity = 150
 ;
