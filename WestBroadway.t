@@ -22,5 +22,5 @@ WestBroadway: OutdoorRoom
  
 // The skeleton key, which unlocks Endora's Cellar, mistakenly dropped on West Broadway street
 + skeletonKey: Key 'skeleton key' 'skeleton key' 
-    "A key has been dropped on the ground in the haste of it's owners departure. The key is constructed of wrought iron. A generic, all purpose, skeleton key. The story told by it's appearance is outweighed by the vibe reverberating from the seemingly simple object."
+    "A key has been dropped on the ground in the haste of its owners departure. The key is constructed of wrought iron. A generic, all purpose, skeleton key. The story told by it's appearance is outweighed by the vibe reverberating from the seemingly simple object."
 ;
