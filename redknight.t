@@ -20,5 +20,5 @@ redKnight: Person 'red knight' 'red knight'
     disambigName = 'red knight'
     posture = lying
     location = jasperCrypt
-    
+    properName = 'Risas'
 ;

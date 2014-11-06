@@ -19,5 +19,5 @@
     disambigName = 'white knight'
     posture = lying
     location = marbleCrypt
-    
+    properName = 'Warhym'
 ;

@@ -19,5 +19,5 @@ greenKnight: Person 'green knight' 'green knight'
     disambigName = 'green knight'
     posture = lying
     location = malachiteCrypt
-    
+    properName = 'Garym'
 ;
