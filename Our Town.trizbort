@@ -8,7 +8,7 @@
 			<dock index="0" id="2" port="s" />
 			<dock index="1" id="1" port="n" />
 		</line>
-		<room id="4" name="East Bridge" x="-64" y="-224" w="96" h="64" description="A rickety, wooden bridge leading over the Volta River. It is barely wide enough for one person use." />
+		<room id="4" name="North Bridge" x="-64" y="-224" w="96" h="64" description="A rickety, wooden bridge leading over the Volta River. It is barely wide enough for one person use." />
 		<line id="5">
 			<dock index="0" id="4" port="s" />
 			<dock index="1" id="2" port="n" />
