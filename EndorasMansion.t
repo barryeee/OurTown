@@ -31,7 +31,7 @@ EndorasMansion: Room
     }
 ;
 
-/* The Cellar Door is unlockable only to release Endora's prisoner, entrance to the cellar is not permitted. */
+/* The Cellar Door is only to release Endora's prisoner, entrance to the cellar is not permitted. */
 
 + CellarDoor: LockableWithKey, Door  
 	'Cellar Door'
@@ -39,20 +39,16 @@ EndorasMansion: Room
         "The door, constructed of weathered planking, has centered on it an aged locking mechanism. From beyond the door you hear the tortured cries of a hopeless prisoner."
     keyList = [skeletonKey]
     
-/* Unlocking of the cellar door results in the reward of 3 points for releasing Endora's prisoner and can only be done with the possession of the skeleton key that was dropped on West Broadway. */
+/* Opening of the cellar door results in the reward of 3 points for releasing Endora's prisoner and can only be done with the possession of the skeleton key that was dropped on West Broadway. */
     
-    dobjFor(Unlock)
+    dobjFor(Open)
     {
              action() 
              { 
-                if (skeletonKey.location == me)
-                    {
-                       achievement.awardPointsOnce(); 
-                       
-                    }
-                 inherited; 
-             } 
-    }     
+               achievement.awardPointsOnce();                        
+             }
+    } 
+         
    achievement : Achievement { +3 "Releasing Endora's prisoner" } 
 
  ;
