@@ -10,6 +10,8 @@
  *   Basic description and characteristics for one of the
  *   Four Elemental Knights which appear first in the crypts below the tomb in
  *   the Town Cemetery.
+*Maintenance Log
+ *    11/12/2014 Added a gender value so pronouns are used correctly. BE
  */
     
 greenKnight: Person 'green knight' 'green knight'  
@@ -20,4 +22,5 @@ greenKnight: Person 'green knight' 'green knight'
     posture = lying
     location = malachiteCrypt
     properName = 'Garym'
+    isHim = true
 ;

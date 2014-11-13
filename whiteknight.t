@@ -10,6 +10,8 @@
  *   Basic description and characteristics for one of the
  *   Four Elemental Knights which appear first in the crypts below the tomb in
  *   the Town Cemetery.
+*Maintenance Log
+ *    11/12/2014 Added a gender value so pronouns are used correctly. BE
  */
 
     whiteKnight: Person 'white knight' 'white knight'  
@@ -20,4 +22,5 @@
     posture = lying
     location = marbleCrypt
     properName = 'Warhym'
+    isHim = true
 ;
