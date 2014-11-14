@@ -11,15 +11,16 @@
 
 weapon : Thing 'generic weapon' 'generic weapon' 
     "There is nothing special about this weapon"
-    attack = 0
-    defense = 0
+    damage = 1
+    weight = 1
+    // modify examine verb to display weapon's damage and weight properties.
    dobjFor (Examine)
     {
         action()
         {
-            inherited;
-            "<br>Attack value = <<attack>>";
-            "<br>Defense value = <<defense>>"; 
+            inherited();
+            "<br>Damage = <<damage>>";
+            "<br>Weight = <<weight>>"; 
            
         }
     }
@@ -27,8 +28,9 @@ weapon : Thing 'generic weapon' 'generic weapon'
     
     
 cheapSword : weapon 'cheap brass sword' 'brass sword' @BelowtheTomb
-    "A very poorly made and inexpensive sword. Good for 3 or 4 swings before it breaks"
-    attack = 5
-    defense = 3
+    "A very poorly made and inexpensive sword. 
+    It is better than no weapon at all, but it does not look like it will do much damage in a fight."
+    damage = 2
+    weight = 10
 ;
     
