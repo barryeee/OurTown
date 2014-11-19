@@ -8,7 +8,8 @@
  *   Contains the basic definition of all weapons used in this game.
  *   All weapons will be added to this file.
  *   Maintenance Log
- *   *    11/19/2014 Added code for AttackWith verb to allow basic combat with player. BE
+ *   11/19/2014 Added code for AttackWith verb to allow basic combat with player. BE
+ *   11/19/2014 Created Diamond Dagger. BE
  */
 
 weapon : Thing 'generic weapon' 'generic weapon' 
@@ -51,7 +52,7 @@ weapon : Thing 'generic weapon' 'generic weapon'
             {
                 "You missed!<br>";
             }
-            //Defender counter attacks
+            //Defender counterattacks
             "The <<gDobj.name>> ";
             if (rand(gDobj.accuracy) > rand(me.dexterity)) 
             {
@@ -62,7 +63,7 @@ weapon : Thing 'generic weapon' 'generic weapon'
             //Check player health to see if he/she is still alive
             if (me.health <= 0)
             {
-                "<br/>Alas, your opponent has struck a fatal blow.<br/> Your body falls limply to the ground.<br/>";
+                "<br/>Alas, your opponent has struck a fatal blow.<br/>Your body falls limply to the ground.<br/>";
                 finishGameMsg(ftDeath, finishOptionFullScore);
             }
          }
@@ -76,5 +77,12 @@ cheapSword : weapon 'cheap brass sword' 'brass sword' @BelowtheTomb
     It is better than no weapon at all, but it does not look like it will do much damage in a fight."
     damage = 2
     weight = 10
+;
+
+diamondDagger : weapon 'dimaond-studded dagger' 'diamond dagger' @Outfitters
+    " A beautifully hand-crafted weapon, with diamonds inset all long the handle. 
+    It is long enough to double as a short sword in some instances. It looks like a very dangerous weapon."
+    damage = 50
+    weight = 3
 ;
     
