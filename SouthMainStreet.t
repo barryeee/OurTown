@@ -16,7 +16,7 @@ SouthMainStreet: OutdoorRoom
     
     north = TownSquare
    // east = Inn
-   // west = Outfitters
+    west = Outfitters
     south = SouthGate
 ;
 
