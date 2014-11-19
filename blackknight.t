@@ -12,6 +12,7 @@
  *   the Town Cemetery.
  *Maintenance Log
  *    11/12/2014 Added a gender value so pronouns are used correctly. BE
+ *    11/19/2014 Added code for AttackWith verb to allow basic combat with player. BE
  */
 
 
@@ -25,5 +26,26 @@ blackKnight: Person 'black knight' 'black knight'
     location = graniteCrypt
     properName = 'Borgion'
     isHim = true
+    accuracy = 10
+    strength = 10
+    dexterity = 5
+    health = 20
+    damage = 5
+    
+    dobjFor (AttackWith)
+    {
+        verify() { }
+        check() 
+        {
+            // check position of knight. If lying, change positon to standing and display message.
+            if (posture == lying)
+            { 
+                posture = standing;
+                "The <<name>> rises from the crypt and prepares to meet your attack with his mighty sword made of black onyx.<br>";
+                moveIntoForTravel(BelowtheTomb);
+            }
+        }
+        action() { }
+    }
     
 ;

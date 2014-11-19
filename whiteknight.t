@@ -12,6 +12,7 @@
  *   the Town Cemetery.
 *Maintenance Log
  *    11/12/2014 Added a gender value so pronouns are used correctly. BE
+ 
  */
 
     whiteKnight: Person 'white knight' 'white knight'  
@@ -23,4 +24,26 @@
     location = marbleCrypt
     properName = 'Warhym'
     isHim = true
+    accuracy = 10
+    strength = 10
+    dexterity = 5
+    health = 20
+    damage = 5
+    
+    dobjFor (AttackWith)
+    {
+        verify() { }
+        check() 
+        {
+            // check position of knight. If lying, change positon to standing and display message.
+            if (posture == lying)
+            { 
+                posture = standing;
+                "The <<name>> rises from the crypt and prepares to meet your attack with his deadly diamond-barbed flail.<br>";
+                moveIntoForTravel(BelowtheTomb);
+            }
+        }
+        action() { }
+    }
+    
 ;

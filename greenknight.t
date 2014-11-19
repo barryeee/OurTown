@@ -12,6 +12,8 @@
  *   the Town Cemetery.
 *Maintenance Log
  *    11/12/2014 Added a gender value so pronouns are used correctly. BE
+ *    11/19/2014 Added code for AttackWith verb to allow basic combat with player. BE
+ *    11/19/2014 Added code for AttackWith verb to allow basic combat with player. BE
  */
     
 greenKnight: Person 'green knight' 'green knight'  
@@ -23,4 +25,26 @@ greenKnight: Person 'green knight' 'green knight'
     location = malachiteCrypt
     properName = 'Garym'
     isHim = true
+    accuracy = 10
+    strength = 10
+    dexterity = 5
+    health = 20
+    damage = 5
+    
+    dobjFor (AttackWith)
+    {
+        verify() { }
+        check() 
+        {
+            // check position of knight. If lying, change positon to standing and display message.
+            if (posture == lying)
+            { 
+                posture = standing;
+                "The <<name>> rises from the crypt and prepares to meet your attack with his emerald-tipped spear.<br>";
+                moveIntoForTravel(BelowtheTomb);
+            }
+        }
+        action() { }
+    }
+    
 ;

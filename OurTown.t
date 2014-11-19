@@ -11,6 +11,7 @@
  *   the name of your game, your byline, and so on.  
  *
  *   11/04/2014 - Set weightCapacity property for player to 150. BE
+ *   11/19/2014 Added combat atributes to player character. BE
  */
 versionInfo: GameID
     IFID = '69462502-a9b7-4112-9ce0-6b300d602969'
@@ -93,7 +94,11 @@ gameMain: GameMainDef
 
 
 me: Actor
+//    location = BelowtheTomb
     location = TownSquare
     weightCapacity = 150
-    exits = on
+    accuracy = 5
+    strength = 5
+    dexterity = 2
+    health = 20
 ;

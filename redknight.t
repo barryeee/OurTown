@@ -24,4 +24,26 @@ redKnight: Person 'red knight' 'red knight'
     location = jasperCrypt
     properName = 'Risas'
     isHime = true
+    accuracy = 10
+    strength = 10
+    dexterity = 5
+    health = 20
+    damage = 5
+    
+    dobjFor (AttackWith)
+    {
+        verify() { }
+        check() 
+        {
+            // check position of knight. If lying, change positon to standing and display message.
+            if (posture == lying)
+            { 
+                posture = standing;
+                "The <<name>> rises from the crypt and prepares to meet your attack with his maleficent mace covered with ruby spikes.<br>";
+                moveIntoForTravel(BelowtheTomb);
+            }
+        }
+        action() { }
+    }
+    
 ;
