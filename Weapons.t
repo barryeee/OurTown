@@ -9,13 +9,16 @@
  *   All weapons will be added to this file.
  *   Maintenance Log
  *   11/19/2014 Added code for AttackWith verb to allow basic combat with player. BE
- *   11/19/2014 Created Diamond Dagger. BE
+ *   11/19/2014 Created Diamond Dagger. BE 
+ *   11/24/2014 Changed method for awarding points using weapons. BE
  */
 
 weapon : Thing 'generic weapon' 'generic weapon' 
     "There is nothing special about this weapon"
     damage = 1
     weight = 1
+   
+    achievement = perInstance(new SimpleAchievement('Defeating the  ' + gDobj.name)) 
     // modify examine verb to display weapon's damage and weight properties.
    dobjFor (Examine)
     {
@@ -43,7 +46,11 @@ weapon : Thing 'generic weapon' 'generic weapon'
                 //check defender's health to see if he/she is still alive - health > 0
                 if (gDobj.health <= 0)
                 {
-                    "The <<gDobj.name>> crumples to the ground and disolves into a pile ash!";
+                    "<<gDobj.deathMsg>>";
+                    "<br>You have defeated your valiant opponent!";
+                  //int combatpoints = gDobj.points;
+                   // string combatdesc = "defeating the " + gDobj.name;
+                    addToScore(gDobj.points, 'defeating the <<gDobj.name>>');
                     gDobj.moveIntoForTravel(theAbyss);
                     exit;
                 }
@@ -67,7 +74,9 @@ weapon : Thing 'generic weapon' 'generic weapon'
                 finishGameMsg(ftDeath, finishOptionFullScore);
             }
          }
+        
      }
+   
     
 ;                        
                 
@@ -79,7 +88,8 @@ cheapSword : weapon 'cheap brass sword' 'brass sword' @BelowtheTomb
     weight = 10
 ;
 
-diamondDagger : weapon 'dimaond-studded dagger' 'diamond dagger' @Outfitters
+diamondDagger : weapon 'dimaond-studded dagger' 'diamond dagger'
+    @Outfitters
     " A beautifully hand-crafted weapon, with diamonds inset all long the handle. 
     It is long enough to double as a short sword in some instances. It looks like a very dangerous weapon."
     damage = 50

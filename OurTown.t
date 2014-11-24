@@ -77,6 +77,8 @@ function totheAbyss ( )
 
 gameMain: GameMainDef
     initialPlayerChar = me
+    //max score must be upddated by hand with total number of points available.
+    maxScore = 46
     showIntro()
     {
         "<font color=\"yellow\">Welcome to...<br /><br />";
@@ -94,9 +96,9 @@ gameMain: GameMainDef
 
 
 me: Actor
- //   location = BelowtheTomb //test location.
+//   location = BelowtheTomb //test location.
     location = TownSquare
-    weightCapacity = 150
+    weightCapacity = 100
     accuracy = 5
     strength = 5
     dexterity = 2
