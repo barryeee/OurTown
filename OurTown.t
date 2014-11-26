@@ -95,5 +95,5 @@ gameMain: GameMainDef
 me: Actor
     location = TownSquare
     weightCapacity = 150
-    exits = on
+    //exits = on
 ;
