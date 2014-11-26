@@ -11,6 +11,7 @@
  *   the name of your game, your byline, and so on.  
  *
  *   11/04/2014 - Set weightCapacity property for player to 150. BE
+ *   11/19/2014 Added combat atributes to player character. BE
  */
 versionInfo: GameID
     IFID = '69462502-a9b7-4112-9ce0-6b300d602969'
@@ -76,6 +77,8 @@ function totheAbyss ( )
 
 gameMain: GameMainDef
     initialPlayerChar = me
+    //max score must be upddated by hand with total number of points available.
+    maxScore = 46
     showIntro()
     {
         "<font color=\"yellow\">Welcome to...<br /><br />";
@@ -93,7 +96,12 @@ gameMain: GameMainDef
 
 
 me: Actor
+//   location = BelowtheTomb //test location.
     location = TownSquare
-    weightCapacity = 150
-    //exits = on
+    weightCapacity = 100
+    accuracy = 5
+    strength = 5
+    dexterity = 2
+    health = 20
+
 ;
