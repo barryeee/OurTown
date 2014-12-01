@@ -1,13 +1,21 @@
 #charset "us-ascii"
 #include <adv3.h>
 #include <en_us.h>
-
+/* 
+ *   Higth Cathedral 
+ Author: Barry Eichelberger 
+ Date: 10/01/2013 
+ Desc: High Cathedral, spiritual center of Our Town. 
+ Maintenance 12/01/2014 Added north direction/link to Scriptorium. BE
+ */
 HighCathedral: Room 
-    name = '<font color="#880000">High Cathedral</font>'
+    roomName = '<font color="#880000">High Cathedral</font>'
+    destName = '<font color="#880000">High Cathedral</font>'
     desc = "<hr/>As your eyes adjust to the dim lighting, you notice that you are in a temple of very modest interior proportions. Before you lies the gilded High Altar. You are surrounded by stone statues of all kinds, some beautiful, some hideous."
     
     /*east = BehindtheAltar*/
     west = NorthMainStreet
+    north = Scriptorium
 ;
 
  +AngelStatue: Thing 
