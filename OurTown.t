@@ -90,6 +90,8 @@ gameMain: GameMainDef
         Take nothing for granted as you wander the streets. 
         Be careful when entering a building. 
         Most residents don't care much for unexpected visitors.<br /><br /></font>";
+        
+       
     }
 ;
 

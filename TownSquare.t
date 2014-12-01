@@ -3,7 +3,6 @@
 #include <en_us.h>
 
 
-
 TownSquare: OutdoorRoom 
     name = '<br><font color="#00ff00">Town Square</font>'
 
@@ -20,5 +19,6 @@ TownSquare: OutdoorRoom
     south = SouthMainStreet
     west = WestBroadway 
     east = EastBroadway
-    
+     
+
 ;

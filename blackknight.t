@@ -44,7 +44,7 @@ blackKnight: Person 'black knight' 'black knight'
             if (posture == lying)
             { 
                 posture = standing;
-                "The <<name>> rises from the crypt and prepares to meet your attack with his mighty sword made of black onyx.<br>";
+                "<<properName>>, the <<name>> rises from the crypt and prepares to meet your attack with his mighty sword made of black onyx.<br>";
                 moveIntoForTravel(BelowtheTomb);
             }
         }
