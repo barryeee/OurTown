@@ -12,6 +12,8 @@
  *   the Town Cemetery.
 *Maintenance Log
  *    11/12/2014 Added a gender value so pronouns are used correctly. BE
+ *    11/19/2014 Added code for AttackWith verb to allow basic combat with player. BE
+ *    11/24/2014 Added death message property for indiviualized messages. BE
  */
     
     
@@ -29,7 +31,8 @@ redKnight: Person 'red knight' 'red knight'
     dexterity = 5
     health = 20
     damage = 5
-    
+    points = 10
+    deathMsg = "The seemingly invincible knight bursts into a pillar of fire, leaving behind nothing but a pile of ash on the ground."
     dobjFor (AttackWith)
     {
         verify() { }
@@ -39,7 +42,7 @@ redKnight: Person 'red knight' 'red knight'
             if (posture == lying)
             { 
                 posture = standing;
-                "The <<name>> rises from the crypt and prepares to meet your attack with his maleficent mace covered with ruby spikes.<br>";
+                "<<properName>>, the <<name>>, rises from the crypt and prepares to meet your attack with his maleficent mace covered with ruby spikes.<br>";
                 moveIntoForTravel(BelowtheTomb);
             }
         }

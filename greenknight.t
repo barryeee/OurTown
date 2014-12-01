@@ -14,6 +14,7 @@
  *    11/12/2014 Added a gender value so pronouns are used correctly. BE
  *    11/19/2014 Added code for AttackWith verb to allow basic combat with player. BE
  *    11/19/2014 Added code for AttackWith verb to allow basic combat with player. BE
+ *    11/24/2014 Added death message property for indiviualized messages. BE
  */
     
 greenKnight: Person 'green knight' 'green knight'  
@@ -30,6 +31,9 @@ greenKnight: Person 'green knight' 'green knight'
     dexterity = 5
     health = 20
     damage = 5
+    points = 10
+    deathMsg = "The seemingly invincible knight disolves into a puddle of scummy, green pond water on the floor."
+    
     
     dobjFor (AttackWith)
     {
@@ -40,7 +44,7 @@ greenKnight: Person 'green knight' 'green knight'
             if (posture == lying)
             { 
                 posture = standing;
-                "The <<name>> rises from the crypt and prepares to meet your attack with his emerald-tipped spear.<br>";
+                "<<properName>>,the <<name>>, rises from the crypt and prepares to meet your attack with his emerald-tipped spear.<br>";
                 moveIntoForTravel(BelowtheTomb);
             }
         }
