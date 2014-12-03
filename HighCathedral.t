@@ -6,7 +6,9 @@
  Author: Barry Eichelberger 
  Date: 10/01/2013 
  Desc: High Cathedral, spiritual center of Our Town. 
- Maintenance 12/01/2014 Added north direction/link to Scriptorium. BE
+ Maintenance 
+ 12/01/2014 Added north direction/link to Scriptorium. BE
+ 12/03/2014 Added weight to angel statue to prevent taking it. BE
  */
 HighCathedral: Room 
     roomName = '<font color="#880000">High Cathedral</font>'
@@ -23,6 +25,7 @@ HighCathedral: Room
     vocabWords = 'angel/statue'
     desc = "You see a large statue, apparently carved from granite. It appears to be ancient, showing signs of severe weathering."
     location = HighCathedral
+    weight = 1000
      actionDobjFeel
         {
         "<bold>That was an incredibly stupid thing to do!</bold><br />";

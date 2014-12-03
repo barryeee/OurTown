@@ -36,7 +36,6 @@ Scriptorium: Room
     The eerie, pearlescent glow is just bright enought to illuminate the room."
     isLit = true
     brightness = 3
-    
 ;
 +historyShelf: Surface, Fixture
     'history shelf*shelves'
@@ -56,7 +55,6 @@ Scriptorium: Room
 ;
 scriptoriumEastWall: defaultEastWall
    desc = "This wall is built of the same stone as the rest of the cathedral. "
-    
 ;
 
 scriptoriumWestWall: defaultWestWall
