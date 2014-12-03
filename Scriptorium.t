@@ -17,8 +17,9 @@ Scriptorium: Room
     desc = "<hr/> A windowless library, filled with shelves from floor to ceiling, containing various book and scrolls."
 
     south = HighCathedral
-    
-;
+    roomParts = static inherited -defaultEastWall +scriptoriumEastWall -defaultWestWall +scriptoriumWestWall
+         -defaultNorthWall +scriptoriumNorthWall -defaultSouthWall +scriptoriumSouthWall
+ ;
 
 +ReadingDesk:  Surface
     'reading desk/oak desk/desk'
@@ -34,4 +35,23 @@ Scriptorium: Room
     isLit = true
     brightness = 3
     
+;
+scriptoriumEastWall: defaultEastWall
+   desc = "This wall is built of the same stone as the rest of the cathedral. "
+    
+;
++historyShelf: Surface, Fixture
+    'history shelf'
+    'history shell'
+    "This shelf reaches from floor to ceiling and is packed with various scrolls and books. 
+    Since it is labled \"History\", it is a safe bet that everything on it is of an historical nature."
+;
+scriptoriumWestWall: defaultWestWall
+   desc = "This wall is built of the same stone as the rest of the cathedral. "
+;
+scriptoriumNorthWall: defaultNorthWall
+   desc = "This wall is built of the same stone as the rest of the cathedral. "
+;
+scriptoriumSouthWall: defaultSouthWall
+   desc = "This wall is built of the same stone as the rest of the cathedral. "
 ;
