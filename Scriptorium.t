@@ -8,13 +8,15 @@
  *   Desc: The Sciptorium is a small room located of the main sancturary in the High Cathedral.
  *              Its only purpose is to be a repository for various book and scrolls....
  *      Maintenance Log:
+ *      12/03/2014 Added shevles and modified room description. BE
  *
  */
 
 Scriptorium: Room
     roomName = '<font color="#008800">Scriptorium</font>'
     destName = '<font color="#008800">Scriptorium</font>'
-    desc = "<hr/> A windowless library, filled with shelves from floor to ceiling, containing various book and scrolls."
+    desc = "<hr/> A windowless library, filled with shelves from floor to ceiling. 
+        Unfortunately, it looks as if the library has been looted, as there are few, if any volumes remaining on the shelves."
 
     south = HighCathedral
     roomParts = static inherited -defaultEastWall +scriptoriumEastWall -defaultWestWall +scriptoriumWestWall
@@ -36,16 +38,27 @@ Scriptorium: Room
     brightness = 3
     
 ;
++historyShelf: Surface, Fixture
+    'history shelf*shelves'
+    'history shelf'
+    "This shelf reaches from floor to ceiling and is large enough to hold hundreds of books and scrolls. "
+    
+;
++spellsShelf: Surface, Fixture
+    'spells shelf*shelves'
+    'spells shelf'
+    "This shelf reaches from floor to ceiling and is large enough to hold hundreds of books and scrolls. "
+;
++monstersShelf: Surface, Fixture
+    'monsters shelf*shelves'
+    'monsters shelf'
+    "This shelf reaches from floor to ceiling and is large enough to hold hundreds of books and scrolls. "
+;
 scriptoriumEastWall: defaultEastWall
    desc = "This wall is built of the same stone as the rest of the cathedral. "
     
 ;
-+historyShelf: Surface, Fixture
-    'history shelf'
-    'history shell'
-    "This shelf reaches from floor to ceiling and is packed with various scrolls and books. 
-    Since it is labled \"History\", it is a safe bet that everything on it is of an historical nature."
-;
+
 scriptoriumWestWall: defaultWestWall
    desc = "This wall is built of the same stone as the rest of the cathedral. "
 ;
