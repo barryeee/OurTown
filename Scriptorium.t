@@ -2,7 +2,7 @@
 #include <adv3.h>
 #include <en_us.h>
 /* 
- *   The Sciptorium 
+ *   The Sciptorium
  *   Author: Barry Eichelberger
  *   Date: 12-01-2014
  *   Desc: The Sciptorium is a small room located of the main sancturary in the High Cathedral.
