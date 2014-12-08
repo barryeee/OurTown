@@ -9,11 +9,15 @@
  Maintenance 
  12/01/2014 Added north direction/link to Scriptorium. BE
  12/03/2014 Added weight to angel statue to prevent taking it. BE
+ 12/08/2014 change Notice from readable object to decoration. Added custom message to object incase player attempts to take notice. BE
  */
 HighCathedral: Room 
     roomName = '<font color="#880000">High Cathedral</font>'
     destName = '<font color="#880000">High Cathedral</font>'
-    desc = "<hr/>As your eyes adjust to the dim lighting, you notice that you are in a temple of very modest interior proportions. Before you lies the gilded High Altar. You are surrounded by stone statues of all kinds, some beautiful, some hideous."
+    desc = "<hr/>As your eyes adjust to the dim lighting, you notice that you are in a temple of very modest interior proportions. 
+        Before you lies the gilded High Altar. 
+        You are surrounded by stone statues of all kinds, some beautiful, some hideous.
+        There is a notice attached to the wall."
     
     /*east = BehindtheAltar*/
     west = NorthMainStreet
@@ -37,17 +41,18 @@ HighCathedral: Room
         }
 ;
 
-+Notice: Thing, Readable 
++Decoration
     name = 'Notice on Cathedral Wall' 
     vocabWords = 'Notice'
-    location = HighCathedral
-   desc = "You see an ancient piece of parchment hanging on the wall beside the doors. Although nearly illegible, you can just barely make out the writing...<br>"
-    readDesc = "<center><font color=\"orange\">Welcome to the High Cathedral!</font></center>
-    <ul>
+    
+   desc = "You see an ancient piece of parchment hanging on the wall beside the doors. Although nearly illegible, you can just barely make out the writing...<br>
+    <center><font face=\"Segoe Script\"color=\"orange\"><h1>Welcome to the High Cathedral!</h1></center>
+    <h2><ul>
         <li>Services of Worship occur at irregular intervals.</li>
         <li>Please observe proper decorum at all times while inside the Cathedral.</li>
-        <li>A final word of caution ... You may look at, but <font color=\"red\">DO NOT TOUCH</font>, the Angel Statue!</li></ul>
-   <center>Thank you and enjoy your time here.</center>"
+        <li>A final word of caution ... <br/>You may look at, but <font color=\"red\"><b>DO NOT TOUCH</b></font>, the Angel Statue!</li></ul>
+   <center>Thank you and enjoy your time here.</center></h2></font>"
+    notImportantMsg = 'Please do not deface the Cathedral by removing or in any other disturbing this notice.'
     
    
 ;
