@@ -52,7 +52,7 @@ HighCathedral: Room
         <li>Please observe proper decorum at all times while inside the Cathedral.</li>
         <li>A final word of caution ... <br/>You may look at, but <font color=\"red\"><b>DO NOT TOUCH</b></font>, the Angel Statue!</li></ul>
    <center>Thank you and enjoy your time here.</center></h2></font>"
-    notImportantMsg = 'Please do not deface the Cathedral by removing or in any other disturbing this notice.'
+    notImportantMsg = 'Please do not deface the Cathedral by removing or in any other way disturbing this notice.'
     
    
 ;
