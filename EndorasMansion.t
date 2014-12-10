@@ -5,8 +5,11 @@
 /* "Endora's Mansion", located... "
 Created by Laurie Starr
 Created on September 18, 2014 
+    maintenance log
 github test October 6, 2014
 added Cellar Door November 4, 2014
+added to the Pull verb in re the Summoning Rope and the Open verb in re the Cellar Door
+
 */
 
 EndorasMansion: Room
@@ -27,9 +30,30 @@ EndorasMansion: Room
 
     actionDobjPull
     {
-     "From deep inside the mansion you hear the unpleasant cackling of an angry witch."; 
+        // if the rope has been pulled previously Endora has already been summoned
+        if (Endora.discovered && Endora.location != theAbyss)        {
+            "The Witch has already been summoned." ;
+        }
+        // if Endora has been summoned and is still in the mansion and Merrick has been set loose Endora "dies" (sent to the abyss)
+        else if (Endora.discovered && Endora.location == EndorasMansion && Merrick.discovered)
+        {
+            Endora.deathMsg;
+            Endora.moveIntoForTravel(theAbyss);           
+        }  
+        // Endora has already been summoned and killed
+        else if (Endora.location == theAbyss)
+        {
+            "Ding Dong the Witch is Dead, the wicked witch, the mean old witch...";
+        }
+        // Endora has not been discovered
+        else
+        {           
+            Endora.discover();          
+            "From deep inside the mansion you hear the unpleasant cackling of an angry witch. You have summoned Endora, the Wicked Witch of West Broadway. Look upon her at your own behest."; 
+        }
     }
 ;
+
 
 /* The Cellar Door is only to release Endora's prisoner, entrance to the cellar is not permitted. */
 
@@ -39,17 +63,27 @@ EndorasMansion: Room
         "The door, constructed of weathered planking, has centered on it an aged locking mechanism. From beyond the door you hear the tortured cries of a hopeless prisoner."
     keyList = [skeletonKey]
     
-/* Opening of the cellar door results in the reward of 3 points for releasing Endora's prisoner and can only be done with the possession of the skeleton key that was dropped on West Broadway. */
+/* Opening of the cellar door results in the release of Endora's prisoner and can only be done with the possession of the skeleton key that was dropped on West Broadway. */
     
     dobjFor(Open)
     {
-             action() 
+        action()
+        {
+            Merrick.discover();         
+             if (Endora.location == EndorasMansion && Endora.discovered == true)
              { 
-               achievement.awardPointsOnce();                        
-             }
+                Endora.deathMsg;
+                Endora.moveIntoForTravel(theAbyss);                
+             }                       
+            else
+            {
+                "'Where is she?' states a very angry Merrick.";
+            }
+            inherited;
+        }         
     } 
          
-   achievement : Achievement { +3 "Releasing Endora's prisoner" } 
+   
 
  ;
 
