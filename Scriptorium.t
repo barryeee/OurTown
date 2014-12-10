@@ -42,16 +42,63 @@ Scriptorium: Room
     'history shelf'
     "This shelf reaches from floor to ceiling and is large enough to hold hundreds of books and scrolls. "
     
+    iobjFor (PutOn)
+    {
+        action()
+        {
+            if (gDobj.destination == 'history shelf')
+            {
+                inherited();
+            }
+            else
+            {
+                "You can't put that here!";
+            }
+        }
+    }
+    
 ;
 +spellsShelf: Surface, Fixture
     'spells shelf*shelves'
     'spells shelf'
     "This shelf reaches from floor to ceiling and is large enough to hold hundreds of books and scrolls. "
+    
+     iobjFor (PutOn)
+    {
+        action()
+        {
+            if (gDobj.destination == 'spells shelf')
+            {
+                inherited();
+            }
+            else
+            {
+                "You can't put that here!";
+            }
+        }
+    }
+    
 ;
 +monstersShelf: Surface, Fixture
     'monsters shelf*shelves'
     'monsters shelf'
     "This shelf reaches from floor to ceiling and is large enough to hold hundreds of books and scrolls. "
+    
+     iobjFor (PutOn)
+    {
+        action()
+        {
+            if (gDobj.destination == 'monsters shelf')
+            {
+                inherited();
+            }
+            else
+            {
+                "You can't put that here!";
+            }
+        }
+    }
+    
 ;
 scriptoriumEastWall: defaultEastWall
    desc = "This wall is built of the same stone as the rest of the cathedral. "

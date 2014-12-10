@@ -37,12 +37,30 @@ Book: Readable
 ;
 
 blackScroll: Book
+    'black scroll*scrolls'
     'black scroll'
-    'black scroll'
-    @TownSquare
+    @graniteCrypt
+    
     "An ancient work, written on parchment and covered with black silk. There appears to be something written on it ..."
-    readDesc = "<center><font face=\"Segoe Script\" color=\"gold\"><h1><br/>The War of Conquest</h1><br/><br/>
+    destination = 'history shelf'
+    sightPresence = nil
+    isListed = nil
+     readDesc = "<center><font face=\"Segoe Script\" color=\"gold\"><h1><br/>The War of Conquest</h1><br/><br/>
         <h2>Being a History of the conflict<br>
+        between the Four Elemental Knights<br/>
+        and<br/>
+        The Witch Endora</h2></font></center>"      
+;
+
+whiteScroll: Book
+    'white scroll*scrolls'
+    'white scroll'
+    
+    @marbleCrypt
+    "An ancient work, written on parchment and covered with white brocade. There appears to be something written on it ..."
+    destination = 'history shelf'
+    readDesc = "<center><font face=\"Segoe Script\" color=\"gold\"><h1><br/>Victory At The Bridge</h1><br/><br/>
+        <h2>A Continuation of the History of the conflict<br>
         between the Four Elemental Knights<br/>
         and<br/>
         The Witch Endora</h2></font></center>"      
