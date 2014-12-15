@@ -44,7 +44,8 @@ blackScroll: Book
     "An ancient work, written on parchment and covered with black silk. There appears to be something written on it ..."
     destination = 'history shelf'
     sightPresence = nil
-    isListed = nil
+    isListed = (sightPresence)
+    isListedInContents = (sightPresence)
      readDesc = "<center><font face=\"Segoe Script\" color=\"gold\"><h1><br/>The War of Conquest</h1><br/><br/>
         <h2>Being a History of the conflict<br>
         between the Four Elemental Knights<br/>

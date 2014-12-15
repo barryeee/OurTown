@@ -46,6 +46,7 @@ blackKnight: Person 'black knight' 'black knight'
                 posture = standing;
                 "<<properName>>, the <<name>> rises from the crypt and prepares to meet your attack with his mighty sword made of black onyx.<br>";
                 moveIntoForTravel(BelowtheTomb);
+                blackScroll.sightPresence = true;
             }
         }
         action() { }
