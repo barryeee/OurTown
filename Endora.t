@@ -18,6 +18,6 @@ Endora: Hidden, Person 'witch' 'Wicked Witch of West Broadway, Endora' @EndorasM
     isHer = true 
     properName = 'Endora'   
     uselessToAttackMsg = 'Physical confrontation only angers Endora, your efforts are in vain.' 
-    deathMsg = "<p>'Why Merrick Why'... exclaims Endora as she vaporizes into a black cloud.</p>"
+    deathMsg = "<p>\"Why Merrick Why\"... exclaims Endora as she vaporizes into a black cloud.</p>"
 ;
 
