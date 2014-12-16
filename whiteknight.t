@@ -14,6 +14,7 @@
  *    11/12/2014 Added a gender value so pronouns are used correctly. BE
  *    11/19/2014 Added code for AttackWith verb to allow basic combat with player. BE
  *    11/24/2014 Added death message property for indiviualized messages. BE 
+ *    12/15/2014 Changed sightPrsence property on white scroll to visible when knight stands up. BE
  */
 
     whiteKnight: Person 'white knight' 'white knight'  
@@ -44,6 +45,7 @@
                 posture = standing;
                 "<<properName>>, the <<name>>, rises from the crypt and prepares to meet your attack with his deadly diamond-barbed flail.<br>";
                 moveIntoForTravel(BelowtheTomb);
+                whiteScroll.sightPresence = true;
             }
         }
         action() { }

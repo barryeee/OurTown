@@ -9,7 +9,7 @@
     All books, scrolls, tomes, grimoires, ect. should be instances of this object. 
     Their souce code should be contained in this file, below the book object definition.
 Maintenance:
-
+    12/15/2014 added 3 properties to the black and white scrolls to make them invisible. BE
  */
 
 Book: Readable
@@ -60,6 +60,9 @@ whiteScroll: Book
     @marbleCrypt
     "An ancient work, written on parchment and covered with white brocade. There appears to be something written on it ..."
     destination = 'history shelf'
+    sightPresence = nil
+    isListed = (sightPresence)
+    isListedInContents = (sightPresence)
     readDesc = "<center><font face=\"Segoe Script\" color=\"gold\"><h1><br/>Victory At The Bridge</h1><br/><br/>
         <h2>A Continuation of the History of the conflict<br>
         between the Four Elemental Knights<br/>
