@@ -11,6 +11,7 @@
  *   11/19/2014 Added code for AttackWith verb to allow basic combat with player. BE
  *   11/19/2014 Created Diamond Dagger. BE 
  *   11/24/2014 Changed method for awarding points using weapons. BE
+ *   12/15/2014 Remove points for ddefeating opponents. Points no longer used. BE
  */
 
 weapon : Thing 'generic weapon' 'generic weapon' 
@@ -48,9 +49,6 @@ weapon : Thing 'generic weapon' 'generic weapon'
                 {
                     "<<gDobj.deathMsg>>";
                     "<br>You have defeated your valiant opponent!";
-                  //int combatpoints = gDobj.points;
-                   // string combatdesc = "defeating the " + gDobj.name;
-                    addToScore(gDobj.points, 'defeating the <<gDobj.name>>');
                     gDobj.moveIntoForTravel(theAbyss);
                     exit;
                 }

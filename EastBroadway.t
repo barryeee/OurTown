@@ -26,6 +26,7 @@ Maintenance Log--------------
 10/07/2014 added a point to the unlock verb for the gate. 
     Points are only awared the first time the gate is unlocked. 
     Changed the description. BE
+12/15/2014 Remove points for opening gate. Points no longer used. BE
 */
    
 + CemeteryGate: LockableWithKey, Door  
@@ -38,10 +39,8 @@ Maintenance Log--------------
     {
              action() 
              { 
-               achievement.awardPointsOnce(); 
                inherited; 
              } 
     }   
-   achievement : Achievement { +3 "Opening the Cemetery Gate" } 
 
  ;

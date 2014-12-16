@@ -105,5 +105,5 @@ me: Actor
     strength = 5
     dexterity = 2
     health = 20
-
+     
 ;
