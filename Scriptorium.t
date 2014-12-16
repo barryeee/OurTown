@@ -48,6 +48,7 @@ Scriptorium: Room
         {
             if (gDobj.destination == 'history shelf')
             {
+                "You gently place the <<gDobj.name>> on the history shelf";
                 inherited();
             }
             else
