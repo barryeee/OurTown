@@ -13,7 +13,7 @@
 */
     
     
-Merrick: Hidden, Person 'Merrick' 'Merrick' @EndorasMansion
+Merrick: Hidden, Person 'Merrick' ' Arch Nemesis of Endora, Merrick' @EndorasMansion
     "Endora's ruggedly handsome former lover/present arch nemesis."
     isHim = true 
     properName = 'Merrick'   

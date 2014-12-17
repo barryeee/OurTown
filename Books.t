@@ -9,6 +9,7 @@
     All books, scrolls, tomes, grimoires, ect. should be instances of this object. 
     Their souce code should be contained in this file, below the book object definition.
 Maintenance:
+    12/16/2014 LS Added Book of Shadows
 
  */
 
@@ -46,7 +47,7 @@ blackScroll: Book
     sightPresence = nil
     isListed = (sightPresence)
     isListedInContents = (sightPresence)
-     readDesc = "<center><font face=\"Segoe Script\" color=\"gold\"><h1><br/>The War of Conquest</h1><br/><br/>
+    readDesc = "<center><font face=\"Segoe Script\" color=\"gold\"><h1><br/>The War of Conquest</h1><br/><br/>
         <h2>Being a History of the conflict<br>
         between the Four Elemental Knights<br/>
         and<br/>
@@ -65,4 +66,29 @@ whiteScroll: Book
         between the Four Elemental Knights<br/>
         and<br/>
         The Witch Endora</h2></font></center>"      
+;
+
+BookofShadows: Book
+    'Book of Shadows'
+    'Book of Shadows'
+    
+    @Merrick
+    "<p>Bound in worn, black leather a golden pentacle appears glowing on the cover.</p>"
+    destination = 'spells shelf'
+    readDesc = "<center><font face=\"Old English Text MT\" color=\"red\">
+        <h1><img src=\"star.png\"></h1>
+        <p>Book of Shadows
+        <br>Forbidden Secrets<br/>
+        <br>Betwixt Endora, Merrick<br/>
+        <br>and<br/>
+        <br>The Four Elemental Knights<br/></p>
+        <p><br>I. Endora<br/>
+        <br>In the beginning Endora was pristine of heart and had beauty to match...<br/></p>
+        <p>II. Merrick</p>        
+        <p>III. The Black Knight</p>
+        <p>IV. The White Knight</p>
+        <p>V. The Green Knight</p>        
+        <p>VI. The Red Knight</p>
+        
+        </font></center>"      
 ;
