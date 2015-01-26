@@ -23,7 +23,7 @@ versionInfo: GameID
     authorEmail = 'Barry Eichelberger <eichelbergerb@nicc.edu>'
     desc = 'Demonstration Project for Progamming Support class.'
     htmlDesc = 'Demonstration Project for Progamming Support class.'
-
+headline = 'An Interactive Sample' 
     /* 
      *   other bibliographic tags you might want to set include:
      *
@@ -78,18 +78,19 @@ function totheAbyss ( )
 gameMain: GameMainDef
     initialPlayerChar = me
     //max score must be upddated by hand with total number of points available.
-    maxScore = 46
+   // maxScore = 46
     showIntro()
     {
-        "<font color=\"yellow\">Welcome to...<br /><br />";
-        "<center><font face=\"Comic Sans MS\" size=\"100\" >Our Town</font></center><br /><br />";
+        "<p><br/><br/><br/><br/><br/><br/><br/>
+        <h1><font color=\"yellow\">Welcome to...<br /><br />";
+        "<center>Our Town</center><br /><br /></h1>";
 
 
         "It's a quirky little place, with unexpected characters showing up all the time.<br/>";
         "Although it appears to nothing more than a quaint, oudated little rual town in the Midwest, apperances can be deceiving. 
         Take nothing for granted as you wander the streets. 
         Be careful when entering a building. 
-        Most residents don't care much for unexpected visitors.<br /><br /></font>";
+        Most residents don't care much for unexpected visitors.<br /><br /></font></p>";
         
        
     }
