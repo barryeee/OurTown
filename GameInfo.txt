@@ -1,12 +1,13 @@
 IFID: 69462502-a9b7-4112-9ce0-6b300d602969
 Name: Our Town
+Headline: An Interactive Sample
 Byline: by Barry Eichelberger, et al.
 HtmlByline: by <a href="mailto:eichelbergerb@nicc.edu"> Barry Eichelberger</a>
 AuthorEmail: Barry Eichelberger <eichelbergerb@nicc.edu>
 Desc: Demonstration Project for Progamming Support class.
 HtmlDesc: Demonstration Project for Progamming Support class.
 Version: 1
-ReleaseDate: 2015-01-15
+ReleaseDate: 2015-01-26
 Language: en-US
 LicenseType: Freeware
 CopyingRules: Nominal cost only; compilations allowed
