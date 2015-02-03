@@ -87,8 +87,8 @@ gameMain: GameMainDef
 
 
         "It's a quirky little place, with unexpected characters showing up all the time.<br/>";
-        "Although it appears to nothing more than a quaint, oudated little rual town in the Midwest, apperances can be deceiving. 
-        Take nothing for granted as you wander the streets. 
+        "Although it appears to nothing more than a quaint, oudated, little rual town, apperances can be deceiving. 
+        Take nothing for granted as you wander the streets. Look at everything.
         Be careful when entering a building. 
         Most residents don't care much for unexpected visitors.<br /><br /></font></p>";
         
@@ -102,6 +102,7 @@ me: Actor
 //   location = BelowtheTomb //test location.
     location = TownSquare
     weightCapacity = 100
+    bulkCapacity = 1
     accuracy = 5
     strength = 5
     dexterity = 2

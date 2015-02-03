@@ -9,18 +9,19 @@
  *              Its only purpose is to be a repository for various book and scrolls....
  *      Maintenance Log:
  *      12/03/2014 Added shevles and modified room description. BE
+ *      01/28/2015 mad the Crystal Globe to heavy to carry, to prvent a player from walking off with it. BE
  *
  */
 
 Scriptorium: Room
     roomName = '<font color="#008800">Scriptorium</font>'
     destName = '<font color="#008800">Scriptorium</font>'
-    desc = "<hr/> A windowless library, filled with shelves from floor to ceiling. 
+    desc = "<img src=\"scriptorium.jpg\" width=\"200\" height=\"150\"> A windowless library, filled with shelves from floor to ceiling. 
         Unfortunately, it looks as if the library has been looted, as there are few, if any volumes remaining on the shelves."
 
     south = HighCathedral
     roomParts = static inherited -defaultEastWall +scriptoriumEastWall -defaultWestWall +scriptoriumWestWall
-         -defaultNorthWall +scriptoriumNorthWall -defaultSouthWall +scriptoriumSouthWall
+         -defaultNorthWall +scriptoriumNorthWall -defaultSouthWall +scriptoriumSouthWall -defaultFloor +scriptoriumFloor
  ;
 
 +ReadingDesk:  Surface
@@ -36,6 +37,7 @@ Scriptorium: Room
     The eerie, pearlescent glow is just bright enought to illuminate the room."
     isLit = true
     brightness = 3
+    weight = 1000 //it is too heavy to carry - we don't want anyone walking off with the lamp!
 ;
 +historyShelf: Surface, Fixture
     'history shelf*shelves'
@@ -113,4 +115,8 @@ scriptoriumNorthWall: defaultNorthWall
 ;
 scriptoriumSouthWall: defaultSouthWall
    desc = "This wall is built of the same stone as the rest of the cathedral. "
+;
+scriptoriumFloor: Floor 'Scriptorium Floor' 'floor of the Scriptorium'
+    desc="You see a stone floor made of limestone blocks, worn smooth by the passage many feet over the course of countless years. "
+    putDestMessage = &putDestFloor 
 ;

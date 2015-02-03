@@ -6,7 +6,7 @@
 TownSquare: OutdoorRoom 
     name = '<br><font color="#00ff00">Town Square</font>'
 
-    desc { "<h1><img src=\"townsquare.jpg\" width=\"500\" height=\"250\"></h1>
+    desc { "<h1><img src=\"townsquare.jpg\" width=\"200\" height=\"100\"></h1>
         <hr/>
        <br>
         You are located in the heart of Our Town, surrounded by the Town Hall, the High Cathedral, and a dry goods store which specializes in outfitting people for the crazy adventures which some groups embark upon around here. The local tavern/hotel, where visitors can find a room for the night, also borders on the Square. 

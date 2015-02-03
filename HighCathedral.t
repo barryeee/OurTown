@@ -10,11 +10,12 @@
  12/01/2014 Added north direction/link to Scriptorium. BE
  12/03/2014 Added weight to angel statue to prevent taking it. BE
  12/08/2014 change Notice from readable object to decoration. Added custom message to object incase player attempts to take notice. BE
+ 01/28/2015 Added image to ornate key description. BE
  */
 HighCathedral: Room 
     roomName = '<font color="#880000">High Cathedral</font>'
     destName = '<font color="#880000">High Cathedral</font>'
-    desc = "<h1><img src=\"cathedral2.jpg\" width=\"200\" hieght=\"250\" ><\h1><p>As your eyes adjust to the dim lighting, you notice that you are in a temple of very modest interior proportions. 
+    desc = "<h1><img src=\"cathedral2.jpg\" width=\"145\" height=\"200\" ><\h1><p>As your eyes adjust to the dim lighting, you notice that you are in a temple of very modest interior proportions. 
         Before you lies the gilded High Altar. 
         You are surrounded by stone statues of all kinds, some beautiful, some hideous.
         There is a notice attached to the wall.</p><br />"
@@ -27,7 +28,7 @@ HighCathedral: Room
  +AngelStatue: Thing 
     name = 'Angel Statue'
     vocabWords = 'angel/statue'
-    desc = "<img src=\"angel.jpg\"><hr/>You see a large statue, apparently carved from granite. It appears to be ancient, showing signs of severe weathering."
+    desc = "<img src=\"angel.jpg\"width=\"150\" height=\"200\"><hr/>You see a large statue, apparently carved from granite. It appears to be ancient, showing signs of severe weathering."
     location = HighCathedral
     weight = 1000
      actionDobjFeel
@@ -57,7 +58,8 @@ HighCathedral: Room
    
 ;
 + ornateKey: Key 'ornate key' 'ornate key'
-    "The key is made of brass, old and tarnished. 
+    desc = "<img src=\"cemeterykey.jpg\" width=\"100\" height=\"66\">The key is made of brass, old and tarnished. 
     It is quite ornate in its design, reflecting a level of craftsmanship no longer seen in this day and age.
     A closer inspection reveals a gruesome pattern of skeletons covering the the enire surface of the key."
+    bulk = 1
 ;
