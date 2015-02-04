@@ -94,5 +94,6 @@ BookofShadows: Book
         <p>V. The Green Knight</p>        
         <p>VI. The Red Knight</p>
         
-        </font></center>"      
+        </font></center>" 
+     bulk = 1
 ;

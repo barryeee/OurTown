@@ -102,7 +102,7 @@ me: Actor
 //   location = BelowtheTomb //test location.
     location = TownSquare
     weightCapacity = 100
-    bulkCapacity = 1
+    bulkCapacity = 2
     accuracy = 5
     strength = 5
     dexterity = 2
