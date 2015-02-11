@@ -87,9 +87,9 @@ gameMain: GameMainDef
 
 
         "It's a quirky little place, with unexpected characters showing up all the time.<br/>";
-        "Although it appears to nothing more than a quaint, oudated, little rual town, apperances can be deceiving. 
-        Take nothing for granted as you wander the streets. Look at everything.
-        Be careful when entering a building. 
+        "Although it appears to nothing more than a quaint, oudated, little rual town, apperances can be deceiving. <br/>
+        Take nothing for granted as you wander the streets. Look at everything.<br/>
+        Be careful when entering a building. <br/>
         Most residents don't care much for unexpected visitors.<br /><br /></font></p>";
         
        

@@ -9,7 +9,8 @@
  *              Its only purpose is to be a repository for various book and scrolls....
  *      Maintenance Log:
  *      12/03/2014 Added shevles and modified room description. BE
- *      01/28/2015 mad the Crystal Globe to heavy to carry, to prvent a player from walking off with it. BE
+ *      01/28/2015 Made the Crystal Globe to heavy to carry, to prvent a player from walking off with it. BE
+ *      02/09/2015 Made minor correction to the suth wall description. BE
  *
  */
 
@@ -114,7 +115,7 @@ scriptoriumNorthWall: defaultNorthWall
    desc = "This wall is built of the same stone as the rest of the cathedral. "
 ;
 scriptoriumSouthWall: defaultSouthWall
-   desc = "This wall is built of the same stone as the rest of the cathedral. "
+   desc = "This wall is built of the same stone as the rest of the cathedral. The entrance door is set in the middle of that wall. "
 ;
 scriptoriumFloor: Floor 'Scriptorium Floor' 'floor of the Scriptorium'
     desc="You see a stone floor made of limestone blocks, worn smooth by the passage many feet over the course of countless years. "
