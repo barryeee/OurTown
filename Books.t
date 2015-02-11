@@ -46,6 +46,7 @@ blackScroll: Book
    // @graniteCrypt
    
     
+    
     "An ancient work, written on parchment and covered with black silk. There appears to be something written on it ..."
    
     destination = 'history shelf'
@@ -53,32 +54,36 @@ blackScroll: Book
     sightPresence = true
     isListed = (sightPresence)
     isListedInContents = (sightPresence)
-    readDesc = "<center><font face=\"Old English Text MT\" color=\"#FFD700\">
-        <h1><br/>The War of Conquest</h1>
-        <br/><br/>
+    readDesc = "<center><font face=\"Courier New\" color=\"Green\">
+        <h1>The War of Conquest</h1>
+        
         <h2>Being a History of the conflict<br>
-        between the Four Elemental Knights<br/>
-        and<br/>
-        The Witch Endora</h2></font></center>"      
+        between the Four Elemental Knights<br>
+        and<br>
+        The Witch Endora</h2></font></center>" 
+    bulk = 1
 ;
 
 whiteScroll: Book
     'white scroll*scrolls'
     'white scroll'
     
-    @marbleCrypt
+//    @marbleCrypt
+    @TownSquare
     "An ancient work, written on parchment and covered with white brocade. There appears to be something written on it ..."
     destination = 'history shelf'
-    sightPresence = nil
+//    sightPresence = nil
+    sightPresence = true
     isListed = (sightPresence)
     isListedInContents = (sightPresence)
     readDesc = "<center><font face=\"Segoe Script\" color=\"#FFD700\">
-        <h1><br/>Victory At The Bridge</h1>
-        <br/><br/>
+        <h1>Victory At The Bridge</h1>
+        <br><br>
         <h2>A Continuation of the History of the conflict<br>
-        between the Four Elemental Knights<br/>
-        and<br/>
+        between the Four Elemental Knights<br>
+        and<br>
         The Witch Endora</h2></font></center>"      
+    bulk = 1
 ;
 
 BookofShadows: Book
@@ -86,6 +91,7 @@ BookofShadows: Book
     'Book of Shadows'
     
     @Merrick
+
     "<p>Bound in worn, black leather a golden pentacle appears glowing on the cover.</p>"
     destination = 'spells shelf'
     readDesc = "<center><font face=\"Old English Text MT\" color=\"#FFD700\">
