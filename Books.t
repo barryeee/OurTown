@@ -54,9 +54,8 @@ blackScroll: Book
     sightPresence = true
     isListed = (sightPresence)
     isListedInContents = (sightPresence)
-    readDesc = "<center><font face=\"Courier New\" color=\"Green\">
-        <h1>The War of Conquest</h1>
-        
+    readDesc = "<center><font face=\"Old English Text MT\">
+        <h1>The War of Conquest</h1>        
         <h2>Being a History of the conflict<br>
         between the Four Elemental Knights<br>
         and<br>
