@@ -48,7 +48,7 @@ blackScroll: Book
     sightPresence = nil
     isListed = (sightPresence)
     isListedInContents = (sightPresence)
-    readDesc = "<center><font face=\"Segoe Script\" color=\"gold\"><h1><br/>The War of Conquest</h1><br/><br/>
+    readDesc = "<center><font face=\"Segoe Script\" color=\"#FFD700\"><h1><br/>The War of Conquest</h1><br/><br/>
         <h2>Being a History of the conflict<br>
         between the Four Elemental Knights<br/>
         and<br/>
@@ -65,7 +65,7 @@ whiteScroll: Book
     sightPresence = nil
     isListed = (sightPresence)
     isListedInContents = (sightPresence)
-    readDesc = "<center><font face=\"Segoe Script\" color=\"gold\"><h1><br/>Victory At The Bridge</h1><br/><br/>
+    readDesc = "<center><font face=\"Segoe Script\" color=\"#FFD700\"><h1><br/>Victory At The Bridge</h1><br/><br/>
         <h2>A Continuation of the History of the conflict<br>
         between the Four Elemental Knights<br/>
         and<br/>
@@ -79,7 +79,7 @@ BookofShadows: Book
     @Merrick
     "<p>Bound in worn, black leather a golden pentacle appears glowing on the cover.</p>"
     destination = 'spells shelf'
-    readDesc = "<center><font face=\"Old English Text MT\" color=\"red\">
+    readDesc = "<center><font face=\"Old English Text MT\" color=\"#FFD700\">
         <h1><img src=\"star.png\"></h1>
         <p>Book of Shadows
         <br>Forbidden Secrets<br/>
