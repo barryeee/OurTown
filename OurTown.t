@@ -12,6 +12,7 @@
  *
  *   11/04/2014 - Set weightCapacity property for player to 150. BE
  *   11/19/2014 Added combat atributes to player character. BE
+ *   02/23/2015 BE Added Our Town graphic.
  */
 versionInfo: GameID
     IFID = '69462502-a9b7-4112-9ce0-6b300d602969'
@@ -23,7 +24,7 @@ versionInfo: GameID
     authorEmail = 'Barry Eichelberger <eichelbergerb@nicc.edu>'
     desc = 'Demonstration Project for Progamming Support class.'
     htmlDesc = 'Demonstration Project for Progamming Support class.'
-headline = 'An Interactive Sample' 
+    headline = 'An Interactive Sample' 
     /* 
      *   other bibliographic tags you might want to set include:
      *
@@ -82,15 +83,14 @@ gameMain: GameMainDef
     showIntro()
     {
         "<p><br/><br/><br/><br/><br/><br/><br/>
-        <h1><font color=\"yellow\">Welcome to...<br /><br />";
-        "<center>Our Town</center><br /><br /></h1>";
-
-
+        <h1><font color=\"yellow\">Welcome to...<br /><br /></font></h1>";
+        "<center><img src=\"OurTown.png\"></center><br>";
+        
         "It's a quirky little place, with unexpected characters showing up all the time.<br/>";
         "Although it appears to nothing more than a quaint, oudated, little rual town, apperances can be deceiving. <br/>
         Take nothing for granted as you wander the streets. Look at everything.<br/>
         Be careful when entering a building. <br/>
-        Most residents don't care much for unexpected visitors.<br /><br /></font></p>";
+        Most residents don't care much for unexpected visitors.<br /><br /></p>";
         
        
     }

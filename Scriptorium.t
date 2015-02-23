@@ -109,7 +109,7 @@ scriptoriumEastWall: defaultEastWall
 ;
 
 scriptoriumWestWall: defaultWestWall
-   desc = "This wall is built of the same stone as the rest of the cathedral. The entrance doors are set in the middle of that wall. "
+   desc = "This wall is built of the same stone as the rest of the cathedral. The entrance door is set in the middle of that wall. "
 ;
 scriptoriumNorthWall: defaultNorthWall
    desc = "This wall is built of the same stone as the rest of the cathedral. "

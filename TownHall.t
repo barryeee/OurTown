@@ -10,7 +10,8 @@
 --            Used '+' signs to indicate the bell and key will part of (located on) the counter. BE
 -- 10/28/2014 Added Stone Steps Down to the Jail. BE
 -- 10/29/2014 Added eventlist to steps, 1 in 3 trips ends in death. BE
--- 02/09/2014 Added image of descending stairs to jail. BE
+-- 02/09/2015 Added image of descending stairs to jail. BE
+-- 02/23/2015 BE Added floor description to the room.
 */     
 TownHall: Room 
     name = '<font color="#008800">Town Hall</font>'
@@ -25,7 +26,9 @@ TownHall: Room
     down = StoneStepsDown
     north = StoneStepsDown
     south = WestBroadway
+    roomParts = static inherited -defaultFloor +townhallFloor
 ;
+
 +StoneStepsDown: TravelWithMessage, StairwayDown, RandomEventList ->StoneStepsUp
 	'Stone Steps'
         'Stone Steps'
@@ -95,3 +98,7 @@ TownHall: Room
     ;*/
 
 
+townhallFloor: Floor 'Town Hall Floor' 'floor of the Town Hall'
+    desc="You see a  wooden floor, so worn and dirty it is impossible to make out what type of wood the floor is made of. "
+    putDestMessage = &putDestFloor 
+;

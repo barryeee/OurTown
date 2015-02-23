@@ -11,14 +11,16 @@
 Maintenance:
 12/15/2014 added 3 properties to the black and white scrolls to make them invisible. BE
 12/16/2014 LS Added Book of Shadows
+02/23/2015 BE Modified font face and color for black and white scrolls.   
 
- */
+*/
 
 Book: Readable
     'book*books'
     'book'
     "A generic book with writing, etc."
     weight = 5
+    bulk = 1
     destination = 'history shelf'
     readDesc = "There is nothing special about this book. I reaaly do not understand your fascination with it!"
     // these books can only be read in the Sciptorium.
@@ -42,19 +44,22 @@ blackScroll: Book
     'black scroll*scrolls'
     'black scroll'
    @graniteCrypt
+   
    "<p>An ancient work, written on parchment and covered with black silk. There appears to be something written on it ...</p>"
    
     destination = 'history shelf'
   
-    sightPresence = nil
+    
+    sightPresence = nil 
     isListed = (sightPresence) 
-    isListedInContents = (sightPresence) 
-    bulk = 1
+    isListedInContents = (sightPresence)
+    
    
-    readDesc = "<p> <center><color=\"#FFD700\"> <h1>The War of
-    Conquest</h1><br><br> <h2>Being a History of the conflict<br> between
+   
+    readDesc = "<hr><p> <center><font face='Segoe Script' color=\"#8A4B08\"> <font size=7>The War of
+    Conquest</font><br><br> <font size=5>Being a History of the conflict<br> between
     the Four Elemental Knights<br> and<br> The Witch
-    Endora</h2></color></center> </p>"
+    Endora</font></font></center> </p><hr>"
     
    
 ;
@@ -64,17 +69,18 @@ whiteScroll: Book
     'white scroll'
     
     @marbleCrypt
+  
     "An ancient work, written on parchment and covered with white brocade. There appears to be something written on it ..."
     destination = 'history shelf'
     sightPresence = nil
     isListed = (sightPresence)
     isListedInContents = (sightPresence)
-    readDesc = "<center><font face=\"Segoe Script\" color=\"#FFD700\"><h1><br>Victory At The Bridge</h1><br><br>
-    <h2>A Continuation of the History of the conflict<br>
+    readDesc = "<center><font face=\"Segoe Script\" color=\"#8A4B08\"><br><font size=7>Victory At The Bridge</font><br><br>
+    <font size=5>A Continuation of the History of the conflict<br>
     between the Four Elemental Knights<br>
     and<br>
-    The Witch Endora</h2></font></center>"      
-        bulk = 1
+    The Witch Endora</font></center>"      
+
 ;
 BookofShadows: Book
     'Book of Shadows'
@@ -97,36 +103,7 @@ BookofShadows: Book
     <p>V. The Green Knight</p>
     <p>VI. The Red Knight</p>
     </font></center>"
-    bulk = 1
-;
 
-
-
-testBook: Book
-    'Test Book'
-    'Test Book'
-    
-    @TownSquare
-
-    "<body background=\"parchment.jpg\"><p>Bound in worn, black leather a golden pentacle appears glowing on the cover.</p>"
-    destination = 'spells shelf'
-    readDesc = "<center><font face=\"Segoe Script\" color=\"#663300\">
-        <p><font size=7>Test Book</font></p>
-        <p>Book of Shadows
-        <br>Forbidden Secrets<br/>
-        <br>Betwixt Endora, Merrick<br/>
-        <br>and<br/>
-        <br>The Four Elemental Knights<br/></p>
-        <p><br>I. Endora<br/>
-        <br>In the beginning Endora was pristine of heart and had beauty to match...<br/></p>
-        <p>II. Merrick</p>        
-        <p>III. The Black Knight</p>
-        <p>IV. The White Knight</p>
-        <p>V. The Green Knight</p>        
-        <p>VI. The Red Knight</p>
-        
-        </font></center></body>" 
-     bulk = 1
 ;
 
 
