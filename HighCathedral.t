@@ -11,6 +11,7 @@
  12/03/2014 Added weight to angel statue to prevent taking it. BE
  12/08/2014 change Notice from readable object to decoration. Added custom message to object incase player attempts to take notice. BE
  01/28/2015 Added image to ornate key description. BE
+ 02/24/2015 BE Changed Notice font face and color.
  */
 HighCathedral: Room 
     roomName = '<font color="#880000">High Cathedral</font>'
@@ -46,13 +47,14 @@ HighCathedral: Room
     name = 'Notice on Cathedral Wall' 
     vocabWords = 'Notice'
     
-   desc = "You see an ancient piece of parchment hanging on the wall beside the doors. Although nearly illegible, you can just barely make out the writing...<br>
-    <center><font face=\"Segoe Script\"color=\"orange\"><h1>Welcome to the High Cathedral!</h1></center>
-    <h2><ul>
-        <li>Services of Worship occur at irregular intervals.</li>
-        <li>Please observe proper decorum at all times while inside the Cathedral.</li>
-        <li>A final word of caution ... <br/>You may look at, but <font color=\"red\"><b>DO NOT TOUCH</b></font>, the Angel Statue!</li></ul>
-   <center>Thank you and enjoy your time here.</center></h2></font>"
+   desc = "You see an ancient piece of parchment hanging on the wall beside the doors. 	Although nearly illegible, you can just barely make out the writing...<br>
+    <ul><font face=\"Old English Text MT\"color=\"#000033\" size=7>Welcome to the High Cathedral!</font>
+    
+        <li><font face=\"Old English Text MT\" color=\"#000033\" size=5>Services of Worship occur at irregular intervals.</font></li>
+        <li><font face=\"Old English Text MT\" color=\"#000033\" size=5>Please observe proper decorum at all times while inside the Cathedral.</font></li>
+        <li><font face=\"Old English Text MT\" color=\"#000033\" size=5>A final word of caution ... <br>
+       You may look at, but <font color=\"#880000\"><b> DO NOT TOUCH</b></font>,  the Angel Statue!</font></li></ul>
+   <p><font face=\"Old English Text MT\" color=\"#000033\" size=5>Thank you and enjoy your time here.</font></p>"
     notImportantMsg = 'Please do not deface the Cathedral by removing or in any other way disturbing this notice.'
     
    

@@ -50,9 +50,9 @@ blackScroll: Book
     destination = 'history shelf'
   
     
-    sightPresence = nil 
-    isListed = (sightPresence) 
-    isListedInContents = (sightPresence)
+    //sightPresence = nil 
+    //isListed = (sightPresence) 
+    //isListedInContents = (sightPresence)
     
    
    

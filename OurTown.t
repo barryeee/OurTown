@@ -86,11 +86,15 @@ gameMain: GameMainDef
         <h1><font color=\"yellow\">Welcome to...<br /><br /></font></h1>";
         "<center><img src=\"OurTown.png\"></center><br>";
         
-        "It's a quirky little place, with unexpected characters showing up all the time.<br/>";
-        "Although it appears to nothing more than a quaint, oudated, little rual town, apperances can be deceiving. <br/>
-        Take nothing for granted as you wander the streets. Look at everything.<br/>
-        Be careful when entering a building. <br/>
-        Most residents don't care much for unexpected visitors.<br /><br /></p>";
+        "It's a quirky little place, with unexpected characters showing up all the time.<br>";
+        "Although it appears to be nothing more than a quaint, oudated, little rual town, apperances can be deceiving. <br>
+        <ul>
+            <li>Take nothing for granted as you wander the streets. </li>
+            <li>Look at everything.</li>
+            <li>Be careful when entering a building.
+                Most residents don't care much for unexpected visitors.</li>
+        </ul>
+        <br><br></p>";
         
        
     }
@@ -108,4 +112,19 @@ me: Actor
     dexterity = 2
     health = 20
      
+;
+
++TouristGuide: Readable
+    'tourist guide'
+    'guide'
+    "A small pamphlet with fadded printing on the cover..."
+    weight = 1
+    bulk = 1
+    readDesc = "<font face=\"TADS-Serif\" size=5><center>A Tourist\'s Guide<br>To<br>Our Town
+        <br><br><font size=4>Everything you need to know
+        <br>in order to survive...almost!</font></center> 
+        
+        
+        </font>"
+ 
 ;
