@@ -6,7 +6,7 @@
 TownSquare: OutdoorRoom 
     name = '<br><font color="#00ff00">Town Square</font>'
 
-    roomFirstDesc { "<h1><img src=\"townsquare.jpg\" width=\"200\" height=\"100\" align=\"left\"></h1>
+    roomDesc { "<h1><img src=\"townsquare.jpg\" width=\"200\" height=\"100\" align=\"left\"></h1>
         
        <br>
         You are located in the heart of Our Town, surrounded by the Town Hall, the High Cathedral, 
