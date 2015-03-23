@@ -16,10 +16,10 @@
 HighCathedral: Room 
     roomName = '<font color="#880000">High Cathedral</font>'
     destName = '<font color="#880000">High Cathedral</font>'
-    desc = "<h1><img src=\"cathedral2.jpg\" width=\"145\" height=\"200\" ><\h1><p>As your eyes adjust to the dim lighting, you notice that you are in a temple of very modest interior proportions. 
+    desc = "<table><tr><td><img src=\"cathedral2.jpg\" width=\"145\" height=\"200\" ></td><td>As your eyes adjust to the dim lighting, you notice that you are in a temple of very modest interior proportions. 
         Before you lies the gilded High Altar. 
         You are surrounded by stone statues of all kinds, some beautiful, some hideous.
-        There is a notice attached to the wall.</p><br />"
+        There is a notice attached to the wall.</td></tr></table>"
     
     /*east = BehindtheAltar*/
     west = NorthMainStreet
@@ -29,7 +29,8 @@ HighCathedral: Room
  +AngelStatue: Thing 
     name = 'Angel Statue'
     vocabWords = 'angel/statue'
-    desc = "<img src=\"angel.jpg\"width=\"150\" height=\"200\"><hr/>You see a large statue, apparently carved from granite. It appears to be ancient, showing signs of severe weathering."
+    desc = "<table><tr><td><img src=\"angel.jpg\"width=\"150\" height=\"200\"></td>
+        <td>You see a large statue, apparently carved from granite. It appears to be ancient, showing signs of severe weathering.</td></tr></table>"
     location = HighCathedral
     weight = 1000
      actionDobjFeel
@@ -60,8 +61,9 @@ HighCathedral: Room
    
 ;
 + ornateKey: Key 'ornate key' 'ornate key'
-    desc = "<img src=\"cemeterykey.jpg\" width=\"100\" height=\"66\">The key is made of brass, old and tarnished. 
+    desc = "<table><tr><td><img src=\"cemeterykey.jpg\" width=\"100\" height=\"66\"></td>
+        <td>The key is made of brass, old and tarnished. 
     It is quite ornate in its design, reflecting a level of craftsmanship no longer seen in this day and age.
-    A closer inspection reveals a gruesome pattern of skeletons covering the the enire surface of the key."
+    A closer inspection reveals a gruesome pattern of skeletons covering the the enire surface of the key.</td></tr></table>"
     bulk = 1
 ;

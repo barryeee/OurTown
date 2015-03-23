@@ -37,15 +37,15 @@ TownHall: Room
   [ 
     new function 
     { 
-      "<p><h1><img src=\"stonestepsdown.jpg\" height=\"200\" width=\"100\"></h1>You desend a long flight of narow, well-worn stone steps. <br>
+      "<table><tr><td><img src=\"stonestepsdown.jpg\" height=\"200\" width=\"100\"></td><td>You desend a long flight of narow, well-worn stone steps. <br>
       The steps are damp and covered with slime, making them treacherous to navigate.<br>
       Unfortunately, the shoes your are wearing are not up to the task.<br>
-      You slip and fall down the stairs, breaking your neck when you land at the bottom.</p>";
+      You slip and fall down the stairs, breaking your neck when you land at the bottom.</td></tr></table>";
        finishGameMsg(ftDeath, finishOptionFullScore);
     }, 
-    '<p><h1><img src=\"stonestepsdown.jpg\" height=\"200\" width=\"100\"></h1>You descend the steps to the Jail. </p>',
-    '<p><h1><img src=\"stonestepsdown.jpg\" height=\"200\" width=\"100\"></h1>You desend a long flight of narow, well-worn stone steps. <br>
-      The steps are damp and covered with slime, making them treacherous to navigate.'
+    '<table><tr><td><img src=\"stonestepsdown.jpg\" height=\"200\" width=\"100\"></td><td>You descend the steps to the Jail. </td></tr></table>',
+    '<table><tr><td><img src=\"stonestepsdown.jpg\" height=\"200\" width=\"100\"></td><td>You descend a long flight of narow, well-worn stone steps. <br>
+      The steps are damp and covered with slime, making them treacherous to navigate.</td></tr></table>'
   ]   
 
  ;

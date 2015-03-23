@@ -12,7 +12,8 @@
  */
 NorthBridge: OutdoorRoom 
     name = '<font color="#00ff00">North Bridge</font>'
-    desc = "<h1><img src=\"northbridge.jpg\" width=\"200\" height=\"153\"></h1>A rickety, wooden bridge leading over the Volta River. It is barely wide enough for one person use."
+    desc = "<table><tr><td><img src=\"northbridge.jpg\" width=\"200\" height=\"153\"></td>
+        <td>A rickety, wooden bridge leading over the Volta River. It is barely wide enough for one person use.</td></tr></table>"
 
     south = NorthMainStreet
     north: FakeConnector {"The bridge is closed for repairs. The next person who tires to cross will likely fall into the river and drown. 

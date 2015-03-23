@@ -17,8 +17,8 @@
 Scriptorium: Room
     roomName = '<font color="#008800">Scriptorium</font>'
     destName = '<font color="#008800">Scriptorium</font>'
-    desc = "<img src=\"scriptorium.jpg\" width=\"200\" height=\"150\"> A windowless library, filled with shelves from floor to ceiling. 
-        Unfortunately, it looks as if the library has been looted, as there are few, if any volumes remaining on the shelves."
+    desc = "<table><tr><td><img src=\"scriptorium.jpg\" width=\"200\" height=\"150\"></td><td> A windowless library, filled with shelves from floor to ceiling. 
+        Unfortunately, it looks as if the library has been looted, as there are few, if any volumes remaining on the shelves.</td></tr></table>"
 
     south = HighCathedral
     roomParts = static inherited -defaultEastWall +scriptoriumEastWall -defaultWestWall +scriptoriumWestWall
