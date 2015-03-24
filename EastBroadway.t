@@ -4,13 +4,15 @@
 /* 
  *   East Broadway 
  *   Author: Barry Eichelberger 
- *   Date:   10/01/2014
+ *   Date:   10/01/2014 
+ *   Maintenance Log:
+ *      03/24/2015 BE re-format image presentation.
  */
 EastBroadway: OutdoorRoom 
     roomName = '<font color="#00ff00">East Broadway</font>'
     destName = '<font color="#00ff00">East Broadway</font>'
-    desc = "<hr/>a bricked-paved street which leads to the Inn of 7 Sorrows on
-        the South, the Cemetery Gate, leading to the Town Cemetery on the east and the Town Square on the West."
+    desc = "<table><tr><td><img src=\"eastbroadway.jpg\" height=\"100\" width=\"200\"></td><td> East Broadway is a bricked-paved street which leads to the Inn of 7 Sorrows on
+        the South, the Cemetery Gate, leading to the Town Cemetery on the east and the Town Square on the West.</td></tr></table>"
 
     west = TownSquare
     east = CemeteryGate
@@ -19,8 +21,7 @@ EastBroadway: OutdoorRoom
 Created by Brian Vorwald
 Created on September 23, 2013
 Maintenance Log--------------
-11/13/2013 added Header Comments
-09/25/2014 renamed from Catheral Gate to Cemetery Gate and changed object type
+11/13/2013 added Header Comments  
     to door and merged with East Broadway. BE
 10/02/2014 made the gate a lockable object and created ornateKey to unlock it. BE
 10/07/2014 added a point to the unlock verb for the gate. 
