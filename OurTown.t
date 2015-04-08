@@ -120,11 +120,11 @@ me: Actor
     "A small pamphlet with fadded printing on the cover..."
     weight = 1
     bulk = 1
-    readDesc = "<font face=\"TADS-Serif\" size=5><center>A Tourist\'s Guide<br>To<br>Our Town
-        <br><br><font size=4>Everything you need to know
-        <br>in order to survive...almost!</font></center> 
+    readDesc = "<center><table background=\"parchment.jpg\"><tr><td><center><font face=\"TADS-Serif\" size=7>A Tourist\'s Guide<br>To<br>Our Town
+        <br><br><font size=5>Everything you need to know
+        <br>in order to survive...almost!</font></font></center></td></tr></table></center>
         
         
-        </font>"
+    "
  
 ;
