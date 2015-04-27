@@ -16,7 +16,7 @@ TownSquare: OutdoorRoom
         "<br />";       
     } 
     
-    //desc = "The heart of Our Town."  
+  
     
     north = NorthMainStreet
     south = SouthMainStreet
