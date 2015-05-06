@@ -6,8 +6,9 @@ src win edit mode:%tads%lib\adv3\actions.t:S:0:TADS 3
 line wrap:southgate.t:S:0:N
 src win split:NorthBridge.t:S:0:0.000000
 src win edit mode:TownSquare.t:S:0:TADS 3
-build:ext resfile cnt:I:0
+src win split:Monsters.t:S:0:0.000000
 line wrap:WestBroadway.t:S:0:N
+build:ext resfile cnt:I:0
 line wrap:Weapons.t:S:0:N
 line wrap:OurTown.t:S:0:N
 build:defaults set:I:1
@@ -18,9 +19,9 @@ watch win:pos:R:312,426,596,542
 line wrap:TownCemetery.t:S:0:N
 src win edit mode:TownHall.t:S:0:TADS 3
 build:c ops:I:0
-SearchToolbar:rebarNewLine:I:0
 src win selrange:pathfind.t:S:0:0,0
 src win selrange:pathfind.t:S:1:13734,13734
+SearchToolbar:rebarNewLine:I:0
 MenuBar:rebarVis:I:1
 log win pos::R:247,153,1200,492
 log win vis::I:0
@@ -30,6 +31,7 @@ DocToolbar:rebarIndex:I:3
 src win edit mode:%tads%lib\adv3\thing.t:S:0:TADS 3
 src win selrange:NorthBridge.t:S:0:0,0
 src win selrange:NorthBridge.t:S:1:607,607
+line wrap:Books.t:S:0:N
 build:include_files-sys:S:0:system
 build:include_files-sys:S:1:system
 build:include_files-sys:S:2:system
@@ -49,8 +51,9 @@ build:include_files-sys:S:15:system
 build:include_files-sys:S:16:lib
 build:include_files-sys:S:17:system
 build:include_files-sys:S:18:lib
-line wrap:Books.t:S:0:N
 src win split:Jail.t:S:0:0.000000
+src win selrange:Monsters.t:S:0:0,0
+src win selrange:Monsters.t:S:1:1404,1404
 DocToolbar:rebarWidth:I:-1
 line wrap:Abyss.t:S:0:N
 src win split:blackknight.t:S:0:0.000000
@@ -60,13 +63,13 @@ line wrap:NorthMainStreet.t:S:0:N
 line wrap:HighCathedral.t:S:0:N
 line wrap:CathedralGate.t:S:0:N
 src win edit mode:pathfind.t:S:0:TADS 3
-build:zipfile:S:0:%tads%OurTown.zip
 line wrap:SouthMainStreet.t:S:0:N
 src win edit mode:%tads%lib\adv3\exits.t:S:0:TADS 3
+build:zipfile:S:0:%tads%OurTown.zip
 src win split:Tomb.t:S:0:0.000000
 watch win:sep xpos 0:I:142
-watch win:sep xpos 1:I:142
 line wrap:%tads%lib\adv3\actions.t:S:0:N
+watch win:sep xpos 1:I:142
 watch win:sep xpos 2:I:142
 build:installer options:S:0:name=OurTown
 build:installer options:S:1:savext=OurTown
@@ -74,6 +77,7 @@ watch win:sep xpos 3:I:142
 src win edit mode:NorthBridge.t:S:0:TADS 3
 search:start at top:I:0
 line wrap:TownSquare.t:S:0:N
+src win edit mode:Monsters.t:S:0:TADS 3
 src win split:Scriptorium.t:S:0:0.000000
 src win split:%tads%include\t3.h:S:0:0.000000
 src win split:EndorasMansion.t:S:0:0.000000
@@ -83,14 +87,14 @@ src win selrange:Jail.t:S:1:931,931
 src win split:%tads%include\tads.h:S:0:0.000000
 src win split:whiteknight.t:S:0:0.000000
 src win selrange:blackknight.t:S:0:0,0
-src win selrange:blackknight.t:S:1:825,825
+src win selrange:blackknight.t:S:1:2025,2025
 line wrap:TownHall.t:S:0:N
 src win selrange:%tads%lib\adv3\adv3.h:S:0:0,0
 src win selrange:%tads%lib\adv3\adv3.h:S:1:0,0
 src win split:BelowTheTomb.t:S:0:0.000000
 proj search:exact case:I:0
-DocToolbar:rebarVis:I:1
 src win split:%tads%lib\adv3\en_us\en_us.t:S:0:0.000000
+DocToolbar:rebarVis:I:1
 auto-script:quit sequences:S:0:<nocase>[<]line[>]<space>*q(uit)?<space>*
 auto-script:quit sequences:S:1:<nocase>[<]line[>]<space>*y.*
 src win selrange:Tomb.t:S:0:0,0
@@ -99,9 +103,9 @@ SearchToolbar:rebarIndex:I:2
 search:wrap:I:1
 line wrap:%tads%lib\adv3\thing.t:S:0:N
 src win edit mode:Jail.t:S:0:TADS 3
-auto-script:next-id:I:323
-SearchToolbar:rebarWidth:I:281
+auto-script:next-id:I:331
 src win edit mode:blackknight.t:S:0:TADS 3
+SearchToolbar:rebarWidth:I:281
 src win edit mode:%tads%lib\adv3\adv3.h:S:0:TADS 3
 src win selrange:Scriptorium.t:S:0:0,0
 src win selrange:Scriptorium.t:S:1:3622,3622
@@ -125,11 +129,11 @@ search:text:S:0:\\
 search:text:S:1:\
 locals win:vis:I:0
 locals win:pos:R:10,426,294,542
-main win max::I:1
 src win selrange:%tads%include\tads.h:S:0:0,0
 src win selrange:%tads%include\tads.h:S:1:0,0
 src win selrange:whiteknight.t:S:0:0,0
 src win selrange:whiteknight.t:S:1:0,0
+main win max::I:1
 src win split:Merrick.t:S:0:0.000000
 line wrap:pathfind.t:S:0:N
 proj search:collapse spaces:I:0
@@ -139,47 +143,47 @@ src win selrange:BelowTheTomb.t:S:1:705,705
 src win edit mode:Tomb.t:S:0:TADS 3
 search:exact case:I:0
 src win split:southgate.t:S:0:0.000000
-mdi win list::S:0::help
-mdi win list::S:1::docsearch
-mdi win list::S:2:blackknight.t
-mdi win list::S:3:EastBroadway.t
-mdi win list::S:4:TownCemetery.t
-mdi win list::S:5:Tomb.t
-mdi win list::S:6:CathedralGate.t
-mdi win list::S:7:OurTown.t
-mdi win list::S:8:TownSquare.t
-mdi win list::S:9:Scriptorium.t
-mdi win list::S:10:Books.t
+mdi win list::S:0:Weapons.t
+mdi win list::S:1:blackknight.t
+mdi win list::S:2:Monsters.t
+mdi win list::S:3:TownSquare.t
+mdi win list::S:4::help
+mdi win list::S:5::docsearch
+mdi win list::S:6:Books.t
+mdi win list::S:7:Tomb.t
+mdi win list::S:8:CathedralGate.t
+mdi win list::S:9:OurTown.t
+mdi win list::S:10:Scriptorium.t
 mdi win list::S:11:NorthMainStreet.t
 mdi win list::S:12:TownHall.t
-mdi win list::S:13:Weapons.t
-mdi win list::S:14:Jail.t
-mdi win list::S:15:HighCathedral.t
+mdi win list::S:13:Jail.t
+mdi win list::S:14:HighCathedral.t
 build:webpage dir:S:0:web
 build:srczipfile:S:0:%tads%OurTownSource.zip
 main win pos::R:-8,-8,1688,1018
-proj search:whole word:I:0
 line wrap:NorthBridge.t:S:0:N
 src win selrange:%tads%lib\adv3\en_us\en_us.t:S:0:0,0
 src win selrange:%tads%lib\adv3\en_us\en_us.t:S:1:155663,155663
+proj search:whole word:I:0
+line wrap:Monsters.t:S:0:N
 help win vis::I:1
-help win pos::R:239,123,1678,985
-build:ignore case:I:0
+help win pos::R:272,178,1296,647
 src win split:WestBroadway.t:S:0:0.000000
+build:ignore case:I:0
 src win split:Weapons.t:S:0:0.000000
+src win split:OurTown.t:S:0:0.000000
 build:exe:S:0:%tads%OurTown.exe
 docsearch win vis::I:1
 docsearch win pos::R:472,378,1496,847
-src win split:OurTown.t:S:0:0.000000
 src win edit mode:Scriptorium.t:S:0:TADS 3
 src win edit mode:%tads%include\t3.h:S:0:TADS 3
 src win edit mode:EndorasMansion.t:S:0:TADS 3
 script win:vis:I:0
 script win:pos:R:183,426,337,542
 build special file:cover art:S:0:OurTown.jpg
-build:use charmap:I:0
 src win edit mode:%tads%include\tads.h:S:0:TADS 3
 src win edit mode:whiteknight.t:S:0:TADS 3
+build:use charmap:I:0
 src win split:TownCemetery.t:S:0:0.000000
 EditToolbar:rebarIndex:I:1
 hist win vis::I:0
@@ -187,6 +191,9 @@ src win edit mode:BelowTheTomb.t:S:0:TADS 3
 src win selrange:EastBroadway.t:S:0:0,0
 src win selrange:EastBroadway.t:S:1:1712,1712
 EditToolbar:rebarWidth:I:845
+src win selrange:Merrick.t:S:0:0,0
+src win selrange:Merrick.t:S:1:0,0
+src win edit mode:%tads%lib\adv3\en_us\en_us.t:S:0:TADS 3
 build:include_files:S:0:tads.h
 build:include_files:S:1:t3.h
 build:include_files:S:2:lookup.h
@@ -206,9 +213,6 @@ build:include_files:S:15:gramprod.h
 build:include_files:S:16:adv3.h
 build:include_files:S:17:strcomp.h
 build:include_files:S:18:en_us.h
-src win selrange:Merrick.t:S:0:0,0
-src win selrange:Merrick.t:S:1:0,0
-src win edit mode:%tads%lib\adv3\en_us\en_us.t:S:0:TADS 3
 SearchToolbar:rebarVis:I:1
 MenuBar:rebarNewLine:I:0
 proj search:regex:I:0
@@ -228,9 +232,9 @@ line wrap:blackknight.t:S:0:N
 src win selrange:OurTown.t:S:0:0,0
 src win selrange:OurTown.t:S:1:4097,4097
 src win pos:Weapons.t:R:175,175,1199,542
+src win pos:OurTown.t:R:0,0,1144,552
 build:debug_image_file:S:0:debug\OurTown.t3
 DebugToolbar:rebarNewLine:I:1
-src win pos:OurTown.t:R:0,0,1144,552
 line wrap:%tads%lib\adv3\adv3.h:S:0:N
 src win edit mode:EastBroadway.t:S:0:TADS 3
 search dlg:old searches:S:0:\\
@@ -242,35 +246,35 @@ src win split:CathedralGate.t:S:0:0.000000
 src win selrange:TownCemetery.t:S:0:0,0
 src win selrange:TownCemetery.t:S:1:1324,1324
 src win edit mode:Merrick.t:S:0:TADS 3
-find dialog:pos:R:483,459,927,752
 src win split:SouthMainStreet.t:S:0:0.000000
+find dialog:pos:R:483,459,927,752
 line wrap:Tomb.t:S:0:N
 src win edit mode:southgate.t:S:0:TADS 3
+src win split:%tads%lib\adv3\actions.t:S:0:0.000000
 search dlg:old search opts:S:0:
 search dlg:old search opts:S:1:
 search dlg:old search opts:S:2:
-src win split:%tads%lib\adv3\actions.t:S:0:0.000000
 src win split:TownSquare.t:S:0:0.000000
 src win edit mode:WestBroadway.t:S:0:TADS 3
 src win edit mode:Weapons.t:S:0:TADS 3
-search:regex:I:0
 src win edit mode:OurTown.t:S:0:TADS 3
-mdi tab order::S:0:7,6,10,8,11,15,9,14,12,13,5,4,3,2,1,0
+search:regex:I:0
+mdi tab order::S:0:9,8,6,3,11,14,10,13,12,0,7,1,2,5,4
 line wrap:Scriptorium.t:S:0:N
 line wrap:%tads%include\t3.h:S:0:N
 line wrap:EndorasMansion.t:S:0:N
 build:rlsgam:S:0:%tads%OurTown.t3
-EditToolbar:rebarVis:I:1
 src win selrange:Books.t:S:0:0,0
-src win selrange:Books.t:S:1:1645,1645
+src win selrange:Books.t:S:1:0,128
+EditToolbar:rebarVis:I:1
 src win pos:Books.t:R:75,75,1044,452
-main win mdi max::I:1
 src win edit mode:TownCemetery.t:S:0:TADS 3
+main win mdi max::I:1
 line wrap:%tads%include\tads.h:S:0:N
 line wrap:whiteknight.t:S:0:N
-auto-script:default quit sequences set:I:1
 src win selrange:Abyss.t:S:0:0,0
 src win selrange:Abyss.t:S:1:311,311
+auto-script:default quit sequences set:I:1
 src win split:TownHall.t:S:0:0.000000
 line wrap:BelowTheTomb.t:S:0:N
 src win selrange:NorthMainStreet.t:S:0:0,0
@@ -279,56 +283,54 @@ src win selrange:HighCathedral.t:S:0:0,0
 src win selrange:HighCathedral.t:S:1:1123,1141
 src win selrange:CathedralGate.t:S:0:0,0
 src win selrange:CathedralGate.t:S:1:1014,1014
-DocToolbar:rebarNewLine:I:0
 line wrap:%tads%lib\adv3\en_us\en_us.t:S:0:N
+DocToolbar:rebarNewLine:I:0
 src win selrange:SouthMainStreet.t:S:0:0,0
 src win selrange:SouthMainStreet.t:S:1:560,560
 src win selrange:%tads%lib\adv3\actions.t:S:0:0,0
 src win selrange:%tads%lib\adv3\actions.t:S:1:16219,16219
 MenuBar:rebarIndex:I:0
-mdi win title::S:0:
-mdi win title::S:1:
-mdi win title::S:2:blackknight.t
-mdi win title::S:3:EastBroadway.t
-mdi win title::S:4:TownCemetery.t
-mdi win title::S:5:Tomb.t
-mdi win title::S:6:CathedralGate.t
-mdi win title::S:7:OurTown.t
-mdi win title::S:8:TownSquare.t
-mdi win title::S:9:Scriptorium.t
-mdi win title::S:10:Books.t
+mdi win title::S:0:Weapons.t
+mdi win title::S:1:blackknight.t
+mdi win title::S:2:Monsters.t
+mdi win title::S:3:TownSquare.t
+mdi win title::S:4:
+mdi win title::S:5:
+mdi win title::S:6:Books.t
+mdi win title::S:7:Tomb.t
+mdi win title::S:8:CathedralGate.t
+mdi win title::S:9:OurTown.t
+mdi win title::S:10:Scriptorium.t
 mdi win title::S:11:NorthMainStreet.t
 mdi win title::S:12:TownHall.t
-mdi win title::S:13:Weapons.t
-mdi win title::S:14:Jail.t
-mdi win title::S:15:HighCathedral.t
+mdi win title::S:13:Jail.t
+mdi win title::S:14:HighCathedral.t
 src win split:%tads%lib\adv3\thing.t:S:0:0.000000
 src win edit mode:Books.t:S:0:TADS 3
 src win selrange:TownSquare.t:S:0:0,0
 src win selrange:TownSquare.t:S:1:62,62
-search:dir:I:1
 src win edit mode:Abyss.t:S:0:TADS 3
+search:dir:I:1
 build:installer prog:S:0:%tads%OurTown_Setup.exe
 MenuBar:rebarWidth:I:-1
 project win:vis:I:1
 project win:pos:R:2,120,230,985
-auto-script:dir:S:0:%tads%Scripts
 src win edit mode:NorthMainStreet.t:S:0:TADS 3
 line wrap:EastBroadway.t:S:0:N
+auto-script:dir:S:0:%tads%Scripts
 src win edit mode:HighCathedral.t:S:0:TADS 3
+src win edit mode:CathedralGate.t:S:0:TADS 3
 stack win pos::R:297,203,1250,542
 stack win vis::I:0
 filesearch win vis::I:0
 filesearch win pos::R:397,303,1592,752
-src win edit mode:CathedralGate.t:S:0:TADS 3
 DebugToolbar:rebarIndex:I:4
-searchMode::I:1
 line wrap:Merrick.t:S:0:N
+searchMode::I:1
 src win selrange:TownHall.t:S:0:0,0
 src win selrange:TownHall.t:S:1:758,758
 src win edit mode:SouthMainStreet.t:S:0:TADS 3
 src win split:pathfind.t:S:0:0.000000
-src win split:%tads%lib\adv3\exits.t:S:0:0.000000
 search dlg:old repl text:S:0:\
 search dlg:old repl text:S:1:\"
 search dlg:old repl text:S:2:
@@ -336,4 +338,5 @@ search dlg:old repl text:S:3:ain`t
 search dlg:old repl text:S:4:`
 search dlg:old repl text:S:5:topictext
 search dlg:old repl text:S:6:topictext
+src win split:%tads%lib\adv3\exits.t:S:0:0.000000
 

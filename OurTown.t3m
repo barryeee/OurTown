@@ -46,6 +46,7 @@
 -lib system
 -lib adv3/adv3
 -source OurTown
+-source Monsters
 
 -res
 GameInfo.txt
