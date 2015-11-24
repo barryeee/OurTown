@@ -2,20 +2,15 @@
 <trizbort>
 	<info />
 	<map>
-		<room id="1" name="Jail" x="-288" y="-96" w="96" h="64" description="" />
+		<room id="1" name="Jail" x="-64" y="-32" w="96" h="64" description="" />
 		<line id="2" startText="down" midText="To Town Hall" endText="up">
-			<dock index="0" id="1" port="s" />
-			<point index="1" x="-224" y="32" />
+			<dock index="0" id="1" port="e" />
+			<point index="1" x="128" y="0" />
 		</line>
-		<room id="3" name="Cell" x="-288" y="-224" w="96" h="64" description="" />
+		<room id="3" name="Cell" x="-64" y="-128" w="96" h="64" description="" />
 		<line id="4">
 			<dock index="0" id="3" port="s" />
 			<dock index="1" id="1" port="n" />
-		</line>
-		<room id="5" name="Below The Tomb" x="128" y="160" w="96" h="64" description="" />
-		<line id="6" startText="down" midText="To The Tomb" endText="up">
-			<dock index="0" id="5" port="w" />
-			<point index="1" x="96" y="64" />
 		</line>
 	</map>
 	<settings>

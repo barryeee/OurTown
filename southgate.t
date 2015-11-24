@@ -13,8 +13,7 @@
 SouthGate: OutdoorRoom 
     
         roomName = '<font color="#00ff00">South Gate</font>'
-        desc = "<table><tr><td><img src=\"southgate.jpg\" width=\"200\" height=\"133\"></td><td>The southern entrance/exit to Our Town. 
-            Beyond is just miles and miles of farmland...</td></tr></table>"
+        desc = "<img src=\"southgate.jpg\" align=\"top\" width=\"200\" height=\"133\">The southern entrance/exit to Our Town. Beyond is just miles and miles of farmland..."
     
     north = SouthMainStreet
     south: FakeConnector {"Unfortunately, the South Gate has been locked for years. Some one lost the key and it has never been replaced."}

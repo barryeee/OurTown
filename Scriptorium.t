@@ -11,15 +11,14 @@
  *      12/03/2014 Added shevles and modified room description. BE
  *      01/28/2015 Made the Crystal Globe to heavy to carry, to prvent a player from walking off with it. BE
  *      02/09/2015 Made minor correction to the suth wall description. BE
- *      04/27/2015 Mde minor change to room description. BE
  *
  */
 
 Scriptorium: Room
     roomName = '<font color="#008800">Scriptorium</font>'
     destName = '<font color="#008800">Scriptorium</font>'
-    desc = "<table><tr><td><img src=\"scriptorium.jpg\" width=\"200\" height=\"150\"></td><td> A windowless library, filled with shelves from floor to ceiling. 
-        Unfortunately, it looks as if the library has been looted, as there are few, if any useful volumes remaining on the shelves.</td></tr></table>"
+    desc = "<img src=\"scriptorium.jpg\" width=\"200\" height=\"150\"> A windowless library, filled with shelves from floor to ceiling. 
+        Unfortunately, it looks as if the library has been looted, as there are few, if any volumes remaining on the shelves."
 
     south = HighCathedral
     roomParts = static inherited -defaultEastWall +scriptoriumEastWall -defaultWestWall +scriptoriumWestWall
@@ -110,7 +109,7 @@ scriptoriumEastWall: defaultEastWall
 ;
 
 scriptoriumWestWall: defaultWestWall
-   desc = "This wall is built of the same stone as the rest of the cathedral. The entrance door is set in the middle of the wall. "
+   desc = "This wall is built of the same stone as the rest of the cathedral. The entrance door is set in the middle of that wall. "
 ;
 scriptoriumNorthWall: defaultNorthWall
    desc = "This wall is built of the same stone as the rest of the cathedral. "

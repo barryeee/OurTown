@@ -13,7 +13,8 @@
     
 NorthMainStreet: OutdoorRoom 
     name = '<font color=\"#00ff00\">North Main Street</font>'
-    desc = "<table><tr><td><img src=\"NorthMainStreet.jpg\" height=\"150\" width=\"200\" align=\"left\"></td><td>A well-paved street on the north end of Main Street. 
+    desc = "<table>
+        <tr><td><img src=\"NorthMainStreet.jpg\" height=\"150\" width=\"200\" align=\"left\"></td><td>A well-paved street on the north end of Main Street. 
         To the north is the East Bridge and the open road! 
         To the West is Town Hall and to the east is the High Cathedral. South leads to Town Square.</td></tr></table>"
      

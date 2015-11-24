@@ -6,7 +6,6 @@
     Maintenance Log 
         11/04/2014      LS      Added the skeletonKey 
         11/05/2014      LS      Fixed spelling errors
-        03/01/2015      BE      Removed exit north to Town Hall.
 */
 
 
@@ -16,7 +15,7 @@ WestBroadway: OutdoorRoom
     desc = "<hr/>A brick-paved street which leads to the Town Hall on the north, Ollie\'s Outfitters on the South, Endora\'s Mansion on the West and the Town Square on the East."
 
     south = Outfitters
-   
+    north = TownHall
     west = EndorasMansion
     east = TownSquare
 ;

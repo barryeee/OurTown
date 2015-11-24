@@ -18,11 +18,10 @@
 
 
 BelowtheTomb: Room '<font color="#880000">Below the Tomb</font>'
-    "<table><tr><td><img src=\"belowtomb.jpg\" width=\"200\" height=\"100\"></td><td>You land in a dark cave, with the only light coming from the torches above.
-    Dimly lit, there does not appear to be a path. 
-    Instead, the flickering light casts shadows against four stone crypts, which line the walls in front of you. 
-    The crypts lay silent and ominous before you, aligned in a row against the south wall. 
-    One of the crypts lies open, with its lid laying on the floor .</td></tr></table>-"
+    "<hr/>You land in a dark cave, with the only light coming from the torches above.
+    Dimly lit, there does not appear to be a path. Instead, the flickering light
+    casts shadows against four stone crypts, which line the walls in front of you. The crypts lay
+    silent and ominous before you, aligned in a row against the south wall. One of the crypts lies open, with its lid laying on the floor ."
 
    
     up = Tomb

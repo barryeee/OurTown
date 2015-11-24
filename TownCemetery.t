@@ -11,8 +11,7 @@ Added Header Comments
 */
 
 TownCemetery: OutdoorRoom 
-        name = '<font color="#00ff00">The Town Cemetery</font>'
-        
+	name = '<font color="#00ff00">The Town Cemetery</font>'
 	vocabWords = 'cemetery'
 	desc = "You peer around and see various tombstones, highlighting memories of years gone by. 
             Many of these poor victims of life are forgotten by the cold steel gate. 
@@ -30,10 +29,8 @@ Maintenance Log--------------
 11/13/2013 added Header Comments
 09/25/2014 renamed from Catheral Gate to Cemetery Gate and changed object type to door and merged with TownCemetery. BE
 */
- + CemeteryGate2: LockableWithKey, Door ->CemeteryGate 'gate' 'gate'
-     desc = "A black steel gate hulks before you, creaking in the wind. 
-            
-            The gate is secured with an ornate lock."
+    
++ CemeteryGate2: LockableWithKey, Door ->CemeteryGate 'gate' 'gate' 
     keyList = [ornateKey]
 	  
  

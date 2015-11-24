@@ -29,8 +29,7 @@ HighCathedral: Room
  +AngelStatue: Thing 
     name = 'Angel Statue'
     vocabWords = 'angel/statue'
-    desc = "<table><tr><td><img src=\"angel.jpg\"width=\"150\" height=\"200\"></td>
-        <td>You see a large statue, apparently carved from granite. It appears to be ancient, showing signs of severe weathering.</td></tr></table>"
+    desc = "<table><tr><td><img src=\"angel.jpg\"width=\"150\" height=\"200\"></td><td>You see a large statue, apparently carved from granite. It appears to be ancient, showing signs of severe weathering.</td></tr></table>"
     location = HighCathedral
     weight = 1000
      actionDobjFeel
@@ -49,7 +48,7 @@ HighCathedral: Room
     vocabWords = 'Notice'
     
    desc = "You see an ancient piece of parchment hanging on the wall beside the doors. 	Although nearly illegible, you can just barely make out the writing...<br>
-    <ul><font face=\"Old English Text MT\"color=\"#000033\" size=7>Welcome to the High Cathedral!</font>
+    <ul background=\"parchment.jpg\"><font face=\"Old English Text MT\"color=\"#000033\" size=7>Welcome to the High Cathedral!</font>
     
         <li><font face=\"Old English Text MT\" color=\"#000033\" size=5>Services of Worship occur at irregular intervals.</font></li>
         <li><font face=\"Old English Text MT\" color=\"#000033\" size=5>Please observe proper decorum at all times while inside the Cathedral.</font></li>
@@ -61,8 +60,7 @@ HighCathedral: Room
    
 ;
 + ornateKey: Key 'ornate key' 'ornate key'
-    desc = "<table><tr><td><img src=\"cemeterykey.jpg\" width=\"100\" height=\"66\"></td>
-        <td>The key is made of brass, old and tarnished. 
+    desc = "<table><tr><td><img src=\"cemeterykey.jpg\" width=\"100\" height=\"66\"></td><td>The key is made of brass, old and tarnished. 
     It is quite ornate in its design, reflecting a level of craftsmanship no longer seen in this day and age.
     A closer inspection reveals a gruesome pattern of skeletons covering the the enire surface of the key.</td></tr></table>"
     bulk = 1
