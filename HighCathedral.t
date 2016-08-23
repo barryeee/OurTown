@@ -48,13 +48,16 @@ HighCathedral: Room
     vocabWords = 'Notice'
     
    desc = "You see an ancient piece of parchment hanging on the wall beside the doors. 	Although nearly illegible, you can just barely make out the writing...<br>
-    <ul background=\"parchment.jpg\"><font face=\"Old English Text MT\"color=\"#000033\" size=7>Welcome to the High Cathedral!</font>
+       <table background=\"parchment.jpg\">
+       <tr><td>
+       <ul><font face=\"Old English Text MT\"color=\"#000033\" size=7>Welcome to the High Cathedral!</font>
     
         <li><font face=\"Old English Text MT\" color=\"#000033\" size=5>Services of Worship occur at irregular intervals.</font></li>
         <li><font face=\"Old English Text MT\" color=\"#000033\" size=5>Please observe proper decorum at all times while inside the Cathedral.</font></li>
         <li><font face=\"Old English Text MT\" color=\"#000033\" size=5>A final word of caution ... <br>
        You may look at, but <font color=\"#880000\"><b> DO NOT TOUCH</b></font>,  the Angel Statue!</font></li></ul>
-   <p><font face=\"Old English Text MT\" color=\"#000033\" size=5>Thank you and enjoy your time here.</font></p>"
+   <p><font face=\"Old English Text MT\" color=\"#000033\" size=5>Thank you and enjoy your time here.</font></p> </td></tr></table>"
+   
     notImportantMsg = 'Please do not deface the Cathedral by removing or in any other way disturbing this notice.'
     
    
