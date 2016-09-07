@@ -20,6 +20,13 @@ Outfitters: Room
     
     
 ;
+
+++Jar: Thing
+    name = 'Glass Jar'
+    desc = "A dirty glass jar containing a murky liquid with a film on the surface."
+    vocabWords = 'jar/Jar'
+    weight = 1000
+;
     
  ++OldLantern: LightSource
     'old lantern/lantern'
