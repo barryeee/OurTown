@@ -19,7 +19,7 @@ EndorasMansion: Room
     desc = "<p>An expansive/decrepit Victorian Era Mansion. Void of any paint and surrounded by brambles and briars.. Inside the mansion the sun bounces dusty rays off ornate, antique furnishings. To the north you can barely make out the shape of a door.</p>"
     
     east = WestBroadway
-    north = CellarDoor
+   // north = CellarDoor
 ;
 
 +SummoningRope: Thing
@@ -90,7 +90,8 @@ EndorasMansion: Room
             if (!Merrick.discovered)
             {
                 Merrick.discover();   
-                "<p>You have released Endora's long time prisoner, Merrick. The only soul capable of destroying Endora!</p>";                "<p>He hands you a book. \"Take this book to the Scriptorium and don't let Endora get it away from you.\"</p>";
+                "<p>You have released Endora's long time prisoner, Merrick. The only soul capable of destroying Endora!</p>"; 
+                "<p>He hands you a book. \"Take this book to the Scriptorium and don't let Endora get it away from you.\"</p>";
                 BookofShadows.location = EndorasMansion;
                 if (Endora.location == EndorasMansion && Endora.discovered)
                 { 
