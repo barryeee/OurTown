@@ -15,11 +15,12 @@
     
 Endora: Hidden, Person 
     'witch' 
-    'Wicked Witch of West Broadway, Endora' 
+    'Wicked Witch of West Broadway/Endora' 
+    
     @EndorasMansion
     "<p>Centuries old, black of heart, putrid of scent and terrifying to behold, Endora has remained in her lair guarding her prisoner as only he knows her secret.</p>"
      isHer = true 
-
+    properName = 'Endora'
     uselessToAttackMsg = "<p>Physical confrontation only angers Endora, your efforts are in vain.</p>" 
     deathMsg = "<p>\"Why Merrick Why\"... exclaims Endora as she vaporizes into a black cloud.</p>"
 ;
