@@ -105,16 +105,16 @@ SearchToolbar:rebarIndex:I:2
 search:wrap:I:1
 line wrap:%tads%lib\adv3\thing.t:S:0:N
 src win edit mode:Jail.t:S:0:TADS 3
-auto-script:next-id:I:300
+auto-script:next-id:I:309
 SearchToolbar:rebarWidth:I:281
 src win edit mode:%tads%lib\adv3\adv3.h:S:0:TADS 3
 src win selrange:Scriptorium.t:S:0:0,0
-src win selrange:Scriptorium.t:S:1:673,673
+src win selrange:Scriptorium.t:S:1:58,58
 src win split:EastBroadway.t:S:0:0.000000
 src win selrange:%tads%include\t3.h:S:0:0,0
 src win selrange:%tads%include\t3.h:S:1:0,0
 src win selrange:EndorasMansion.t:S:0:0,0
-src win selrange:EndorasMansion.t:S:1:175,175
+src win selrange:EndorasMansion.t:S:1:130,130
 docking config::S:0:CL
 docking config::S:1:W0,237,270,2,400,302,550,D,L,project win
 docking config::S:2:W0,237,150,175,400,345,550,D,L,script win
@@ -138,19 +138,18 @@ proj search:collapse spaces:I:0
 src win edit mode:Tomb.t:S:0:TADS 3
 search:exact case:I:0
 src win split:southgate.t:S:0:0.000000
-mdi win list::S:0:%tads%Scripts\Auto 299.cmd
-mdi win list::S:1:%tads%Scripts\Auto 298.cmd
-mdi win list::S:2::help
-mdi win list::S:3::docsearch
+mdi win list::S:0:TownHall.t
+mdi win list::S:1::help
+mdi win list::S:2::docsearch
+mdi win list::S:3:Scriptorium.t
 mdi win list::S:4:EndorasMansion.t
 mdi win list::S:5:Endora.t
-mdi win list::S:6:Merrick.t
-mdi win list::S:7:Weapons.t
-mdi win list::S:8:TownHall.t
+mdi win list::S:6:Books.t
+mdi win list::S:7:Merrick.t
+mdi win list::S:8:Weapons.t
 mdi win list::S:9:Outfitters.t
-mdi win list::S:10:Scriptorium.t
-mdi win list::S:11:SevenSorrowsInn.t
-mdi win list::S:12:OurTown.t
+mdi win list::S:10:SevenSorrowsInn.t
+mdi win list::S:11:OurTown.t
 build:webpage dir:S:0:web
 build:srczipfile:S:0:%tads%OurTownSource.zip
 main win pos::R:-8,-8,1608,868
@@ -172,8 +171,8 @@ docsearch win pos::R:472,378,1667,847
 src win edit mode:Scriptorium.t:S:0:TADS 3
 src win edit mode:%tads%include\t3.h:S:0:TADS 3
 src win edit mode:EndorasMansion.t:S:0:TADS 3
-script win:vis:I:1
-script win:pos:R:2,706,230,835
+script win:vis:I:0
+script win:pos:R:183,426,337,542
 src win edit mode:%tads%include\tads.h:S:0:TADS 3
 build:use charmap:I:0
 EditToolbar:rebarIndex:I:1
@@ -246,13 +245,13 @@ src win edit mode:WestBroadway.t:S:0:TADS 3
 src win edit mode:Weapons.t:S:0:TADS 3
 src win edit mode:OurTown.t:S:0:TADS 3
 search:regex:I:0
-mdi tab order::S:0:12,10,11,9,8,7,5,6,4,3,2,1,0
+mdi tab order::S:0:11,3,10,9,0,8,5,7,4,6,2,1
 line wrap:Scriptorium.t:S:0:N
 line wrap:%tads%include\t3.h:S:0:N
 line wrap:EndorasMansion.t:S:0:N
 build:rlsgam:S:0:%tads%OurTown.t3
 src win selrange:Books.t:S:0:0,0
-src win selrange:Books.t:S:1:1322,1322
+src win selrange:Books.t:S:1:3356,3356
 EditToolbar:rebarVis:I:1
 src win pos:Books.t:R:75,75,1044,452
 src win split:SevenSorrowsInn.t:S:0:0.000000
@@ -278,19 +277,18 @@ src win split:Outfitters.t:S:0:0.000000
 src win selrange:%tads%lib\adv3\actions.t:S:0:0,0
 src win selrange:%tads%lib\adv3\actions.t:S:1:16219,16219
 MenuBar:rebarIndex:I:0
-mdi win title::S:0:%tads%Scripts\Auto 299.cmd
-mdi win title::S:1:%tads%Scripts\Auto 298.cmd
+mdi win title::S:0:TownHall.t
+mdi win title::S:1:
 mdi win title::S:2:
-mdi win title::S:3:
+mdi win title::S:3:Scriptorium.t
 mdi win title::S:4:EndorasMansion.t
 mdi win title::S:5:Endora.t
-mdi win title::S:6:Merrick.t
-mdi win title::S:7:Weapons.t
-mdi win title::S:8:TownHall.t
+mdi win title::S:6:Books.t
+mdi win title::S:7:Merrick.t
+mdi win title::S:8:Weapons.t
 mdi win title::S:9:Outfitters.t
-mdi win title::S:10:Scriptorium.t
-mdi win title::S:11:SevenSorrowsInn.t
-mdi win title::S:12:OurTown.t
+mdi win title::S:10:SevenSorrowsInn.t
+mdi win title::S:11:OurTown.t
 src win edit mode:Books.t:S:0:TADS 3
 src win split:%tads%lib\adv3\thing.t:S:0:0.000000
 src win selrange:TownSquare.t:S:0:0,0
@@ -300,7 +298,7 @@ search:dir:I:1
 build:installer prog:S:0:%tads%OurTown_Setup.exe
 MenuBar:rebarWidth:I:-1
 project win:vis:I:1
-project win:pos:R:2,120,230,680
+project win:pos:R:2,120,230,835
 src win edit mode:NorthMainStreet.t:S:0:TADS 3
 line wrap:EastBroadway.t:S:0:N
 auto-script:dir:S:0:%tads%Scripts
@@ -314,14 +312,14 @@ src win selrange:SevenSorrowsInn.t:S:0:0,0
 src win selrange:SevenSorrowsInn.t:S:1:672,672
 DebugToolbar:rebarIndex:I:4
 src win selrange:%tads%Scripts\Auto 298.cmd:S:0:0,0
-src win selrange:%tads%Scripts\Auto 298.cmd:S:1:186,186
+src win selrange:%tads%Scripts\Auto 298.cmd:S:1:246,246
 src win selrange:%tads%Scripts\Auto 299.cmd:S:0:0,0
 src win selrange:%tads%Scripts\Auto 299.cmd:S:1:0,0
 line wrap:Merrick.t:S:0:N
 searchMode::I:1
 src win edit mode:SouthMainStreet.t:S:0:TADS 3
 src win selrange:TownHall.t:S:0:0,0
-src win selrange:TownHall.t:S:1:4126,4126
+src win selrange:TownHall.t:S:1:2923,2923
 search dlg:old repl text:S:0:\
 search dlg:old repl text:S:1:\"
 search dlg:old repl text:S:2:
