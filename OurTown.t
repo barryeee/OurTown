@@ -10,9 +10,10 @@
  *   IMPORTANT - You should customize some of the text below, as marked:
  *   the name of your game, your byline, and so on.  
  *
- *   11/04/2014 - Set weightCapacity property for player to 150. BE
- *   11/19/2014 Added combat atributes to player character. BE
- *   02/23/2015 BE Added Our Town graphic.
+ *      11/04/2014 - Set weightCapacity property for player to 150. BE
+ *      11/19/2014 Added combat atributes to player character. BE
+ *      02/23/2015 BE Added Our Town graphic.
+ *      09/21/2016 Added new contributors to the credit screen. BE
  */
 versionInfo: GameID
     IFID = '69462502-a9b7-4112-9ce0-6b300d602969'
@@ -45,10 +46,13 @@ versionInfo: GameID
     {
         /* show our credits */
         "Created by the Programming Support Class at Northeast Iowa Community College.";
-        "<br>BE - Barry Eichelberger, Instructor, Fall 2013 - 2014";
+        "<br>BE - Barry Eichelberger, Instructor, Fall 2013 - 2014,2016";
         "<br>BV - Brian Vorwald, Fall 2013";
         "<br>GL - Grayson Leigh, Fall 2013";
         "<br>LS - Laurie Starr, Fall 2014";
+        "<br>MR - Mitch Roberts, Fall 2016";
+        "<br>AW - Andy Winchell, Fall 2016";
+        
         /* 
          *   The game credits are displayed first, but the library will
          *   display additional credits for library modules.  It's a good

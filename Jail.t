@@ -8,14 +8,14 @@
  *   Desc: the Jail is the entrance to
  *   the underground maze, beneath the city.
  *      Maintenance Log:
- * 10/07/2014 Changed Description. 
- *      Merged in room description from Jail Cellar written by Grayson Leigh. BE
- * 10/28/2014 Added Stone Steps up to town hall. BE
- * 02/09/2015 Removed acheivement points and addded simple smell. BE
+ *      10/07/2014 Changed Description. Merged in room description from Jail Cellar written by Grayson Leigh. BE
+ *      10/28/2014 Added Stone Steps up to town hall. BE
+ *      02/09/2015 Removed acheivement points and addded simple smell. BE
+ *      09/21/2016 Changed room color from green to red, since the steps are slippery and can cause death! BE
  */
 
 Jail: Room
-    name = '<font color="#008800">Jail</font>'
+    name = '<font color="#880000">Jail</font>'
     desc = "<hr/> A small, dank room with an unavoidable musk permeating the air.
         The only light comes from a single, guttering torch. 
         A wall of iron bars separate the northern half of the room from the rest, serving as a cramped cell."
@@ -34,7 +34,7 @@ Jail: Room
 ; 
 
 + CellDoor: LockableWithKey, Door
-'Cell Door'
+'Cell Door/door'
 'Cell Door'
 "The Cell Door is made of sturdy iron bars. There is a rusty-looking lock which secures the cell."
 

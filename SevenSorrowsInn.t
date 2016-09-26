@@ -18,8 +18,8 @@ SevenSorrowsInn: Room
 ;
 
 +OldWoodenBar: Surface 
-    name = 'Old Wooden Bar' 
-    vocabWords = 'bar' 
+    'old wooden bar/bar/wooden bar' 
+    'bar' 
     desc = "An old wooden bar, stained and worn from centuries of use and abuse.There are equally worn wooden stools lined along the bar"
     inRoomDesc = "a wooden bar is at one end of the room."
 ;

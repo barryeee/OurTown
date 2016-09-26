@@ -3,13 +3,13 @@
 #include <en_us.h>
 
 /* "Endora's Mansion", located... "
-Created by Laurie Starr
-Created on September 18, 2014 
-    maintenance log
-github test October 6, 2014
-added Cellar Door November 4, 2014
-added to the Pull verb in re the Summoning Rope and the Open verb in re the Cellar Door
-added Book of Shadows to Merrick's personal belongings December 16, 2014
+*       Created by Laurie Starr
+*       Created on September 18, 2014 
+*       maintenance log
+*       10/06/2014 github test. LS
+*       11/04/2016 added Cellar Door. LS
+*       12/03/2014 added Book of Shadows to Merrick's personal belongings. added to the Pull verb in re the Summoning Rope and the Open verb to the Cellar Door.LS
+*       09/15/2016 added synonym to Cellar Door for ease of use. BE
 
 */
 
@@ -19,7 +19,7 @@ EndorasMansion: Room
     desc = "<p>An expansive/decrepit Victorian Era Mansion. Void of any paint and surrounded by brambles and briars.. Inside the mansion the sun bounces dusty rays off ornate, antique furnishings. To the north you can barely make out the shape of a door.</p>"
     
     east = WestBroadway
-    north = CellarDoor
+   // north = CellarDoor
 ;
 
 +SummoningRope: Thing
@@ -76,7 +76,7 @@ EndorasMansion: Room
 /* The Cellar Door is only to release Endora's prisoner, entrance to the cellar is not permitted. */
 
 + CellarDoor: LockableWithKey, Door  
-	'Cellar Door'
+	'Cellar Door/door'
         'Cellar Door'
         "<p>The door, constructed of weathered planking, has centered on it an aged locking mechanism. From beyond the door you hear the tortured cries of a hopeless prisoner.</p>"
     keyList = [skeletonKey]
@@ -90,7 +90,8 @@ EndorasMansion: Room
             if (!Merrick.discovered)
             {
                 Merrick.discover();   
-                "<p>You have released Endora's long time prisoner, Merrick. The only soul capable of destroying Endora!</p>";                "<p>He hands you a book. \"Take this book to the Scriptorium and don't let Endora get it away from you.\"</p>";
+                "<p>You have released Endora's long time prisoner, Merrick. The only soul capable of destroying Endora!</p>"; 
+                "<p>He hands you a book. \"Take this book to the Scriptorium and don't let Endora get it away from you.\"</p>";
                 BookofShadows.location = EndorasMansion;
                 if (Endora.location == EndorasMansion && Endora.discovered)
                 { 
