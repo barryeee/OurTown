@@ -11,7 +11,8 @@
 Maintenance:
 12/15/2014 added 3 properties to the black and white scrolls to make them invisible. BE
 12/16/2014 LS Added Book of Shadows
-02/23/2015 BE Modified font face and color for black and white scrolls.   
+02/23/2015 BE Modified font face and color for black and white scrolls. 
+09/26/2016 Added Scroll of Opening Spells. BE  
 
 */
 
@@ -106,4 +107,19 @@ BookofShadows: Book
 
 ;
 
+openingScroll: Book
+    'Scroll of Opening Spells'
+    'scroll of opening spells'
+    
+    @spellsShelf
+  
+    "A small, shabby-looking scroll. It appears to have been written on the back of a dirty linen napkin."
+    destination = 'spells shelf'
+    
+    readDesc = "<center><font face=\"Segoe Script\" color=\"#8A4B08\"><br><font size=7>How to Open Anything</font><br><br>
+    <font size=5>Without Breaking It<br>
+     <font size=3>When confronted with and object which is not locked but can not be opened<br>
+        use the command \"apertu\" instead.<br>
+            It usually works and is much neater than breaking things!</font></center>"      
 
+;
