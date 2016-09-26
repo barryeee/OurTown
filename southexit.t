@@ -8,12 +8,18 @@
      Author: Andy Winchell 
      Date: 09/20/2016
  *   Maintenance Log:
+-- 9/26/2016 connected SouthernGate to SouthExit MR
  */
     
 SouthExit: OutdoorRoom 
     
         roomName = '<font color="#00ff00">South Exit</font>'
-        desc = "<img src=\"southexit.jpg\" align=\"top\" width=\"200\" height=\"133\">You have managed to escape the town.  Your experience here has created countless tales to tell, but will anyone believe them?"
+        desc = "<img src=\"southexit.jpg\" align=\"left, top\" width=\"200\" height=\"133\">You have managed to escape the town.  
+            Your experience here has created countless tales to tell, but will anyone believe them?"
     
-    north = SouthGate
+    north = SouthernGate
+;
+
++ SouthernGate2: Door ->SouthernGate 'Southern Gate' 'Southern Gate'
+    
 ;

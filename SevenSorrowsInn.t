@@ -63,3 +63,8 @@ SevenSorrowsInn: Room
     location = MetalLockBox
 ;
 
+++silverKey: Key  //Key to open the MetalLockBox @ SevenSorrowsInn
+    'silver key' 'silver key'
+    desc = "The key is made of silver. Other than that there seems to be nothing special about it.."
+    location = OldWoodenBar
+;
