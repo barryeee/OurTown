@@ -14,6 +14,7 @@
 -- Added Header Comments
 -- 10/23/2014 Changed the description. Stone crypts have replaced the wooden caskets. BE
 -- 11/03/2014 Added individual crpyts. BE
+-- 9/26/2016 Added silver key to jasperCrypt
     -------------------------------*/
 
 
@@ -56,4 +57,10 @@ BelowtheTomb: Room '<font color="#880000">Below the Tomb</font>'
    initiallyOpen = nil
     weight = 10000
         material = adventium
+;
+
+++silverKey: Key  //Key to open the MetalLockBox @ SevenSorrowsInn
+    'silver key' 'silver key'
+    desc = "The key is made of silver. Other than that there seems to be nothing special about it.."
+    location = jasperCrypt
 ;
