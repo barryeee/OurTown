@@ -11,7 +11,8 @@
 Maintenance:
 12/15/2014 added 3 properties to the black and white scrolls to make them invisible. BE
 12/16/2014 LS Added Book of Shadows
-02/23/2015 BE Modified font face and color for black and white scrolls.   
+02/23/2015 BE Modified font face and color for black and white scrolls. 
+09/26/2016 Added Scroll of Opening Spells. BE  
 
 */
 
