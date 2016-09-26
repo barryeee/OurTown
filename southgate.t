@@ -16,5 +16,5 @@ SouthGate: OutdoorRoom
         desc = "<img src=\"southgate.jpg\" align=\"top\" width=\"200\" height=\"133\">The southern entrance/exit to Our Town. Beyond is just miles and miles of farmland..."
     
     north = SouthMainStreet
-    south: FakeConnector {"Unfortunately, the South Gate has been locked for years. Some one lost the key and it has never been replaced."}
+    south = SouthExit
 ;
