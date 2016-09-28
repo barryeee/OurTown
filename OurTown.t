@@ -13,6 +13,7 @@
  *   11/04/2014 - Set weightCapacity property for player to 150. BE
  *   11/19/2014 Added combat atributes to player character. BE
  *   02/23/2015 BE Added Our Town graphic.
+ *   09/28/2016 Added image to TouristGuide. MR
  */
 versionInfo: GameID
     IFID = '69462502-a9b7-4112-9ce0-6b300d602969'
@@ -117,7 +118,7 @@ me: Actor
 +TouristGuide: Readable
     'tourist guide'
     'guide'
-    "A small pamphlet with fadded printing on the cover..."
+    "<img src=\"Leather_Bound_Guide_Book.jpg\" align=\"top\" width=\"200\" height=\"133\">A small leather bound book with fadded printing on the cover..."
     weight = 1
     bulk = 1
     readDesc = "<font face=\"TADS-Serif\" size=5><center>A Tourist\'s Guide<br>To<br>Our Town
