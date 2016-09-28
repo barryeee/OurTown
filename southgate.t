@@ -30,9 +30,9 @@ SouthGate: OutdoorRoom
 'Southern Gate'
 'Southern Gate'
     
-        desc =  "The southern gate is made of well crafted gold colored iron. There is also a gold-plated lock. It appears to have 
+        desc =  "<img src=\"southern_gate.jpg\" align=\"left\" width=\"200\" height=\"133\"><p>The southern gate is made of well crafted gold colored iron. There is also a gold-plated lock. It appears to have 
             the letter 'S' engraved on it. Unfortunately, the Southern Gate has been locked for years. Some one lost the key and it has 
-            never been found, at least not yet!"
+            never been found, at least not yet!</p>"
     north = SouthGate
     south = SouthExit
     

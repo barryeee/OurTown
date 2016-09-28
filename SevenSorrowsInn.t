@@ -7,6 +7,7 @@
 -- 9/20/2016 Created OldWoodenBar. It's function is to hold the MetalLockBox. MR
 -- 9/20/2016 Created MetalLockBox. It will hold the goldKey. MR
 -- 9/20/2016 Created goldKey. It's function is to unlock the SouthernGate. MR
+-- 9/20/2016 Created silver key. It's function is to unlock MetalLockBox. MR    
  */
 SevenSorrowsInn: Room 
     roomName = '<font color="#008800">Seven Sorrows Inn</font>'
