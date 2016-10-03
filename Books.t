@@ -2,16 +2,17 @@
 #include <adv3.h>
 #include <en_us.h>
 /* 
- *   Books.t *8 Author: Barry Eichelberger 
-* Date: 12-04-2014 
-* Desc: A basic model for all things readable which end up in the Scriptorium. 
-*    All books, scrolls, tomes, grimoires, ect. should be instances of this object. 
-*    Their souce code should be contained in this file, below the book object definition.
-*Maintenance:
-*       12/15/2014 added 3 properties to the black and white scrolls to make them invisible. BE
-*       12/16/2014 Added Book of Shadows LS
-*       02/23/2015 Modified font face and color for black and white scrolls.  BE
-*       09/27/2016 Added Scroll of Opening Spells. BE
+ *   Books.t 
+ Author: Barry Eichelberger 
+ Date: 12-04-2014 
+ Desc: A basic model for all things readable which end up in the Scriptorium. 
+    All books, scrolls, tomes, grimoires, ect. should be instances of this object. 
+    Their souce code should be contained in this file, below the book object definition.
+Maintenance:
+12/15/2014 added 3 properties to the black and white scrolls to make them invisible. BE
+12/16/2014 LS Added Book of Shadows
+02/23/2015 BE Modified font face and color for black and white scrolls.   
+
 */
 
 Book: Readable
@@ -74,7 +75,8 @@ whiteScroll: Book
     sightPresence = nil
     isListed = (sightPresence)
     isListedInContents = (sightPresence)
-    readDesc ="<font size=5>A Continuation of the History of the conflict<br>
+    readDesc = "<center><font face=\"Segoe Script\" color=\"#8A4B08\"><br><font size=7>Victory At The Bridge</font><br><br>
+    <font size=5>A Continuation of the History of the conflict<br>
     between the Four Elemental Knights<br>
     and<br>
     The Witch Endora</font></center>"      
@@ -104,17 +106,4 @@ BookofShadows: Book
 
 ;
 
-ScrollOpeningSpells: Book
-    'Scroll of Opening Spells'
-    'scoll of opening spells'
-    @spellsShelf
-    "<p> the scroll appears to have been hand-written on the back of a linen napkin</p>"
-    destination = 'spells shelf'
-    readDesc = "<table background=\"linen.jpg\">
-       <tr><td>
-       <p><center><font face='Segoe Script' color=\"#8A4B08\"> <font size=7>How To Open Anything
-    </font><br><br> <font size=5>Without Breaking It!</font><br><br>
-        <font size=3>If any object stubbornly refuses to open<br>
-        use the command \"apertu\".<br>
-        It usually works!</font></font></center> </p> </td></tr></table>"
-;
+
