@@ -115,7 +115,7 @@ me: Actor
     health = 20
      
 ;
-
+// Increases ability for holding objects
 +LeatherPouch: BagOfHolding, Container, Wearable  //A pouch for holding items
     'leather pouch'
     'leather pouch'
