@@ -17,7 +17,7 @@ SouthExit: OutdoorRoom
         desc = "<img src=\"southexit.jpg\" align=\"left,\" width=\"200\" height=\"133\">You have managed to escape the town.  
             Your experience here has created countless tales to tell, but will anyone believe them?"
     
-    north = SouthGate
+    
 ;
 
 + SouthernGate2: Door ->SouthernGate 'Southern Gate' 'Southern Gate'
