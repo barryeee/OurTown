@@ -6,7 +6,9 @@
 *     Date:   09/28/2016
     *       Desc: This file contains all the custom verbs created for this game.
 *       Maintenance Log
-*/   
+*       10/19/2016 Moved to totheAbyss function to this file from OurTown.t BE
+*/  
+    
 
     //The Ring verb. Surprisingly, there is no such verb contained in the game.
 DefineTAction(Ring);
@@ -30,4 +32,12 @@ modify Thing
         }
     }
 ;
-       
+  
+/* totheAbyss - a function which allows the player to be relocated to the Abyss, where he/she dies immediately*/
+function totheAbyss ( )
+{
+    me.moveIntoForTravel(theAbyss);
+    say (theAbyss.roomName); 
+    say (theAbyss.desc);
+    finishGameMsg(ftDeath, finishOptionFullScore);
+}
