@@ -16,6 +16,7 @@
  *   02/23/2015 BE Added Our Town graphic.
  *   09/28/2016 Added image to TouristGuide. MR
  *   09/29/2016 Created LeatherPouch. MR
+ *   10/19/2016 Moved totheAbyss function to CustomVerbs.t file. BE
  */
 versionInfo: GameID
     IFID = '69462502-a9b7-4112-9ce0-6b300d602969'
@@ -70,14 +71,6 @@ versionInfo: GameID
     }
     
 ;
-/* totheAbyss - a function which allows the player to be relocated to the Abyss, where he/she dies immediately*/
-function totheAbyss ( )
-{
-    me.moveIntoForTravel(theAbyss);
-    say (theAbyss.roomName); 
-    say (theAbyss.desc);
-    finishGameMsg(ftDeath, finishOptionFullScore);
-}
 
 gameMain: GameMainDef
     initialPlayerChar = me
