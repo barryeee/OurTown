@@ -9,6 +9,7 @@
      Date: 09/20/2016
  *   Maintenance Log:
 -- 9/26/2016 connected SouthernGate to SouthExit MR
+-- 10/26/2016 Finished Game added
  */
     
 SouthExit: OutdoorRoom 
