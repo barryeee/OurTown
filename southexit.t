@@ -9,7 +9,8 @@
      Date: 09/20/2016
  *   Maintenance Log:
 -- 9/26/2016 connected SouthernGate to SouthExit MR
--- 10/26/2016 Finished Game added
+-- 10/26/2016 Finished Game added AW
+-- 10/26/2016 Added enteringRoom Fucntion to make end game message work properly. BE
  */
     
 SouthExit: OutdoorRoom 
@@ -17,11 +18,16 @@ SouthExit: OutdoorRoom
         roomName = '<font color="#00ff00">South Exit</font>'
         desc = "<img src=\"southexit.jpg\" align=\"left,\" width=\"200\" height=\"133\">You have managed to escape the town.  
             Your experience here has created countless tales to tell, but will anyone believe them?"
-    finishGame (extra) {
-        finishGameMsg(nil, extra);
-    }
     
+     enteringRoom (traveler) 
+   { 
+        "<img src=\"southexit.jpg\" align=\"left,\" width=\"200\" height=\"133\">You have managed to escape the town.  
+        Your experience here has created countless tales to tell, but will anyone believe them?";
     
+    finishGameMsg(ftVictory,finishOptionCredits);
+   } 
+
+      
 ;
 
 + SouthernGate2: Door ->SouthernGate 'Southern Gate' 'Southern Gate'
