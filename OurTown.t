@@ -17,6 +17,7 @@
  *   09/28/2016 Added image to TouristGuide. MR
  *   09/29/2016 Created LeatherPouch. MR
  *   10/19/2016 Moved totheAbyss function to CustomVerbs.t file. BE
+ *   10/31/2016 Updated credits. BE
  */
 versionInfo: GameID
     IFID = '69462502-a9b7-4112-9ce0-6b300d602969'
@@ -53,6 +54,8 @@ versionInfo: GameID
         "<br>BV - Brian Vorwald, Fall 2013";
         "<br>GL - Grayson Leigh, Fall 2013";
         "<br>LS - Laurie Starr, Fall 2014";
+        "<br>MR - Mitch Roberts, Fall 2016";
+        "<br>AW - Andy Winchell, Fall 2016";
         /* 
          *   The game credits are displayed first, but the library will
          *   display additional credits for library modules.  It's a good
@@ -98,7 +101,7 @@ gameMain: GameMainDef
 
 
 me: Actor
-//   location = BelowtheTomb //test location.
+// location = BelowtheTomb //test location.
     location = TownSquare
     weightCapacity = 100
     bulkCapacity = 2
