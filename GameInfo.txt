@@ -7,11 +7,7 @@ AuthorEmail: Barry Eichelberger <eichelbergerb@nicc.edu>
 Desc: Demonstration Project for Progamming Support class.
 HtmlDesc: Demonstration Project for Progamming Support class.
 Version: 1
-<<<<<<< HEAD
 ReleaseDate: 2016-11-10
-=======
-ReleaseDate: 2016-09-30
->>>>>>> origin/master
 Language: en-US
 LicenseType: Freeware
 CopyingRules: Nominal cost only; compilations allowed

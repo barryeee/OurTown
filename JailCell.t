@@ -25,7 +25,6 @@ JailCell: Room
 ;
 
 //A NPC that can give you clues as you traverse the game
-<<<<<<< HEAD
 + mrJingles: Actor
     'rat'
     'rat'
@@ -49,7 +48,7 @@ JailCell: Room
     {
        if (mrJingles.discovered)
         {
-            moveIntoForTravel(JailCell);    
+            moveIntoForTravel(CellDoor);    
             setCurState(mrJinglesDiscovered);
         }
     }
@@ -94,31 +93,3 @@ JailCell: Room
 ;
 
   
-=======
-+ Rat: Thing, Actor
-    'rat'
-    'rat'
-    desc = "Just an ordinary looking rat, but he seems like he wants to talk?"
-    isHim = true
-    propertyName = 'Mr, Jingles'
-    bulk = 2
-    location = JailCell
-    destination = LeatherPouch
-  ;
- ++ DefaultAnyTopic, ShuffledEventList
-    [
-      'It is nice to finally have someone to talk to.',
-        
-      'You should find Merrick. He says in an excited tone, He has something you could use!',
-        
-      'The rat looks up at you. Hello, I am Mr.Jingles. ',
-        
-      'I hear that Merrick and Endora were once lovers.',
-          
-      'Be careful in this town, it can be very dangerous.',
-        
-      'Can I come with you? I will surely fit in your pouch.'
-        
-    ]
-;  
->>>>>>> origin/master

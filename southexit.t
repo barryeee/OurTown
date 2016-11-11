@@ -17,11 +17,7 @@ SouthExit: OutdoorRoom
         roomName = '<font color="#00ff00">South Exit</font>'
         desc = "<img src=\"southexit.jpg\" align=\"left,\" width=\"200\" height=\"133\">You have managed to escape the town.  
             Your experience here has created countless tales to tell, but will anyone believe them?"
-<<<<<<< HEAD
   
-=======
-   
->>>>>>> origin/master
     enteringRoom (traveler) {
                   "<img src=\"southexit.jpg\" align=\"left,\" width=\"200\" height=\"133\">You have managed to escape the town.  
                   Your experience here has created countless tales to tell, but will anyone believe them?";
