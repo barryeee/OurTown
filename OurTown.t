@@ -16,6 +16,11 @@
  *   02/23/2015 BE Added Our Town graphic.
  *   09/28/2016 Added image to TouristGuide. MR
  *   09/29/2016 Created LeatherPouch. MR
+<<<<<<< HEAD
+=======
+ *   10/19/2016 Moved totheAbyss function to CustomVerbs.t file. BE
+ *   10/31/2016 Updated credits. BE
+>>>>>>> origin/master
  */
 versionInfo: GameID
     IFID = '69462502-a9b7-4112-9ce0-6b300d602969'
@@ -52,6 +57,8 @@ versionInfo: GameID
         "<br>BV - Brian Vorwald, Fall 2013";
         "<br>GL - Grayson Leigh, Fall 2013";
         "<br>LS - Laurie Starr, Fall 2014";
+        "<br>MR - Mitch Roberts, Fall 2016";
+        "<br>AW - Andy Winchell, Fall 2016";
         /* 
          *   The game credits are displayed first, but the library will
          *   display additional credits for library modules.  It's a good
@@ -70,14 +77,6 @@ versionInfo: GameID
     }
     
 ;
-/* totheAbyss - a function which allows the player to be relocated to the Abyss, where he/she dies immediately*/
-function totheAbyss ( )
-{
-    me.moveIntoForTravel(theAbyss);
-    say (theAbyss.roomName); 
-    say (theAbyss.desc);
-    finishGameMsg(ftDeath, finishOptionFullScore);
-}
 
 gameMain: GameMainDef
     initialPlayerChar = me
@@ -105,7 +104,7 @@ gameMain: GameMainDef
 
 
 me: Actor
-//   location = BelowtheTomb //test location.
+// location = BelowtheTomb //test location.
     location = TownSquare
     weightCapacity = 100
     bulkCapacity = 2
@@ -142,12 +141,16 @@ me: Actor
     bulk = 1
     readDesc = "<font face=\"Old English Text MT\" color=\"#888888\" size=5><center>A Tourist\'s Guide<br>To<br>Our Town
         <br><br><font size=4>Everything you need to know
+<<<<<<< HEAD
         <br>in order to survive...almost!</font></center>  
-        <br><font size=4><center>Feel free to wonder around and get to know the town. 
+        <br><font size=4><center>Feel free to wander around and get to know the town. 
         <br>Keep an eye out for Mr. Jingles. He can be quite helpful!</font></center> 
         <br><br><font face=\"Old English Text MT\" color=\"#888888\" size=3><center>Your goal<br>should you accept it<br>is to complete a series of dangerous quests<br> 
         that will reward you with treasures and tokens.<br>These items will allow you to unlock new quests. Once the quests are complete<br>
         you will be given a special gift to unlock your freedom.</font></center>
         <br><br><font face=\"Old English Text MT\" color=\"#888888\" size=5><center>*Happy Hunting*</font></center></font>"
+=======
+        <br>in order to survive...almost!</font></center>  </font>"
+>>>>>>> origin/master
     location = LeatherPouch
  ;

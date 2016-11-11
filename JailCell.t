@@ -25,14 +25,15 @@ JailCell: Room
 ;
 
 //A NPC that can give you clues as you traverse the game
-+ Rat: Actor
+<<<<<<< HEAD
++ mrJingles: Actor
     'rat'
     'rat'
     desc = "Just an ordinary looking rat, but he seems like he wants to talk?"
     bulk = 2
     location = JailCell
     isHim = true
-    globalParamName = 'rat'      
+    globalParamName = 'rat'
     makeProper(properName)   
     {      
         name = properName;      
@@ -40,9 +41,23 @@ JailCell: Room
         initializeVocabWith(properName.toLower());      
         return name;   
     } 
+    
+      dobjFor(TalkTo)
+  {
+     verify() { }
+     check() 
+    {
+       if (mrJingles.discovered)
+        {
+            moveIntoForTravel(JailCell);    
+            setCurState(mrJinglesDiscovered);
+        }
+    }
+  }
 ;
 
-++RatKnown : AccompanyingState
+
+++mrJinglesDiscovered : AccompanyingState
   specialDesc = "Mr. Jingles is accompanying you. " 
   stateDesc = "Mr. Jingles is with you. " 
   accompanyTravel(leadActor, conn)  
@@ -61,15 +76,15 @@ JailCell: Room
   
      'I hear that Merrick and Endora were once lovers.',
   
-     'The rat looks up at you. Hello, I am <<Rat.makeProper('Mr.Jingles')>> . ',
+     'The rat looks up at you. Hello, I am <<mrJingles.makeProper('Mr.Jingles')>> . ',
   
      'Be careful in this town, it can be very dangerous.'
   
      ] 
     ;
   
-++ RatSouthGateAgenda: ConvAgendaItem
-    isReady = (inherited && Rat.canSee (SouthGate))
+++ mrJinglesSouthGateAgenda: ConvAgendaItem
+    isReady = (inherited && mrJingles.canSee (SouthGate))
     invokeItem()
     {
         "This Gate is quite beautiful, I bet the key is equally as beautiful.";
@@ -79,3 +94,31 @@ JailCell: Room
 ;
 
   
+=======
++ Rat: Thing, Actor
+    'rat'
+    'rat'
+    desc = "Just an ordinary looking rat, but he seems like he wants to talk?"
+    isHim = true
+    propertyName = 'Mr, Jingles'
+    bulk = 2
+    location = JailCell
+    destination = LeatherPouch
+  ;
+ ++ DefaultAnyTopic, ShuffledEventList
+    [
+      'It is nice to finally have someone to talk to.',
+        
+      'You should find Merrick. He says in an excited tone, He has something you could use!',
+        
+      'The rat looks up at you. Hello, I am Mr.Jingles. ',
+        
+      'I hear that Merrick and Endora were once lovers.',
+          
+      'Be careful in this town, it can be very dangerous.',
+        
+      'Can I come with you? I will surely fit in your pouch.'
+        
+    ]
+;  
+>>>>>>> origin/master
