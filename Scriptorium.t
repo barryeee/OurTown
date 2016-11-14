@@ -10,7 +10,7 @@
  *      Maintenance Log:
  *      12/03/2014 Added shevles and modified room description. BE
  *      01/28/2015 Made the Crystal Globe to heavy to carry, to prvent a player from walking off with it. BE
- *      02/09/2015 Made minor correction to the suth wall description. BE
+ *      02/09/2015 Made minor correction to the south wall description. BE
  *      09/13/2016 made minor change to West wall discriptiion. BE
  *
  */

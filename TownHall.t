@@ -12,6 +12,7 @@
 -- 10/29/2014 Added eventlist to steps, 1 in 3 trips ends in death. BE
 -- 02/09/2015 Added image of descending stairs to jail. BE
 -- 02/23/2015 BE Added floor description to the room.
+*	09/15/2016 added bell sound to ring verb. BE
 */     
 TownHall: Room 
     name = '<font color="#008800">Town Hall</font>'
@@ -64,7 +65,7 @@ TownHall: Room
     
     actionDobjRing
     {
-     "The silver bell makes a pleasant, tinkling sound."; 
+     "<sound src=\"Bell-ding.mp3\" layer=foreground volume=50 fadeout=1.5> The silver bell makes a pleasant, tinkling sound."; 
     }
 ;
 
