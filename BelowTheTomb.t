@@ -14,7 +14,6 @@
 -- Added Header Comments
 -- 10/23/2014 Changed the description. Stone crypts have replaced the wooden caskets. BE
 -- 11/03/2014 Added individual crpyts. BE
-*       09/29/2016 Added apertu verb to and disabled the open and close verb for each crypt. BE
 
     -------------------------------*/
 
@@ -29,54 +28,34 @@ BelowtheTomb: Room '<font color="#880000">Below the Tomb</font>'
     up = Tomb
 ;
 
-+graniteCrypt: Crypt 'granite crypt' 'granite crypt'
++graniteCrypt: Openable, Booth 'granite crypt' 'granite crypt'
     "It is an ancient crypt, carved out of a single piece of black granite. "
    initiallyOpen = true
-    
-;
-
-+marbleCrypt: Crypt 'marble crypt' 'marble crypt'
-    "It is an ancient crypt, carved out of a single piece of white marble. "
-
-;
-
-+jasperCrypt: Crypt 'jasper crypt' 'jasper crypt'
-    "It is an ancient crypt, carved out of a single piece of red jasper. "
-
-;
-
-
-+malachiteCrypt: Crypt 'malachite crypt' 'malachite crypt'
-    "It is an ancient crypt, carved out of a single piece of green malachite. "
-;
-
-Crypt: Openable, Booth 'generic crypt' 'generic crypt'
-    "It is an ancient crypt, carved out of a single piece of gernic stone. "
-   initiallyOpen = nil
     weight = 10000
     material = adventium
-    
-    actionDobjApertu
-    {
-        isOpen = true;
-        "The lid to the crypt slowly slides open, making a low, grinding noise.";
-    }
+;
 
-       
-    dobjFor (Open)
-    {
-        action ()
-        {
-            "The lid rattles noisily but does not open. Perhaps, another command...or a spell?";
-        }
-    }
-    dobjFor (Close)
-    {
-        action()
-        {
-            isOpen= nil;
-            "With a great deal of effort, you drag the lid on to the crypt.";
-        }
-    }
+
+;
++marbleCrypt: Openable, Booth 'marble crypt' 'marble crypt'
+    "It is an ancient crypt, carved out of a single piece of white marble. "
+   initiallyOpen = nil
+    weight = 10000
+        material = adventium
+    
+;
+
++jasperCrypt: Openable, Booth 'jasper crypt' 'jasper crypt'
+    "It is an ancient crypt, carved out of a single piece of red jasper. "
+   initiallyOpen = nil
+    weight = 10000
+        material = adventium
+;
+
++malachiteCrypt: Openable, Booth 'malachite crypt' 'malachite crypt'
+    "It is an ancient crypt, carved out of a single piece of green malachite. "
+   initiallyOpen = nil
+    weight = 10000
+        material = adventium
 ;
 

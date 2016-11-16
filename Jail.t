@@ -12,14 +12,13 @@
  *      Merged in room description from Jail Cellar written by Grayson Leigh. BE
  * 10/28/2014 Added Stone Steps up to town hall. BE
  * 02/09/2015 Removed acheivement points and addded simple smell. BE
- * 10/9/2016 Added image to Jail. MR
  */
 
 Jail: Room
     name = '<font color="#008800">Jail</font>'
-    desc = "<hr/><img src=\"Jail.png\" width=\"200\" height=\"100\" align=\"top\"><p>A small, dank room with an unavoidable musk permeating the air.
+    desc = "<hr/> A small, dank room with an unavoidable musk permeating the air.
         The only light comes from a single, guttering torch. 
-        A wall of iron bars separate the northern half of the room from the rest, serving as a cramped cell.</p>"
+        A wall of iron bars separate the northern half of the room from the rest, serving as a cramped cell."
 
     up = StoneStepsUp
     north = CellDoor
