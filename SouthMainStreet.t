@@ -14,10 +14,10 @@ SouthMainStreet: OutdoorRoom
     roomName = '<font color="#00ff00">South Main Street</font>'
     destName = '<font color="#00ff00">South Main Street</font>'
     desc = "<hr/>This is south extenstion of Main Street. 
-            To the West is Ollie's Outfitters, to the East is the Inn of 7 Sorrows and to the South is the South Gate, the southern exit of Our Town."
+            To the West is Ollie's Outfitters, to the East is the Seven Sorrows Inn and to the South is the South Gate, the southern exit of Our Town."
     
     north = TownSquare
-   // east = Inn
+    east = SevenSorrowsInn
     west = Outfitters
     south = SouthGate
 ;

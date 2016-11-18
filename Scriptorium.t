@@ -9,24 +9,27 @@
  *              Its only purpose is to be a repository for various book and scrolls....
  *      Maintenance Log:
  *      12/03/2014 Added shevles and modified room description. BE
+ *      01/28/2015 Made the Crystal Globe to heavy to carry, to prvent a player from walking off with it. BE
+ *      02/09/2015 Made minor correction to the south wall description. BE
+ *      09/13/2016 made minor change to West wall discriptiion. BE
  *
  */
 
 Scriptorium: Room
     roomName = '<font color="#008800">Scriptorium</font>'
     destName = '<font color="#008800">Scriptorium</font>'
-    desc = "<hr/> A windowless library, filled with shelves from floor to ceiling. 
+    desc = "<img src=\"scriptorium.jpg\" width=\"200\" height=\"150\"> A windowless library, filled with shelves from floor to ceiling. 
         Unfortunately, it looks as if the library has been looted, as there are few, if any volumes remaining on the shelves."
 
     south = HighCathedral
     roomParts = static inherited -defaultEastWall +scriptoriumEastWall -defaultWestWall +scriptoriumWestWall
-         -defaultNorthWall +scriptoriumNorthWall -defaultSouthWall +scriptoriumSouthWall
+         -defaultNorthWall +scriptoriumNorthWall -defaultSouthWall +scriptoriumSouthWall -defaultFloor +scriptoriumFloor
  ;
 
 +ReadingDesk:  Surface
     'reading desk/oak desk/desk'
     'reading desk'
-    "It's a small oak desk, just big enough for a single book or scroll."
+    "<img src=\"readingdesk.jpg\" width=\"200\" height=\"150\"> It's a small oak desk, just big enough for a single book or scroll."
     inRoomDesc = " A small, oak desk sits in the center of the room, to be used by anyone who wishes to do a little light reading!"
 ;
 ++ CrystalGlobe: LightSource
@@ -36,6 +39,7 @@ Scriptorium: Room
     The eerie, pearlescent glow is just bright enought to illuminate the room."
     isLit = true
     brightness = 3
+    weight = 1000 //it is too heavy to carry - we don't want anyone walking off with the lamp!
 ;
 +historyShelf: Surface, Fixture
     'history shelf*shelves'
@@ -112,5 +116,9 @@ scriptoriumNorthWall: defaultNorthWall
    desc = "This wall is built of the same stone as the rest of the cathedral. "
 ;
 scriptoriumSouthWall: defaultSouthWall
-   desc = "This wall is built of the same stone as the rest of the cathedral. "
+   desc = "This wall is built of the same stone as the rest of the cathedral. The entrance door is set in the middle of that wall. "
+;
+scriptoriumFloor: Floor 'Scriptorium Floor' 'floor of the Scriptorium'
+    desc="You see a stone floor made of limestone blocks, worn smooth by the passage many feet over the course of countless years. "
+    putDestMessage = &putDestFloor 
 ;

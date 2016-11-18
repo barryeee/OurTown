@@ -1,84 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<trizbort>
+<trizbort version="1.5.9.5">
 	<info />
 	<map>
-		<room id="1" name="Town Square" x="-64" y="-32" w="96" h="64" description="You are located in the heart of Our Town, surrounded by the Town Hall, the High Cathedral, and a dry goods store which specializes in outfitting people for the crazy adventures which some groups embark upon around here. The local tavern/hotel, where visitors can find a room for the night, also borders on the Square. Main Street runs north and south from the square, while Broadway runs east and west." />
-		<room id="2" name="North Main Street" x="-64" y="-128" w="96" h="64" description="A well-paved street, on the north edge of Our Town. Ahead of you, to the north, is the eastern bridge over the Volta River. City Hall is to the west, while the entrance to the great High Cathedral lies to the east. To the south is Town Square." />
-		<line id="3">
+		<room id="1" name="Town Square" subtitle="" x="-64" y="-32" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="You are located in the heart of Our Town, surrounded by the Town Hall, the High Cathedral, and a dry goods store which specializes in outfitting people for the crazy adventures which some groups embark upon around here. The local tavern/hotel, where visitors can find a room for the night, also borders on the Square. Main Street runs north and south from the square, while Broadway runs east and west." roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="" />
+		<room id="2" name="North Main Street" subtitle="" x="-64" y="-128" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="A well-paved street, on the north edge of Our Town. Ahead of you, to the north, is the eastern bridge over the Volta River. City Hall is to the west, while the entrance to the great High Cathedral lies to the east. To the south is Town Square." roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="" />
+		<line id="3" name="" description="">
 			<dock index="0" id="2" port="s" />
 			<dock index="1" id="1" port="n" />
 		</line>
-		<room id="4" name="North Bridge" x="-64" y="-224" w="96" h="64" description="A rickety, wooden bridge leading over the Volta River. It is barely wide enough for one person use." />
-		<line id="5">
+		<room id="4" name="North Bridge" subtitle="" x="-64" y="-224" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="A rickety, wooden bridge leading over the Volta River. It is barely wide enough for one person use." roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="" />
+		<line id="5" name="" description="">
 			<dock index="0" id="4" port="s" />
 			<dock index="1" id="2" port="n" />
 		</line>
-		<room id="6" name="High Cathedral" x="64" y="-128" w="96" h="64" description="As your eyes adjust to the dim lighting, you notice that you are in a temple of very modest interior proportions. Before you lies the gilded High Altar. You are surrounded by stone statues of all kinds, some beautiful, some hideous.">
+		<room id="6" name="High Cathedral" subtitle="" x="64" y="-128" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="As your eyes adjust to the dim lighting, you notice that you are in a temple of very modest interior proportions. Before you lies the gilded High Altar. You are surrounded by stone statues of all kinds, some beautiful, some hideous." roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="">
 			<objects at="ne">Angel Statue|Notice</objects>
 		</room>
-		<room id="8" name="Town Hall" x="-192" y="-128" w="96" h="64" description="" />
-		<line id="9">
+		<room id="8" name="Town Hall" subtitle="" x="-192" y="-128" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="" />
+		<line id="9" name="" description="">
 			<dock index="0" id="8" port="e" />
 			<dock index="1" id="2" port="w" />
 		</line>
-		<room id="12" name="The Abyss" x="-320" y="160" w="96" h="64" description="Congratulations! You have arrived a the one place no one wants to be!!  This place is filled with creatures and monsters that are just DYING to make your acquaintance!  And did I mention, there are no exits. Have a nice life...what's left of it!" />
-		<line id="7" startText="in" endText="out">
+		<room id="12" name="The Abyss" subtitle="" x="-320" y="160" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="Congratulations! You have arrived a the one place no one wants to be!!  This place is filled with creatures and monsters that are just DYING to make your acquaintance!  And did I mention, there are no exits. Have a nice life...what's left of it!" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="" />
+		<line id="7" name="" description="" startText="in" endText="out">
 			<dock index="0" id="2" port="e" />
 			<dock index="1" id="6" port="w" />
 		</line>
-		<line id="15">
+		<line id="15" name="" description="">
 			<dock index="0" id="16" port="e" />
 			<dock index="1" id="1" port="w" />
 		</line>
-		<room id="16" name="West Broadway" x="-192" y="-32" w="96" h="64" description="" />
-		<room id="13" name="South Main Street" x="-64" y="64" w="96" h="64" description="" />
-		<line id="14">
+		<room id="16" name="West Broadway" subtitle="" x="-192" y="-32" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="" />
+		<room id="13" name="South Main Street" subtitle="" x="-64" y="64" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="" />
+		<line id="14" name="" description="">
 			<dock index="0" id="1" port="s" />
 			<dock index="1" id="13" port="n" />
 		</line>
-		<room id="17" name="Ollie's Outfitters" x="-192" y="64" w="96" h="64" description="&quot;A typcial Dry Goods, Hardware store found in any small, rural town. The inventory is anything but typical.&quot;" />
-		<line id="18">
+		<room id="17" name="Ollie's Outfitters" subtitle="" x="-192" y="64" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="&quot;A typcial Dry Goods, Hardware store found in any small, rural town. The inventory is anything but typical.&quot;" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="" />
+		<line id="18" name="" description="">
 			<dock index="0" id="16" port="s" />
 			<dock index="1" id="17" port="n" />
 		</line>
-		<room id="20" name="East Broadway" x="64" y="-32" w="96" h="64" description="" />
-		<room id="21" name="Inn of 7 Sorrows" x="64" y="64" w="96" h="64" description="" />
-		<room id="22" name="Cemetery" x="192" y="-32" w="96" h="64" description="" />
-		<line id="24">
+		<room id="20" name="East Broadway" subtitle="" x="64" y="-32" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="" />
+		<room id="21" name="Inn of 7 Sorrows" subtitle="" x="64" y="64" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="" />
+		<room id="22" name="Cemetery" subtitle="" x="192" y="-32" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="" />
+		<line id="24" name="" description="">
 			<dock index="0" id="1" port="e" />
 			<dock index="1" id="1" port="e" />
 		</line>
-		<line id="25">
+		<line id="25" name="" description="">
 			<dock index="0" id="21" port="n" />
 			<dock index="1" id="20" port="s" />
 		</line>
-		<line id="26">
+		<line id="26" name="" description="">
 			<dock index="0" id="13" port="e" />
 			<dock index="1" id="21" port="w" />
 		</line>
-		<line id="27">
+		<line id="27" name="" description="">
 			<dock index="0" id="8" port="s" />
 			<dock index="1" id="16" port="n" />
 		</line>
-		<room id="28" name="Endora's Mansion" x="-320" y="-32" w="96" h="64" description="" />
-		<line id="29">
+		<room id="28" name="Endora's Mansion" subtitle="" x="-320" y="-32" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="" />
+		<line id="29" name="" description="">
 			<dock index="0" id="28" port="e" />
 			<dock index="1" id="16" port="w" />
 		</line>
-		<room id="10" name="South Gate" x="-64" y="160" w="96" h="64" description="" />
-		<line id="11">
+		<room id="10" name="South Gate" subtitle="" x="-64" y="160" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="" />
+		<line id="11" name="" description="">
 			<dock index="0" id="10" port="n" />
 			<dock index="1" id="13" port="s" />
 		</line>
-		<line id="19">
+		<line id="19" name="" description="">
 			<dock index="0" id="13" port="w" />
 			<dock index="1" id="17" port="e" />
 		</line>
-		<line id="23">
+		<line id="23" name="" description="">
 			<dock index="0" id="20" port="e" />
 			<dock index="1" id="22" port="w" />
 		</line>
-		<line id="30" style="dashed" startText="down" midText="To the Jail" endText="up">
+		<line id="30" name="" description="" style="dashed" startText="down" midText="To the Jail" endText="up">
 			<dock index="0" id="8" port="n" />
 			<point index="1" x="-160" y="-224" />
 		</line>
@@ -95,7 +95,11 @@
 			<smallText>MidnightBlue</smallText>
 			<lineText>MidnightBlue</lineText>
 			<grid>#F5F5F5</grid>
+			<startRoom>GreenYellow</startRoom>
 		</colors>
+		<regions>
+			<NoRegion Name="NoRegion" TextColor="Blue">White</NoRegion>
+		</regions>
 		<fonts>
 			<room size="13">Comic Sans MS</room>
 			<object size="11">Comic Sans MS</object>
@@ -118,11 +122,17 @@
 			<objectListOffset>4</objectListOffset>
 			<connectionStalkLength>32</connectionStalkLength>
 			<preferredDistanceBetweenRooms>64</preferredDistanceBetweenRooms>
+			<defaultRoomName>Cave</defaultRoomName>
 		</rooms>
 		<ui>
 			<handleSize>12</handleSize>
 			<snapToElementSize>16</snapToElementSize>
 		</ui>
+		<margins>
+			<documentSpecific>no</documentSpecific>
+			<horizontal>0</horizontal>
+			<vertical>0</vertical>
+		</margins>
 		<keypadNavigation>
 			<creationModifier>control</creationModifier>
 			<unexploredModifier>alt</unexploredModifier>
