@@ -124,7 +124,7 @@ me: Actor
     bulkCapacity = 3000 
     minBulk = 1 
     
-    iobjFor(PutIn)
+    dobjFor(PutIn)
     {
     }
            isWornBy(me) 
@@ -137,10 +137,12 @@ me: Actor
 +TouristGuide: Readable
     'tourist guide'
     'leather bound guide'
-    "<img src=\"Leather_Bound_Guide_Book.jpg\" align=\"top\" width=\"200\" height=\"133\">A small leather bound book with fadded printing on the cover..."
+    
     weight = 1
     bulk = 1
-    readDesc = "<font face=\"Old English Text MT\" color=\"#888888\" size=5><center>A Tourist\'s Guide<br>To<br>Our Town
+    desc = "A small leather bound book with fadded printing on the cover..."
+    readDesc = "<hr/><img src=\"Leather_Bound_Guide_Book.jpg\" align=\"top\" width=\"200\" height=\"133\">
+        <font face=\"Old English Text MT\" color=\"#888888\" size=5><center>A Tourist\'s Guide<br>To<br>Our Town
         <br><br><font size=4>Everything you need to know
         <br>in order to survive...almost!</font></center>  
         <br><font size=4><center>Feel free to wander around and get to know the town. 

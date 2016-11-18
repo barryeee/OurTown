@@ -15,24 +15,28 @@
  */
     
 SouthGate: OutdoorRoom 
-    
+        
         roomName = '<font color="#00ff00">South Gate</font>'
         desc = "<img src=\"southgate.jpg\" align=\"top\" width=\"200\" height=\"133\">The southern entrance/exit to Our Town. 
             There is a beautiful golden gate here."
+    isKnown = true
     
     north = SouthMainStreet
     south = SouthernGate 
-   
+  
+
 ;
 
+
 + SouthernGate: LockableWithKey, Door
-    
-'Southern Gate'
-'Southern Gate'
+    'Southern Gate'
+    'SouthernGate'
     
         desc =  "<img src=\"southern_gate.jpg\" align=\"left\" width=\"200\" height=\"133\"><p>The southern gate is made of well crafted gold colored iron. There is also a gold-plated lock. It appears to have 
             the letter 'S' engraved on it. Unfortunately, the Southern Gate has been locked for years. Some one lost the key and it has 
             never been found, at least not yet!</p>"
+        isKnown = true   
+    
     north = SouthGate
     south = SouthExit
     

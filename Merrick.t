@@ -16,6 +16,7 @@
 Merrick: Hidden, Person 'Merrick' ' Arch Nemesis of Endora, Merrick' @EndorasMansion
     "Endora's ruggedly handsome former lover/present arch nemesis."
     isHim = true 
+    isKnown = true
     properName = 'Merrick'   
     deathMsg = "<p>'Good Luck in your future endevours. She's all yours now...'</p>"
 ;

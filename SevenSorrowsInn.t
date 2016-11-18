@@ -7,7 +7,8 @@
 -- 9/20/2016 Created OldWoodenBar. It's function is to hold the MetalLockBox. MR
 -- 9/20/2016 Created MetalLockBox. It will hold the goldKey. MR
 -- 9/20/2016 Created goldKey. It's function is to unlock the SouthernGate. MR
--- 9/20/2016 Created silver key. It's function is to unlock MetalLockBox. MR    
+-- 9/20/2016 Created silver key. It's function is to unlock MetalLockBox. MR 
+    11/14/2016 Set silverKey to hidden and set location to BelowTheTomb. MR (Key should be made visible and given to player upon completion of quests)
  */
 SevenSorrowsInn: Room 
     roomName = '<font color="#008800">Seven Sorrows Inn</font>'
@@ -64,8 +65,8 @@ SevenSorrowsInn: Room
     location = MetalLockBox
 ;
 
-++silverKey: Key  //Key to open the MetalLockBox @ SevenSorrowsInn
+++silverKey: Key, Hidden //Key to open the MetalLockBox @ SevenSorrowsInn
     'silver key' 'silver key'
     desc = "The key is made of silver. Other than that there seems to be nothing special about it.."
-    location = OldWoodenBar
+    location = BelowtheTomb
 ;
