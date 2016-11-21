@@ -15,7 +15,6 @@
 -v
 
 ##sources
--source OurTown
 -source Abyss
 -source BelowTheTomb
 -source blackknight
@@ -35,8 +34,6 @@
 -source Outfitters
 -source redknight
 -source Scriptorium
--source SevenSorrowsInn
--source southexit
 -source southgate
 -source SouthMainStreet
 -source Tomb
@@ -48,6 +45,7 @@
 -source whiteknight
 -lib system
 -lib adv3/adv3
+-source OurTown
 
 -res
 GameInfo.txt

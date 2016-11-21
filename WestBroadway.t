@@ -22,7 +22,5 @@ WestBroadway: OutdoorRoom
  
 // The skeleton key, which unlocks Endora's Cellar, mistakenly dropped on West Broadway street
 + skeletonKey: Key 'skeleton key' 'skeleton key' 
-    desc = "<img src=\"skeletonkey.jpg\" width=\"100\" height=\"50\">A key has been dropped on the ground in the haste of its owner\'s departure. The key is constructed of wrought iron. A generic, all purpose, skeleton key. 
-    The story told by its appearance is outweighed by the vibe emanating from the seemingly simple object."
-    bulk = 1
+    "A key has been dropped on the ground in the haste of its owner\'s departure. The key is constructed of wrought iron. A generic, all purpose, skeleton key. The story told by its appearance is outweighed by the vibe reverberating from the seemingly simple object."
 ;

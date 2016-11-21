@@ -15,7 +15,6 @@
  *    11/19/2014 Added code for AttackWith verb to allow basic combat with player. BE
  *    11/24/2014 Added death message property for indiviualized messages. BE
  *    12/15/2014 Changed sightPrsence property on black scroll to visible when knight stands up. BE
- *    10/31/2016 Added ActorState causing knight to follow player after and initial attack. BE
  */
 
 
@@ -49,40 +48,9 @@ blackKnight: Person 'black knight' 'black knight'
                 "<<properName>>, the <<name>> rises from the crypt and prepares to meet your attack with his mighty sword made of black onyx.<br>";
                 moveIntoForTravel(BelowtheTomb);
                 blackScroll.sightPresence = true;
-                setCurState(blackKnightHostile);
             }
         }
-        action() 
-        { 
-         "<br>The black knight attacks and  ";
-            if (rand(blackKnight.accuracy) > rand(me.dexterity)) 
-            {
-                " scores a hit against your pathetic body!";
-                me.health = me.health - rand(blackKnight.strength + blackKnight.damage);
-            }
-            else { "misses.";}
-            //Check player health to see if he/she is still alive
-            if (me.health <= 0)
-            {
-                "<br/>Alas, your opponent has struck a fatal blow.<br/>Your body falls limply to the ground.<br/>";
-                finishGameMsg(ftDeath, finishOptionFullScore);
-            }
-        }
+        action() { }
     }
     
 ;
-//
-
-+blackKnightFriendly: ActorState
-    isInitState = true
-//    specialDesc = "{The bob/he} is standing in the street, looking in a shop
-//    window. "
-//    stateDesc = "He's looking in a shop window. "
-;
-
-+blackKnightHostile  : AccompanyingState 
-  specialDesc = "The black knight is standing beside you. " 
-  stateDesc = "He's standing beside you. " 
-  accompanyTravel(leadActor, conn)  
-    { return leadActor == gPlayerChar; } 
-; 

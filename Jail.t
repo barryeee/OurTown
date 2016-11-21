@@ -11,7 +11,6 @@
  * 10/07/2014 Changed Description. 
  *      Merged in room description from Jail Cellar written by Grayson Leigh. BE
  * 10/28/2014 Added Stone Steps up to town hall. BE
- * 02/09/2015 Removed acheivement points and addded simple smell. BE
  */
 
 Jail: Room
@@ -46,16 +45,10 @@ Jail: Room
         {
         if (rustyKey.location == me)
         {
-        
+        achievement.awardPointsOnce();
+        }
         inherited;
         }
-        else 
-        {
-            "I think you might need someting with which to unlock the door.";
-        }
 }
-}
-;
-+ SimpleOdor 'damp/musty smell' 'musty smell'
-    "The air has a distinctly damp smell, reminiscent of a place without adequate ventilation.  "
-;
+    achievement : Achievement { +3 "unlocking the Cell Door" }
+    ;
