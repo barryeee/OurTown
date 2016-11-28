@@ -142,14 +142,38 @@ me: Actor
     bulk = 1
     desc = "A small leather bound book with fadded printing on the cover..."
     readDesc = "<hr/><img src=\"Leather_Bound_Guide_Book.jpg\" align=\"top\" width=\"200\" height=\"133\">
-        <font face=\"Old English Text MT\" color=\"#888888\" size=5><center>A Tourist\'s Guide<br>To<br>Our Town
+        <font face=\"Old English Text MT\" color=\"#666666\" size=5><center>A Tourist\'s Guide<br>To<br>Our Town
         <br><br><font size=4>Everything you need to know
         <br>in order to survive...almost!</font></center>  
         <br><font size=4><center>Feel free to wander around and get to know the town. 
         <br>Keep an eye out for Mr. Jingles. He can be quite helpful!</font></center> 
-        <br><br><font face=\"Old English Text MT\" color=\"#888888\" size=3><center>Your goal<br>should you accept it<br>is to complete a series of dangerous quests<br> 
+        <br><br><font face=\"Old English Text MT\" color=\"#666666\" size=3><center>Your goal<br>should you accept it<br>is to complete a series of dangerous quests<br> 
         that will reward you with treasures and tokens.<br>These items will allow you to unlock new quests. Once the quests are complete<br>
         you will be given a special gift to unlock your freedom.</font></center>
-        <br><br><font face=\"Old English Text MT\" color=\"#888888\" size=5><center>*Happy Hunting*</font></center></font>"
+        <br><br><font face=\"Old English Text MT\" color=\"#666666\" size=5><center>*Happy Hunting*</font></center></font>
+    
+        <br><br><br><font size=5><center><br><br>Basic Instructions</center><br><br>
+         <font size=4>You (the main character) are located in the Town Square at the onset of the game. Your current location appears in the uppermost left corner of the screen, underneath are the available exits. 
+        The prompt (>) is waiting for your instruction in the form of a direction to move or a verbal command. Press the Enter key after entering your instruction<br><br>
+         A. Moving Around<br><br>
+        Moving around in the game involves entering very basic directions (Cardinal Directions) North, South, East, West and Up or Down at the command prompt. Acronyms may be used in place of the direction name as follows:
+        <br><br>North:  N
+        <br>South:  S
+        <br>East:   E
+        <br>West:   W
+        <br><br>Northeast, Southeast, Southwest and Northwest (Primary InterCardinal Directions) may possibly be used.
+        <br><br>B. Basic Commands<br><br>
+        Basic commands involve the use of a verb in order to act upon an object, for example:
+          <br>\"take the ornate key\". 
+        <br>Examples of some basic command verbs are:  take, drop, look, read, unlock, open…
+        As the player you can take it a step further by acting upon an object with an object, for example:
+          <br>\"unlock the gate with the ornate key\".
+        <br>The \"Quit\" command allows you to leave the game.
+        Use your imagination; try anything, however, pay close attention to your surroundings.
+        <br><br>C. Interaction with NPCs (Non Playing Characters)
+        <br><br>Some NPC's are conversational and can be spoken to and respond back. To speak to NPCs you can use: 
+        <br>talk to, hello, ask about, give to, show to, or even, yes or no.
+        <br>Other NPCs are invoked by the use of special verbs or spells. These are usually learned as game play progresses.
+        <font>"
     location = LeatherPouch
  ;
