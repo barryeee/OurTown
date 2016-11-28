@@ -26,11 +26,11 @@
     desc = "<hr/><img src=\"mrJingles.jpg\" width=\"150\" height=\"150\" align=\"top\">
         </p>Just an ordinary looking rat, but he seems like he wants to talk?"
     bulk = 2
-    location = TownSquare
+    location = JailCell
     destination = AccompanyingState
     isHim = true
     dexterity = 10
-    globalParamName = 'rat'
+    globalParamName = 'Mr.Jingles'
     properName = 'Mr.Jingles'
     
 
@@ -53,7 +53,7 @@
        if (mrJingles.isHim)
         {
             moveIntoForTravel(LeatherPouch);
-                   
+               
             setCurState(mrJinglesDiscovered);
                 
         }
@@ -72,9 +72,11 @@
 //Once discovered mrJingles will accompany player
 +mrJinglesDiscovered : AccompanyingState
   specialDesc = " Mr. Jingles is accompanying you. " 
-  stateDesc = " Mr. Jingles is with you. " 
+  stateDesc = " Mr. Jingles is with you. "
+   
   accompanyTravel(leadActor, conn)  
     { return leadActor == gPlayerChar; } 
+    
     arrivingTurn() { mrJingles.initiateTopic(mrJingles.getOutermostRoom); } 
 
 ;
@@ -117,7 +119,7 @@
         
     '<font color=\'#000088\'><q>I hope you don\'t mind if I tag along with you.</q></font>',
         
-    '<font color=\'#000088\'><q>You can ask me about things.</q><q>I know a lot about this town.</q></font>',
+    '<font color=\'#000088\'><q>You can ask me about things. I know a lot about this town.</q></font>',
         
     '<font color=\'#000088\'><q>It is nice to finally have someone to talk to.</q></font>',
     
