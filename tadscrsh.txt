@@ -1,0 +1,2 @@
+exc_handler = 00638ae0
+CS:EIP = 0000001b:005c020e

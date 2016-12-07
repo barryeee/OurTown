@@ -16,7 +16,8 @@
 HighCathedral: Room 
     roomName = '<font color="#880000">High Cathedral</font>'
     destName = '<font color="#880000">High Cathedral</font>'
-    desc = "<table><tr><td><img src=\"cathedral2.jpg\" width=\"145\" height=\"200\" ></td><td>As your eyes adjust to the dim lighting, you notice that you are in a temple of very modest interior proportions. 
+    desc = "<table><tr><td><img src=\"cathedral2.jpg\" width=\"145\" height=\"200\" ></td>
+        <td>As your eyes adjust to the dim lighting, you notice that you are in a temple of very modest interior proportions. 
         Before you lies the gilded High Altar. 
         You are surrounded by stone statues of all kinds, some beautiful, some hideous.
         There is a notice attached to the wall.</td></tr></table>"
@@ -29,7 +30,8 @@ HighCathedral: Room
  +AngelStatue: Thing 
     name = 'Angel Statue'
     vocabWords = 'angel/statue'
-    desc = "<table><tr><td><img src=\"angel.jpg\"width=\"150\" height=\"200\"></td><td>You see a large statue, apparently carved from granite. It appears to be ancient, showing signs of severe weathering.</td></tr></table>"
+    desc = "<table><tr><td><img src=\"angel.jpg\"width=\"150\" height=\"200\"></td>
+        <td>You see a large statue, apparently carved from granite. It appears to be ancient, showing signs of severe weathering.</td></tr></table>"
     location = HighCathedral
     weight = 1000
      actionDobjFeel

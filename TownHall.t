@@ -12,6 +12,7 @@
 -- 10/29/2014 Added eventlist to steps, 1 in 3 trips ends in death. BE
 -- 02/09/2015 Added image of descending stairs to jail. BE
 -- 02/23/2015 BE Added floor description to the room.
+*       04/01/2015 Removed exit south to West Broadway. BE
 *	09/15/2016 added bell sound to ring verb. BE
 */     
 TownHall: Room 
@@ -26,7 +27,6 @@ TownHall: Room
     east = NorthMainStreet
     down = StoneStepsDown
     north = StoneStepsDown
-    south = WestBroadway
     roomParts = static inherited -defaultFloor +townhallFloor
 ;
 
@@ -38,15 +38,15 @@ TownHall: Room
   [ 
     new function 
     { 
-      "<p><h1><img src=\"stonestepsdown.jpg\" height=\"200\" width=\"100\"></h1>You desend a long flight of narow, well-worn stone steps. <br>
+      "table><tr><td><img src=\"stonestepsdown.jpg\" height=\"200\" width=\"100\"></td><td>You desend a long flight of narow, well-worn stone steps. <br>
       The steps are damp and covered with slime, making them treacherous to navigate.<br>
       Unfortunately, the shoes your are wearing are not up to the task.<br>
-      You slip and fall down the stairs, breaking your neck when you land at the bottom.</p>";
+      You slip and fall down the stairs, breaking your neck when you land at the bottom.</td></tr></table>";
        finishGameMsg(ftDeath, finishOptionFullScore);
     }, 
-    '<p><h1><img src=\"stonestepsdown.jpg\" height=\"200\" width=\"100\"></h1>You descend the steps to the Jail. </p>',
-    '<p><h1><img src=\"stonestepsdown.jpg\" height=\"200\" width=\"100\"></h1>You desend a long flight of narow, well-worn stone steps. <br>
-      The steps are damp and covered with slime, making them treacherous to navigate.'
+    '<table><tr><td><img src=\"stonestepsdown.jpg\" height=\"200\" width=\"100\"></td><td>You descend the steps to the Jail. </td></tr></table>',
+     '<table><tr><td><img src=\"stonestepsdown.jpg\" height=\"200\" width=\"100\"></td><td>You descend a long flight of narow, well-worn stone steps. <br>
+      The steps are damp and covered with slime, making them treacherous to navigate.</td></tr></table>'
   ]   
 
  ;

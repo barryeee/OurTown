@@ -2,6 +2,7 @@
 #include <adv3.h>
 #include <en_us.h>
 /* 
+*
  *   Books.t *8 Author: Barry Eichelberger 
 * Date: 12-04-2014 
 * Desc: A basic model for all things readable which end up in the Scriptorium. 
@@ -55,10 +56,9 @@ blackScroll: Book
     
    
    
-    readDesc = "<hr><p> <center><font face='Segoe Script' color=\"#8A4B08\"> <font size=7>The War of
-    Conquest</font><br><br> <font size=5>Being a History of the conflict<br> between
-    the Four Elemental Knights<br> and<br> The Witch
-    Endora</font></font></center> </p><hr>"
+    readDesc = "<hr><table background=\"parchment.jpg\"><tr><td> <center><font face='Segoe Script' color=\"#8A4B08\"> 
+    <font size=7>The War of Conquest</font><br><br> <font size=5>Being a History of the conflict<br> between
+    the Four Elemental Knights<br> and<br> The Witch Endora</font></font></center></td></tr></table><hr>"
     
    
 ;

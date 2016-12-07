@@ -13,8 +13,10 @@ SouthMainStreet: OutdoorRoom
     
     roomName = '<font color="#00ff00">South Main Street</font>'
     destName = '<font color="#00ff00">South Main Street</font>'
-    desc = "<hr/>This is south extenstion of Main Street. 
-            To the West is Ollie's Outfitters, to the East is the Seven Sorrows Inn and to the South is the South Gate, the southern exit of Our Town."
+      desc = "<table><tr><td><img src=\"southmainstreet.jpg\" width=\"200\" height=\"150\"></td><td>This is south end of Main Street. 
+            To the West is Ollie's Outfitters, 
+        to the East is the Seven Sorrows Inn, 
+        and to the South is the South Gate, the southern exit of Our Town.</td></tr></table>"
     
     north = TownSquare
     east = SevenSorrowsInn

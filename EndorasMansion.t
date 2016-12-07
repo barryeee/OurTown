@@ -10,7 +10,7 @@
 *       11/04/2016 added Cellar Door. LS
 *       12/03/2014 added Book of Shadows to Merrick's personal belongings. added to the Pull verb in re the Summoning Rope and the Open verb to the Cellar Door.LS
 *       09/15/2016 added synonym to Cellar Door for ease of use. BE
-
+*       04/08/2015 made minor change to summoning message. BE
 */
 
 EndorasMansion: Room
@@ -46,13 +46,13 @@ EndorasMansion: Room
             if (!Endora.discovered && !Merrick.discovered)
             {           
                 Endora.discover();          
-                "<p>From deep inside the mansion you hear the unpleasant cackling of an angry witch. You have summoned Endora, the Wicked Witch of West Broadway. Look upon her at your own behest.</p>"; 
+                "<p>From deep inside the mansion you hear the unpleasant cackling of an angry witch. You have summoned Endora, the Wicked Witch of West Broadway. Look upon her at your own peril.</p>"; 
             }
             // if Endora has been summoned and is still in the mansion and Merrick has been set loose Endora "dies" (sent to the abyss)
             else if (!Endora.discovered && Merrick.discovered && Endora.location != theAbyss)
             {
                 Endora.discover();                
-                "<p>From deep inside the mansion you hear the unpleasant cackling of an angry witch. You have summoned Endora, the Wicked Witch of West Broadway. Look upon her at your own behest.</p>"; 
+                "<p>From deep inside the mansion you hear the unpleasant cackling of an angry witch. You have summoned Endora, the Wicked Witch of West Broadway. Look upon her at your own peril.</p>"; 
            
                 "<p>\"Merrick! Who released you?\" states a very suprised Endora.</p>";          
             }                   

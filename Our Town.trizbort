@@ -56,10 +56,6 @@
 			<dock index="0" id="13" port="e" />
 			<dock index="1" id="21" port="w" />
 		</line>
-		<line id="27" name="" description="">
-			<dock index="0" id="8" port="s" />
-			<dock index="1" id="16" port="n" />
-		</line>
 		<room id="28" name="Endora's Mansion" subtitle="" x="-320" y="-32" w="96" h="64" region="NoRegion" handDrawn="yes" allcornersequal="no" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="0" cornerTopRight="0" cornerBottomLeft="0" cornerBottomRight="0" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSmallText="" />
 		<line id="29" name="" description="">
 			<dock index="0" id="28" port="e" />
@@ -82,6 +78,22 @@
 			<dock index="0" id="8" port="n" />
 			<point index="1" x="-160" y="-224" />
 		</line>
+		<room id="31" name="Tomb" x="192" y="64" w="96" h="64" description="" />
+-		<line id="32">
+-			<dock index="0" id="22" port="s" />
+-			<dock index="1" id="31" port="n" />
+-		</line>
+-		<line id="33" style="dashed" startText="up" midText="Below the Tomb" endText="down">
+-			<dock index="0" id="31" port="s" />
+-			<point index="1" x="256" y="192" />
+-		</line>
+-		<room id="34" name="Scriptorium" x="64" y="-224" w="96" h="64" description="">
+-			<objects at="ne">Desk|Globe|Shelves|</objects>
+-		</room>
+-		<line id="35" style="dashed">
+-			<dock index="0" id="34" port="s" />
+-			<dock index="1" id="6" port="n" />
+-		</line>
 	</map>
 	<settings>
 		<colors>

@@ -18,9 +18,8 @@
 Scriptorium: Room
     roomName = '<font color="#008800">Scriptorium</font>'
     destName = '<font color="#008800">Scriptorium</font>'
-    desc = "<img src=\"scriptorium.jpg\" width=\"200\" height=\"150\"> A windowless library, filled with shelves from floor to ceiling. 
-        Unfortunately, it looks as if the library has been looted, as there are few, if any volumes remaining on the shelves."
-
+   desc = "<table><tr><td><img src=\"scriptorium.jpg\" width=\"200\" height=\"150\"></td><td> A windowless library, filled with shelves from floor to ceiling. 
+       Unfortunately, it looks as if the library has been looted, as there are few, if any useful volumes remaining on the shelves.</td></tr></table>"
     south = HighCathedral
     roomParts = static inherited -defaultEastWall +scriptoriumEastWall -defaultWestWall +scriptoriumWestWall
          -defaultNorthWall +scriptoriumNorthWall -defaultSouthWall +scriptoriumSouthWall -defaultFloor +scriptoriumFloor
@@ -116,7 +115,7 @@ scriptoriumNorthWall: defaultNorthWall
    desc = "This wall is built of the same stone as the rest of the cathedral. "
 ;
 scriptoriumSouthWall: defaultSouthWall
-   desc = "This wall is built of the same stone as the rest of the cathedral. The entrance door is set in the middle of that wall. "
+   desc = "This wall is built of the same stone as the rest of the cathedral. The entrance door is set in the middle of the wall. "
 ;
 scriptoriumFloor: Floor 'Scriptorium Floor' 'floor of the Scriptorium'
     desc="You see a stone floor made of limestone blocks, worn smooth by the passage many feet over the course of countless years. "
