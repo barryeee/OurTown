@@ -28,6 +28,7 @@
     bulk = 2
     location = JailCell
     destination = AccompanyingState
+    
     isHim = true
     dexterity = 10
     globalParamName = 'Mr.Jingles'
@@ -55,24 +56,26 @@
             moveIntoForTravel(LeatherPouch);
                
             setCurState(mrJinglesDiscovered);
-                
+               
         }
     }
   }
-    
+   
 
  getActor()
     {
-        if (location.ofKind(InConversationState))
+        if (location.ofKind(AccompanyingState))
             return location.getActor();
-        else
-            return location;
+        
+          else return location.getActor;
     }
 ;
+
 //Once discovered mrJingles will accompany player
 +mrJinglesDiscovered : AccompanyingState
-  specialDesc = " Mr. Jingles is accompanying you. " 
-  stateDesc = " Mr. Jingles is with you. "
+    
+    specialDesc = ' Mr. Jingles is accompanying you. ' 
+    stateDesc = ' Mr. Jingles is with you. '
    
   accompanyTravel(leadActor, conn)  
     { return leadActor == gPlayerChar; } 

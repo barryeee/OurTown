@@ -17,8 +17,8 @@
 SouthGate: OutdoorRoom 
         
         roomName = '<font color="#00ff00">South Gate</font>'
-      desc = "<table><tr><td><img src=\"southgate.jpg\" width=\"200\" height=\"133\"></td><td>The southern entrance/exit to Our Town. 
--            There is a beautiful golden gate here.</td></tr></table>"
+        desc = "<img src=\"southgate.jpg\" align=\"top\" width=\"200\" height=\"133\">The southern entrance/exit to Our Town. 
+            There is a beautiful golden gate here."
     isKnown = true
     
     north = SouthMainStreet

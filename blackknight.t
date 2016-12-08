@@ -14,16 +14,16 @@
  *    11/12/2014 Added a gender value so pronouns are used correctly. BE
  *    11/19/2014 Added code for AttackWith verb to allow basic combat with player. BE
  *    11/24/2014 Added death message property for indiviualized messages. BE
- *    12/15/2014 Changed sightPresence property on black scroll to visible when knight stands up. BE
+ *    12/15/2014 Changed sightPrsence property on black scroll to visible when knight stands up. BE
  *    10/31/2016 Added ActorState causing knight to follow player after and initial attack. BE
  */
 
 
     
 blackKnight: Person 'black knight' 'black knight'  
-    "<table><tr><td><img src=\"blackknight.jpg\" height=\"200\" width=\"142\"></trd><td>A fierce-looking warrior, outfitted in gleaming black armor of unknown
+    "A fierce-looking warrior, outfitted in gleaming black armor of unknown
     material. Although he has been dead for centuries, he has suffered no
-    decay. He looks as though he could be sleeping. </td></tr></table>"
+    decay. He looks as though he could be sleeping. "
     disambigName = 'black knight'
     posture = lying
     location = graniteCrypt

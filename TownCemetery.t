@@ -31,8 +31,6 @@ Maintenance Log--------------
 */
     
 + CemeteryGate2: LockableWithKey, Door ->CemeteryGate 'gate' 'gate' 
-    desc = "A black steel gate hulks before you, creaking in the wind.        
-            The gate is secured with an ornate lock."
     keyList = [ornateKey]
 	  
  
