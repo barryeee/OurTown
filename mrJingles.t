@@ -52,9 +52,7 @@
      check() 
     {
        if (mrJingles.isHim)
-        {
-            moveIntoForTravel(LeatherPouch);
-               
+        {               
             setCurState(mrJinglesDiscovered);
                
         }
@@ -74,8 +72,8 @@
 //Once discovered mrJingles will accompany player
 +mrJinglesDiscovered : AccompanyingState
     
-    specialDesc = ' Mr. Jingles is accompanying you. ' 
-    stateDesc = ' Mr. Jingles is with you. '
+    specialDesc = " Mr. Jingles is accompanying you. " 
+    stateDesc = " Mr. Jingles is with you. "
    
   accompanyTravel(leadActor, conn)  
     { return leadActor == gPlayerChar; } 
@@ -116,8 +114,8 @@
 //Random conversation for mrJingles 
 + HelloTopic, EventList 
     [
-    '<font color=\'#000088\'>The rat climbs onto your pouch...<br>   
-     He looks up at you. <q>Hello, I am
+    '<font color=\'#000088\'>The rat looks up at you.<br>   
+     He says, <q>Hello, I am
      <<mrJingles.makeProper('Mr.Jingles')>> .</q></font>',
         
     '<font color=\'#000088\'><q>I hope you don\'t mind if I tag along with you.</q></font>',

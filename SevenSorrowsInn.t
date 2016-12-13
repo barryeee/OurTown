@@ -9,12 +9,14 @@
 -- 9/20/2016 Created goldKey. It's function is to unlock the SouthernGate. MR
 -- 9/20/2016 Created silver key. It's function is to unlock MetalLockBox. MR 
     11/14/2016 Set silverKey to hidden and set location to BelowTheTomb. MR (Key should be made visible and given to player upon completion of quests)
+	12/12/2016 changed image alignment to top to accomidate text at maximum screen size. MR
  */
 SevenSorrowsInn: Room 
     roomName = '<font color="#008800">Seven Sorrows Inn</font>'
     destName = '<font color="#008800">Seven Sorrows Inn</font>'
     desc = "<table>
-        <tr><td><img src=\"sevensorrowsinn.jpg\" height=\"150\" width=\"200\" align=\"left\"></td><td>A run-down inn of questionable quality. You can order a beverage or a meal, if you desire. 
+        <tr><td><img src=\"sevensorrowsinn.jpg\" height=\"150\" width=\"200\" align=\"top\"></td><td> 
+        A run-down inn of questionable quality. You can order a beverage or a meal, if you desire. 
         You can even rent a room for the night ... if you have enough gold.</td></tr></table>"
 
     
