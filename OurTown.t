@@ -52,6 +52,8 @@ versionInfo: GameID
         "<br>BV - Brian Vorwald, Fall 2013";
         "<br>GL - Grayson Leigh, Fall 2013";
         "<br>LS - Laurie Starr, Fall 2014";
+        "<mr>MR - Mitch Roberts, Fall 2016";
+        "<aw>AW - Andy Wichell, Fall 2016";
         /* 
          *   The game credits are displayed first, but the library will
          *   display additional credits for library modules.  It's a good
@@ -87,6 +89,8 @@ gameMain: GameMainDef
     {
         "<p><br/><br/><br/><br/><br/><br/><br/>
         <h1><font color=\"yellow\">Welcome to...<br /><br /></font></h1>";
+   
+          
         "<center><img src=\"OurTown.png\"></center><br>";
         
         "It's a quirky little place, with unexpected characters showing up all the time.<br>";

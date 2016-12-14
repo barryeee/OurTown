@@ -9,8 +9,8 @@
 EastBroadway: OutdoorRoom 
     roomName = '<font color="#00ff00">East Broadway</font>'
     destName = '<font color="#00ff00">East Broadway</font>'
-    desc = "<hr/>a bricked-paved street which leads to the Seven Sorrows Inn on
-        the South, the Cemetery Gate, leading to the Town Cemetery on the east and the Town Square on the West."
+    desc = "<table><tr><td><img src=eastbroadway.jpg height=\"100\" width=\"200\" align=\"top\"></td><td>A bricked-paved street which leads to the Seven Sorrows Inn on
+        the South, the Cemetery Gate, leading to the Town Cemetery on the east and the Town Square on the West.</td></tr><table>"
 
     west = TownSquare
     east = CemeteryGate
