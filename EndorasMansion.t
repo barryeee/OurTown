@@ -16,7 +16,12 @@
 EndorasMansion: Room
     name = '<font color="#880000">Endora\'s Mansion</font>'
     vocabWords = 'mansion'    
-    desc = "<p>An expansive/decrepit Victorian Era Mansion. Void of any paint and surrounded by brambles and briars.. Inside the mansion the sun bounces dusty rays off ornate, antique furnishings. To the north you can barely make out the shape of a door.</p>"
+    roomDesc  { "<table>
+        <tr><td><img src=\"endorasMansion.jpg\" width=\"200\" height=\"100\" align=\"top\"></td><td><p>
+            An expansive/decrepit Victorian Era Mansion. Void of any paint and surrounded by brambles and briars.. Inside the mansion the sun bounces dusty rays off ornate, antique furnishings. 
+            To the north you can barely make out the shape of a door.</p</td></tr></table>";
+        "<br />";       
+    } 
     
     east = WestBroadway
    // north = CellarDoor

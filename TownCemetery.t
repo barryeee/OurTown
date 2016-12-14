@@ -13,10 +13,13 @@ Added Header Comments
 TownCemetery: OutdoorRoom 
 	name = '<font color="#00ff00">The Town Cemetery</font>'
 	vocabWords = 'cemetery'
-	desc = "You peer around and see various tombstones, highlighting memories of years gone by. 
+	roomDesc  { "<table>
+            <tr><td><img src=\"Cemetery.jpg\" width=\"200\" height=\"200\" align=\"top\"></td><td>You peer around and see various tombstones, highlighting memories of years gone by. 
             Many of these poor victims of life are forgotten by the cold steel gate. 
             Some names worn off the gravestones, broken and split marble dismember the rest. 
-            To the south, at the edge of the graveyard, you see a tomb. And to the northwest, the towering cathedral sits amongst dead grass, and cracked steps."
+            To the south, at the edge of the graveyard, you see a tomb. And to the northwest, the towering cathedral sits amongst dead grass, and cracked steps.</td></tr></table>";
+        "<br />";       
+    } 
     south = Tomb
    
    west = CemeteryGate2
