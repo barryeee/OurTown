@@ -124,7 +124,8 @@ me: Actor
     'leather pouch'
     'leather pouch'
     
-    "<img src=\"Leather_Pouch.jpg\" align=\"top\" width=\"200\" height=\"133\">You have a leather pouch draped over your shoulder. "
+    "<table><tr><td><img src=\"Leather_Pouch.jpg\" align=\"top\" width=\"200\" height=\"133\" align=\"top\">
+    You have a leather pouch draped over your shoulder. </td></tr></table>"
     bulkCapacity = 3000 
     minBulk = 1 
     
@@ -145,8 +146,8 @@ me: Actor
     weight = 1
     bulk = 1
     desc = "A small leather bound book with fadded printing on the cover..."
-    readDesc = "<hr/><img src=\"Leather_Bound_Guide_Book.jpg\" align=\"top\" width=\"200\" height=\"133\">
-        <font face=\"Old English Text MT\" color=\"#666666\" size=5><center>A Tourist\'s Guide<br>To<br>Our Town
+    readDesc = "<table><tr><td><img src=\"Leather_Bound_Guide_Book.jpg\" align=\"top\" width=\"200\" height=\"133\"></td>
+        <td><font face=\"Old English Text MT\" color=\"#666666\" size=5><center>A Tourist\'s Guide<br>To<br>Our Town
         <br><br><font size=4>Everything you need to know
         <br>in order to survive...almost!</font></center>  
         <br><font size=4><center>Feel free to wander around and get to know the town. 
@@ -178,6 +179,6 @@ me: Actor
         <br><br>Some NPC's are conversational and can be spoken to and respond back. To speak to NPCs you can use: 
         <br>talk to, hello, ask about, give to, show to, or even, yes or no.
         <br>Other NPCs are invoked by the use of special verbs or spells. These are usually learned as game play progresses.
-        <font>"
+        <font> </td></tr></table>"
     location = LeatherPouch
  ;

@@ -21,9 +21,9 @@
 
     
 blackKnight: Person 'black knight' 'black knight'  
-    "A fierce-looking warrior, outfitted in gleaming black armor of unknown
+    "<table><tr><td><img src=\"blackknight.jpg\" height=\"100\" width=\"100\" align=\"top\"></td><td>A fierce-looking warrior, outfitted in gleaming black armor of unknown
     material. Although he has been dead for centuries, he has suffered no
-    decay. He looks as though he could be sleeping. "
+    decay. He looks as though he could be sleeping. </td></tr></table>"
     disambigName = 'black knight'
     posture = lying
     location = graniteCrypt

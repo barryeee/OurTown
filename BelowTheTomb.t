@@ -14,15 +14,17 @@
 -- Added Header Comments
 -- 10/23/2014 Changed the description. Stone crypts have replaced the wooden caskets. BE
 -- 11/03/2014 Added individual crpyts. BE
+    12/13/2016 Addeed image. BE
 
     -------------------------------*/
 
 
 BelowtheTomb: Room '<font color="#880000">Below the Tomb</font>'
-    "<hr/>You land in a dark cave, with the only light coming from the torches above.
+    "<table><tr><td><img src=\"belowtomb.jpg\" height=\"100\" width=\"200\" align=\"top\"></td><td>You land in a dark cave, with the only light coming from the torches above.
     Dimly lit, there does not appear to be a path. Instead, the flickering light
-    casts shadows against four stone crypts, which line the walls in front of you. The crypts lay
-    silent and ominous before you, aligned in a row against the south wall. One of the crypts lies open, with its lid laying on the floor ."
+    casts shadows against four stone crypts, which line the walls in front of you. 
+    The crypts lay silent and ominous before you, aligned in a row against the south wall. 
+    One of the crypts lies open, with its lid laying on the floor . </td></tr></table>"
 
    
     up = Tomb

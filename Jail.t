@@ -16,9 +16,9 @@
 
 Jail: Room
     name = '<font color="#008800">Jail</font>'
-    desc = "<hr/> A small, dank room with an unavoidable musk permeating the air.
+    desc = "<table><tr><td><img src=\"jail.jpg\" height=\"140\" width=\"200\" align=\"top\"></td><td>A small, dank room with an unavoidable musk permeating the air.
         The only light comes from a single, guttering torch. 
-        A wall of iron bars separate the northern half of the room from the rest, serving as a cramped cell."
+        A wall of iron bars separate the northern half of the room from the rest, serving as a cramped cell. </td></tr></table>"
 
     up = StoneStepsUp
     north = CellDoor
