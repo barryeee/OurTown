@@ -16,26 +16,27 @@
  *      11/17/2016      Added AskTopic for Endora. MR
  *      11/17/2016      Added InitiateTopic for SouthGate. MR
  *      11/17/2016      Changed font color for mrJingles responses to blue. MR
+ *      09/05/2017      Renamed character Jingles. Simplifed Accompanying routine. BE
  */
  
  
  //An NPC that can give you clues as you traverse the game
- mrJingles: Actor
+ jingles: Actor
     'rat'
     'rat'
     desc = "<hr/><img src=\"mrJingles.jpg\" width=\"150\" height=\"150\" align=\"top\">
         </p>Just an ordinary looking rat, but he seems like he wants to talk?"
     bulk = 2
     location = JailCell
-    destination = AccompanyingState
+   // destination = AccompanyingState
     
     isHim = true
     dexterity = 10
-    globalParamName = 'Mr.Jingles'
-    properName = 'Mr.Jingles'
-    
+    globalParamName = 'jingles'
+    properName = 'Jingles'
+    weight = 1000
 
-    //Make references to mrJingles use proper name instead of rat
+    //Make references to Jingles use proper name instead of rat
     makeProper(properName)   
     {      
         name = properName;      
@@ -45,45 +46,43 @@
     }
 
     
-    //Have mrJingles change state to discovered  
+    //Have Jingles change state to discovered  
       dobjFor(TalkTo)
   {
      verify() { }
-     check() 
-    {
-       if (mrJingles.isHim)
-        {               
-            setCurState(mrJinglesDiscovered);
-               
+     check() { }
+     action () 
+        {
+            setCurState(jinglesFollowing); 
+            inherited;
         }
-    }
+
   }
    
-
- getActor()
-    {
-        if (location.ofKind(AccompanyingState))
-            return location.getActor();
-        
-          else return location.getActor;
-    }
 ;
+ /*
+  *   getActor() { if (location.ofKind(AccompanyingState)) return
+  *   location.getActor();
+  *
+  *   else return location.getActor; }
+  ;*/
 
 //Once discovered mrJingles will accompany player
-+mrJinglesDiscovered : AccompanyingState
++jinglesFollowing : AccompanyingState
     
-    specialDesc = " Mr. Jingles is accompanying you. " 
-    stateDesc = " Mr. Jingles is with you. "
+    specialDesc = "Jingles is accompanying you. " 
+    stateDesc = "Jingles is with you. "
    
   accompanyTravel(leadActor, conn)  
     { return leadActor == gPlayerChar; } 
-    
-    arrivingTurn() { mrJingles.initiateTopic(mrJingles.getOutermostRoom); } 
+  getAccomapnyingTravelState (leadActor, conn)
+        { return new jinglesFollowing (location, leadActor, self);}
+   arrivingTurn() { jingles.initiateTopic(jingles.getOutermostRoom); } 
 
 ;
 
 
-//Mr.Jingles responses to ask about 
+//Jingles responses to ask about 
 + AskTopic @Merrick 
      
     "<font color='#000088'><q>What can you tell me about Merrick?</q> you ask. 
@@ -100,10 +99,10 @@
     <q>Some say she can not be defeated.</q></font>" 
     
 ;
-//Mr.Jingles initiates Topics for certain areas
+//Jingles initiates Topics for certain areas
 + InitiateTopic, EventList @SouthGate
     [ 
-        '<font color=\'#000088\'><q>Look at that beautiful gate!</q> Mr.Jingles declares. 
+        '<font color=\'#000088\'><q>Look at that beautiful gate!</q> Jingles declares. 
         <.p><q>I imagine the key is equally beautiful.</q>
         <.p><q>Someone took it years ago and hid it somewhere in town, so now we are stuck here.</q></font>'
     ] 
@@ -116,7 +115,7 @@
     [
     '<font color=\'#000088\'>The rat looks up at you.<br>   
      He says, <q>Hello, I am
-     <<mrJingles.makeProper('Mr.Jingles')>> .</q></font>',
+     <<jingles.makeProper('Jingles')>> .</q></font>',
         
     '<font color=\'#000088\'><q>I hope you don\'t mind if I tag along with you.</q></font>',
         
