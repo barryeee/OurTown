@@ -37,6 +37,22 @@ blackKnight: Person 'black knight' 'black knight'
     points = 10
     deathMsg = "The seemingly invincible knight suddenly turns to stone and crumbles to the ground, leaving a pile of fine sand behind."
     
+/*    
+ *   dobjFor (Appello) { verify () {} check () {} action () { "<<properName>>,
+ *   the <<name>> rises from the crypt and salutes you.<br>";
+ *   moveIntoForTravel(BelowtheTomb); blackScroll.sightPresence = true;
+ *   setCurState(blackKnightFriendly); }
+ *
+ *   }
+ */
+    
+    actionDobjAppello
+    {
+      "<<properName>>,
+   the <<name>> rises from the crypt and salutes you.<br>";
+    moveIntoForTravel(BelowtheTomb); blackScroll.sightPresence = true;
+    setCurState(blackKnightFriendly);
+    } 
     dobjFor (AttackWith)
     {
         verify() { }
@@ -69,7 +85,7 @@ blackKnight: Person 'black knight' 'black knight'
             }
         }
     }
-    
+   
 ;
 //
 
