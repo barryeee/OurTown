@@ -15,7 +15,8 @@
 -- 10/23/2014 Changed the description. Stone crypts have replaced the wooden caskets. BE
 -- 11/03/2014 Added individual crpyts. BE
     12/13/2016 Addeed image. BE
-
+-- 10/4/17 added doors that corespond to the directions 
+    -- 10/4/17 added a door for every knight
     -------------------------------*/
 
 
@@ -25,10 +26,13 @@ BelowtheTomb: Room '<font color="#880000">Below the Tomb</font>'
     casts shadows against four stone crypts, which line the walls in front of you. 
     The crypts lay silent and ominous before you, aligned in a row against the south wall. 
     One of the crypts lies open, with its lid laying on the floor . </td></tr></table>"
-
-   
-    up = Tomb
+north = redDoor
+south = greenDoor
+east = blackDoor  
+west = whiteDoor    
+ up = Tomb
 ;
+
 
 +graniteCrypt: Openable, Booth 'granite crypt' 'granite crypt'
     "It is an ancient crypt, carved out of a single piece of black granite. "
@@ -60,4 +64,14 @@ BelowtheTomb: Room '<font color="#880000">Below the Tomb</font>'
     weight = 10000
         material = adventium
 ;
+
++ redDoor: Door ->redEntryDoor 'door''door' "The wall behind the tomb slowly vanishes away opening up into a hallway";  
+   + blackDoor: Door ->blackEntryDoor 'door''door' "The wall behind the tomb slowly vanishes away opening up into a hallway";  
++ whiteDoor: Door ->whiteEntryDoor 'door''door' "The wall behind the tomb slowly vanishes away opening up into a hallway";  
++ greenDoor: Door ->greenEntryDoor 'door''door' "The wall behind the tomb slowly vanishes away opening up into a hallway";  
+
+
+   
+
+ 
 
