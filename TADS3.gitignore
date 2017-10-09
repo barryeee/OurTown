@@ -2,3 +2,9 @@
 debug/
 [Oo]bj/
 [wW]eb/
+
+#files to ignore
+*.t3m
+*.tbdconfig
+*.tbdconfig.old
+*.to
