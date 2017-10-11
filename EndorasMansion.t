@@ -10,7 +10,8 @@
 *       11/04/2016 added Cellar Door. LS
 *       12/03/2014 added Book of Shadows to Merrick's personal belongings. added to the Pull verb in re the Summoning Rope and the Open verb to the Cellar Door.LS
 *       09/15/2016 added synonym to Cellar Door for ease of use. BE
-
+*       09/13/2017 added Book of Summons to Merrick. MO SR
+*
 */
 
 EndorasMansion: Room
@@ -96,8 +97,9 @@ EndorasMansion: Room
             {
                 Merrick.discover();   
                 "<p>You have released Endora's long time prisoner, Merrick. The only soul capable of destroying Endora!</p>"; 
-                "<p>He hands you a book. \"Take this book to the Scriptorium and don't let Endora get it away from you.\"</p>";
+                "<p>He offers you two books, the Book of Shadows and the Book of Summons. \"Take these books to the Scriptorium and don't let Endora get them away from you.\"</p>";
                 BookofShadows.location = EndorasMansion;
+                BookofSummons.location = EndorasMansion;
                 if (Endora.location == EndorasMansion && Endora.discovered)
                 { 
                     "<p>\"Why Merrick, what a pleasant suprise.\" states a very nervous Endora.</p>";              

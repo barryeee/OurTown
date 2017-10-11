@@ -12,6 +12,7 @@
 *       12/16/2014 Added Book of Shadows LS
 *       02/23/2015 Modified font face and color for black and white scrolls.  BE
 *       09/27/2016 Added Scroll of Opening Spells. BE
+*       09/13/2017 Added Book of Summons. MO SR    
 */
 
 Book: Readable
@@ -100,6 +101,22 @@ BookofShadows: Book
     <p>IV. The White Knight</p>
     <p>V. The Green Knight</p>
     <p>VI. The Red Knight</p>
+    </font></center>"
+
+;
+
+BookofSummons: Book // This book tells you which verb to use to communicate with the knights.
+    'Book of Summons'
+    'Book of Summons'
+    @Merrick
+    "<p>Bound in worn, yellow leather a golden pentacle appears glowing on the cover.</p>"
+    destination = 'spells shelf'
+    readDesc = "<center><font face=\"Old English Text MT\" color=\"#C3C826\">
+    <h1><img src=\"star.png\"></h1>
+    <p>Book of Summons
+    <br>Forbidden Ritual<br/>
+    <br>The Four Elemental Knights<br/></p>
+    <p><br>Summon Knights by calling out \"Appello\" to them.<br/></p>
     </font></center>"
 
 ;
