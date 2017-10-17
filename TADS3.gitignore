@@ -8,4 +8,6 @@ debug/
 *.tbdconfig
 *.tbdconfig.old
 *.to
+*t3o
+*.cmd
 ###

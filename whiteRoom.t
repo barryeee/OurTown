@@ -17,20 +17,22 @@ whiteRoom : Room
         The white wallpaper looks worn.
         You see a door straight ahead</td></tr></table>"
 
-    east = BelowtheTomb
+    east = whiteDoor2
     west = whiteSwordRoom //room with sword west of the white room
 ;
     /*key to unlock the whiteDoor*/
     
-    whiteKey: Key 'white key' 'white key'
++    whiteKey: Key 'white key' 'white key'
     desc = "<table><tr><td><img src=\"whiteKey.jpg\" width=\"100\" height=\"66\"></td><td>The key is made of brass, old and tarnished.
         This key is used to unlocked the door straight in front of you.</td></tr></table>"
     bulk = 1
 ;
     /* The white Door is what is blocking you from finishing the quest. */
-    whiteDoor: LockableWithKey, Door
++    whiteSwordDoor: LockableWithKey, Door
         'White Door/door'
         'White Door'
         "<p>The door is worn and the paint is chipping</p>"
     keyList = [whiteKey]
 ;
++ whiteDoor2: Door ->whiteDoor  'door''door' 
+;  

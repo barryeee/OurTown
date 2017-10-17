@@ -76,27 +76,6 @@ TownHall: Room
 ;
 
     
-/* DEFINE A NEW VERB */
-    DefineTAction(Ring);
-    VerbRule(Ring) 'ring' singleDobj : RingAction verbPhrase = 'ring/ringing (what)'
-    ;
-
-/* When creating a new verb, you'll want to modify the Thing class so as to provide
-   default handling for the command. The defaults specified here will be used except
-   on objects for which you define explicit handling of the command. */
-   
-/*modify Thing
-    dobjFor(Ring)
-    {
-        preCond = [touchObj];
-        action() { mainReport(okayRingMsg); };        
-    }
-    
-    okayRingMsg = '{You/he} ring{s} {the dobj/him} but not much happens as a
-        result. '
-    
-    shouldNotBreakMsg = 'Only amateurs go round breaking things unnecessarily. '    
-    ;*/
 
 
 townhallFloor: Floor 'Town Hall Floor' 'floor of the Town Hall'
