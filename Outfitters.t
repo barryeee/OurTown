@@ -10,7 +10,7 @@
 */     
 Outfitters: Room 
     name = '<font color="#008800">Ollie\'s Outfitters</font>'
-    desc = "<hr/>You see an empty building, excepte for a few odds and ends left lying about.
+    desc = "<hr/>You see an empty building, except for a few odds and ends left lying about.
         It is obvious that this place has been unused for quite some time."
     
     east = SouthMainStreet
@@ -42,4 +42,10 @@ Outfitters: Room
     weight = 1000 //it is too heavy to carry - we don't want anyone walking off with the lamp!      
   
    
+;
+++cowboyHat: Wearable
+    'Cowboy Hat/Hat/hat'
+    'hat'
+    desc = "A well-worn hat that used to belong to John Wayne"
+    weight = 1
 ;

@@ -23,7 +23,7 @@ versionInfo: GameID
     byline = 'by Barry Eichelberger, et al.'
     htmlByline = 'by <a href="mailto:eichelbergerb@nicc.edu">
                   Barry Eichelberger</a>'
-    version = '1'
+    version = '3'
     authorEmail = 'Barry Eichelberger <eichelbergerb@nicc.edu>'
     desc = 'Demonstration Project for Progamming Support class.'
     htmlDesc = 'Demonstration Project for Progamming Support class.'
@@ -72,14 +72,7 @@ versionInfo: GameID
     }
     
 ;
-/* totheAbyss - a function which allows the player to be relocated to the Abyss, where he/she dies immediately*/
-function totheAbyss ( )
-{
-    me.moveIntoForTravel(theAbyss);
-    say (theAbyss.roomName); 
-    say (theAbyss.desc);
-    finishGameMsg(ftDeath, finishOptionFullScore);
-}
+
 
 gameMain: GameMainDef
     initialPlayerChar = me
@@ -109,7 +102,7 @@ gameMain: GameMainDef
 
 
 me: Actor
-//   location = BelowtheTomb //test location.
+// location = BelowtheTomb //test location.
     location = TownSquare
     weightCapacity = 100
     bulkCapacity = 2
@@ -117,7 +110,8 @@ me: Actor
     strength = 5
     dexterity = 2
     health = 20
-     
+   ;
+
 ;
 // Increases ability for holding objects
 +LeatherPouch: BagOfHolding, Container, Wearable  //A pouch for holding items
