@@ -19,29 +19,29 @@ destName = '<font color="#000000">BlackRoom</font>'
 desc = "<img src=\"scriptorium.jpg\" width=\"200\" height=\"150\"> A Room." // change
 
 east = eastWall
-west = blackDoor
+west = blackDoor2
 north = northWall
 south = southWall
 
 roomParts = static inherited -defaultEastWall +eastWall -defaultWestWall +westWall
--defaultNorthWall +northWall -defaultSouthWall + southWall -defaultFloor +floor
+-defaultNorthWall +northWall -defaultSouthWall + southWall -defaultFloor +defaultFloor
 ;
 
-
-eastWall: defaultEastWall
++ blackDoor2: Door ->blackDoor 'door''door';
+blackEastWall: defaultEastWall
 desc = "This wall is covered in light moss. "
 ;
 
-westWall: defaultWestWall
+blackWestWall: defaultWestWall
 desc = " Has the door you came in."
 ;
-northWall: defaultNorthWall
+blackNorthWall: defaultNorthWall
 desc = "The wall has Endoras picture. This wall has a human statue looks like it shouldn't be here. "
 ;
-southWall: defaultSouthWall
+blackSouthWall: defaultSouthWall
 desc = "This wall looks like it held weapons at one time. "
 ;
-floor: Floor 'blackRoom Floor' 'floor of blackRoom'
+blackFloor: defaultFloor 'blackRoom Floor' 'floor of blackRoom'
 desc="Looks like a stuggle has occured. "
 
 
@@ -68,8 +68,5 @@ totheAbyss();
 
 /* Trying to figure out a good quest to put in here. SR 10/2/2017*/
 
-+ redDoor: Door ->redEntryDoor 'door''door' "The wall behind the tomb slowly vanishes away opening up into a hallway"; 
-+ blackDoor: Door ->blackEntryDoor 'door''door'; 
-+ whiteDoor: Door ->whiteEntryDoor 'door''door'; 
-+ greenDoor: Door ->greenEntryDoor 'door''door';
+
 
