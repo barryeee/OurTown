@@ -18,12 +18,13 @@ SearchToolbar:rebarNewLine:I:0
 MenuBar:rebarVis:I:1
 log win pos::R:399,153,1352,558
 log win vis::I:0
-DocToolbar:rebarIndex:I:3
 src win edit mode:Outfitters.t:S:0:TADS 3
+DocToolbar:rebarIndex:I:3
 line wrap:Books.t:S:0:N
 src win split:Jail.t:S:0:0.000000
 line wrap:JailCell.t:S:0:N
 DocToolbar:rebarWidth:I:-1
+line wrap:Abyss.t:S:0:N
 src win split:blackknight.t:S:0:0.000000
 DebugToolbar:rebarVis:I:1
 line wrap:%tads%lib\adv3\objects.t:S:0:N
@@ -57,7 +58,7 @@ search:wrap:I:1
 src win edit mode:Jail.t:S:0:TADS 3
 src win selrange:blackRoom.t:S:0:0,0
 src win selrange:blackRoom.t:S:1:960,960
-auto-script:next-id:I:12
+auto-script:next-id:I:22
 SearchToolbar:rebarWidth:I:281
 src win edit mode:blackknight.t:S:0:TADS 3
 src win split:EastBroadway.t:S:0:0.000000
@@ -78,34 +79,36 @@ search:text:S:1:
 locals win:vis:I:0
 locals win:pos:R:10,606,294,722
 main win max::I:1
+src win split:whiteSwordRoom.t:S:0:0.000000
 proj search:collapse spaces:I:0
 src win selrange:BelowTheTomb.t:S:0:0,0
 src win selrange:BelowTheTomb.t:S:1:40,40
 search:exact case:I:0
-mdi win list::S:0:blackRoom.t
-mdi win list::S:1:Scriptorium.t
-mdi win list::S:2:Weapons.t
-mdi win list::S:3:Books.t
-mdi win list::S:4:EastBroadway.t
-mdi win list::S:5:TownCemetery.t
-mdi win list::S:6:JailCell.t
-mdi win list::S:7:BelowTheTomb.t
-mdi win list::S:8:Jail.t
-mdi win list::S:9:blackknight.t
-mdi win list::S:10::help
-mdi win list::S:11:OurTown.t
-mdi win list::S:12::docsearch
-mdi win list::S:13:redRoom.t
-mdi win list::S:14:%tads%lib\adv3\objects.t
-mdi win list::S:15:TownHall.t
-mdi win list::S:16:Outfitters.t
+mdi win list::S:0:OurTown.t
+mdi win list::S:1:Abyss.t
+mdi win list::S:2::docsearch
+mdi win list::S:3:whiteSwordRoom.t
+mdi win list::S:4:Weapons.t
+mdi win list::S:5:blackRoom.t
+mdi win list::S:6:Scriptorium.t
+mdi win list::S:7:Books.t
+mdi win list::S:8:EastBroadway.t
+mdi win list::S:9:TownCemetery.t
+mdi win list::S:10:JailCell.t
+mdi win list::S:11:BelowTheTomb.t
+mdi win list::S:12:Jail.t
+mdi win list::S:13:blackknight.t
+mdi win list::S:14:redRoom.t
+mdi win list::S:15:%tads%lib\adv3\objects.t
+mdi win list::S:16:TownHall.t
+mdi win list::S:17:Outfitters.t
 build:srczipfile:S:0:OurTown_dbgSource.zip
-main win pos::R:-8,-8,1408,1018
+main win pos::R:-8,-8,1448,868
 proj search:whole word:I:0
 src win split:redRoom.t:S:0:0.000000
 src win edit mode:blackRoom.t:S:0:TADS 3
 help win pos::R:624,378,1590,827
-help win vis::I:1
+help win vis::I:0
 src win split:Weapons.t:S:0:0.000000
 build:exe:S:0:OurTown_dbg.exe
 docsearch win pos::R:599,353,1565,802
@@ -113,7 +116,7 @@ docsearch win vis::I:1
 src win split:OurTown.t:S:0:0.000000
 src win edit mode:Scriptorium.t:S:0:TADS 3
 script win:vis:I:1
-script win:pos:R:2,855,382,985
+script win:pos:R:2,705,382,835
 src win split:TownCemetery.t:S:0:0.000000
 EditToolbar:rebarIndex:I:1
 hist win vis::I:0
@@ -122,6 +125,8 @@ src win selrange:EastBroadway.t:S:1:0,0
 src win edit mode:BelowTheTomb.t:S:0:TADS 3
 line wrap:CustomKnightVerb.t:S:0:N
 EditToolbar:rebarWidth:I:845
+src win selrange:whiteSwordRoom.t:S:0:0,0
+src win selrange:whiteSwordRoom.t:S:1:779,779
 SearchToolbar:rebarVis:I:1
 MenuBar:rebarNewLine:I:0
 proj search:regex:I:0
@@ -133,24 +138,26 @@ src win selrange:redRoom.t:S:1:1822,1822
 src win split:Books.t:S:0:0.000000
 line wrap:Jail.t:S:0:N
 src win split:JailCell.t:S:0:0.000000
+src win split:Abyss.t:S:0:0.000000
 line wrap:blackknight.t:S:0:N
 src win selrange:Weapons.t:S:0:0,0
-src win selrange:Weapons.t:S:1:2,2
-build:debug_image_file:S:0:F:\TADS3\OurTown\OurTown_dbg.t3
-DebugToolbar:rebarNewLine:I:1
+src win selrange:Weapons.t:S:1:0,0
 src win selrange:OurTown.t:S:0:0,0
-src win selrange:OurTown.t:S:1:4044,4044
+src win selrange:OurTown.t:S:1:4414,4414
+build:debug_image_file:S:0:OurTown_dbg.t3
+DebugToolbar:rebarNewLine:I:1
 src win pos:OurTown.t:R:75,75,1276,582
 src win edit mode:EastBroadway.t:S:0:TADS 3
 src win selrange:TownCemetery.t:S:0:0,0
 src win selrange:TownCemetery.t:S:1:0,0
+src win edit mode:whiteSwordRoom.t:S:0:TADS 3
 src win split:%tads%lib\adv3\objects.t:S:0:0.000000
 src win edit mode:redRoom.t:S:0:TADS 3
 line wrap:blackRoom.t:S:0:N
 src win edit mode:Weapons.t:S:0:TADS 3
 search:regex:I:0
 src win edit mode:OurTown.t:S:0:TADS 3
-mdi tab order::S:0:11,16,7,15,13,14,12,10,9,0,8,6,4,5,1,3,2
+mdi tab order::S:0:17,11,16,14,15,13,5,12,10,8,9,6,7,4,3,2,1,0
 line wrap:Scriptorium.t:S:0:N
 build:rlsgam:S:0:OurTown_dbg_rls.t3
 EditToolbar:rebarVis:I:1
@@ -160,45 +167,50 @@ main win mdi max::I:1
 src win selrange:JailCell.t:S:0:0,0
 src win selrange:JailCell.t:S:1:0,0
 src win edit mode:TownCemetery.t:S:0:TADS 3
+src win selrange:Abyss.t:S:0:0,0
+src win selrange:Abyss.t:S:1:644,644
 auto-script:default quit sequences set:I:1
 src win split:TownHall.t:S:0:0.000000
 line wrap:BelowTheTomb.t:S:0:N
-DocToolbar:rebarNewLine:I:0
 src win selrange:%tads%lib\adv3\objects.t:S:0:0,0
 src win selrange:%tads%lib\adv3\objects.t:S:1:133187,133187
-MenuBar:rebarIndex:I:0
+DocToolbar:rebarNewLine:I:0
 src win split:Outfitters.t:S:0:0.000000
-mdi win title::S:0:blackRoom.t
-mdi win title::S:1:Scriptorium.t
-mdi win title::S:2:Weapons.t
-mdi win title::S:3:Books.t
-mdi win title::S:4:EastBroadway.t
-mdi win title::S:5:TownCemetery.t
-mdi win title::S:6:JailCell.t
-mdi win title::S:7:BelowTheTomb.t
-mdi win title::S:8:Jail.t
-mdi win title::S:9:blackknight.t
-mdi win title::S:10:
-mdi win title::S:11:OurTown.t
-mdi win title::S:12:
-mdi win title::S:13:redRoom.t
-mdi win title::S:14:%tads%lib\adv3\objects.t
-mdi win title::S:15:TownHall.t
-mdi win title::S:16:Outfitters.t
+MenuBar:rebarIndex:I:0
+mdi win title::S:0:OurTown.t
+mdi win title::S:1:Abyss.t
+mdi win title::S:2:
+mdi win title::S:3:whiteSwordRoom.t
+mdi win title::S:4:Weapons.t
+mdi win title::S:5:blackRoom.t
+mdi win title::S:6:Scriptorium.t
+mdi win title::S:7:Books.t
+mdi win title::S:8:EastBroadway.t
+mdi win title::S:9:TownCemetery.t
+mdi win title::S:10:JailCell.t
+mdi win title::S:11:BelowTheTomb.t
+mdi win title::S:12:Jail.t
+mdi win title::S:13:blackknight.t
+mdi win title::S:14:redRoom.t
+mdi win title::S:15:%tads%lib\adv3\objects.t
+mdi win title::S:16:TownHall.t
+mdi win title::S:17:Outfitters.t
 src win edit mode:Books.t:S:0:TADS 3
 src win edit mode:JailCell.t:S:0:TADS 3
+src win edit mode:Abyss.t:S:0:TADS 3
 search:dir:I:1
 build:installer prog:S:0:OurTown_dbg_Setup.exe
 MenuBar:rebarWidth:I:-1
 project win:vis:I:1
-project win:pos:R:2,120,382,829
+project win:pos:R:2,120,382,679
 line wrap:EastBroadway.t:S:0:N
 stack win vis::I:0
 filesearch win vis::I:0
 stack win pos::R:449,203,1402,542
 DebugToolbar:rebarIndex:I:4
-searchMode::I:1
 src win edit mode:%tads%lib\adv3\objects.t:S:0:TADS 3
+searchMode::I:1
+line wrap:whiteSwordRoom.t:S:0:N
 src win selrange:TownHall.t:S:0:0,0
 src win selrange:TownHall.t:S:1:3276,3276
 
