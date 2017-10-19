@@ -4,8 +4,9 @@
 
 
 // Custom Verb that awakes each knight and is friendly.
+// Verb moved to custormVerbs.t. This fiel is obsolete. 10/19/17 BE
 
-/* DEFINE A NEW VERB */
+/* DEFINE A NEW VERB 
     DefineTAction(Apello);
 
     VerbRule(Appello)
@@ -36,7 +37,7 @@
             if ActorState == friendly 
         }
       
-            
+            */           
                 
                 
                 
