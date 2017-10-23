@@ -25,7 +25,8 @@ monster: Person 'monster' 'monster'
     health = 20
     damage = 5
     points = 10
-    deathMsg = "<<properName>>, the <<name>> crumples to the ground, mortally wounded. With his final breath, he uuters these unforgettable words: \"When your time comes to die, 
+    deathMsg = "<<properName>>, the <<name>> crumples to the ground, mortally wounded. With his final breath, he uuters these unforgettable words:
+        \"When your time comes to die, 
         be not like those whose hearts are filled with fear of death,
         so that when their time comes they weep and pray for a little more time
         to live their lives over again in a different way.
@@ -40,3 +41,8 @@ monster: Person 'monster' 'monster'
     
     
 ;
+
+theGrue: monster
+    'The Grue|grue'
+    'grue'
+    
