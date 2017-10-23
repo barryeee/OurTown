@@ -16,7 +16,7 @@
 monster: Person 'monster' 'monster'
     "This is a generic monster with no distinguishing features."
      posture = standing
-    location = TownSquare
+    location = theAbyss
     properName = 'Generic'
     isHim = nil
     accuracy = 10
@@ -43,6 +43,9 @@ monster: Person 'monster' 'monster'
 ;
 
 theGrue: monster
-    'The Grue|grue'
     'grue'
+    'grue'
+    "The grue is a little monster with a big mouth and endless appetite. It will eat anything(or one) in the same room."
+    location = TownSquare
     
+;
