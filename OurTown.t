@@ -80,8 +80,8 @@ gameMain: GameMainDef
    // maxScore = 46
     showIntro()
     {
-        "<p><br/><br/><br/><br/><br/><br/><br/>
-        <h1><font color=\"yellow\">Welcome to...<br /><br /></font></h1>";
+        "<p><br><br><br><br><br><br><br>
+        <h1><font color=\"yellow\">Welcome to...<br><br></font></h1>";
    
           
         "<center><img src=\"OurTown.png\"></center><br>";
@@ -102,8 +102,8 @@ gameMain: GameMainDef
 
 
 me: Actor
- location = BelowtheTomb //test location.
-//    location = TownSquare
+//  location = BelowtheTomb //test location.
+    location = TownSquare
     weightCapacity = 100
     bulkCapacity = 2
     accuracy = 5

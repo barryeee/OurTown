@@ -45,7 +45,27 @@ monster: Person 'monster' 'monster'
 theGrue: monster
     'grue'
     'grue'
-    "The grue is a little monster with a big mouth and endless appetite. It will eat anything(or one) in the same room."
-    location = TownSquare
-    
+    "The grue is a little monster with a big mouth and an endless appetite. It will eat anything(or anyone) in the same room."
+    location = Outfitters
+    properName = 'Grue'
+    isHim = nil
+    accuracy = 100
+    strength = 100
+    dexterity = 100
+    health = 2000
+    damage = 500
+    points = 1000
+    deathMsg = "<<properName>>, the <<name>> crumples to the ground, mortally wounded. With his final breath, he uuters these unforgettable words:
+        \"Ouch! That hurt!\" <<properName>> disolves into a puddle of green goo and disappears.<p>"
+;
+
++ grueDiscovered : AgendaItem 
+  initiallyActive = true 
+  isReady = (getActor.canSee(me))
+  invokeItem 
+  { 
+        "The Grue, upon seeing you enter the room, launches itself at your head and immediately eats your face...followed by the rest of your body";
+    finishGameMsg(ftDeath, finishOptionFullScore);
+} 
+
 ;

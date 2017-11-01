@@ -17,7 +17,7 @@ whiteSwordRoom : Room
     east = whiteRoom
 ;
     
-    whiteSword : weapon 'white sword' 'white sword' @whiteRoomW
+    whiteSword : weapon 'white sword' 'white sword' @whiteRoom
     "A very sharp, white sword. 
     It is heavy but very powerful."
     damage = 75
