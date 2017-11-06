@@ -11,39 +11,13 @@ redRoom: Room
  
     north = doorA 
     south = doorB
-/*
-  *   roomParts = static inherited -defaultEastWall +eastWall -defaultWestWall
-  *   +westWall -defaultNorthWall +northWall -defaultSouthWall + southWall
-  *   -defaultFloor +floor
-  */        
-;
-
- 
-eastWall: defaultEastWall
-   desc = "The wall is made of limestone, and has the door you came in on in the middle. "
-;
-
-westWall: defaultWestWall
-   desc = "The wall is made of limestone."
-;
-
-northWall: defaultNorthWall
-   desc = "The wall is made of limestone, with a heavily barred door in the middle. "
-;
-
-southWall: defaultSouthWall
-   desc = "The wall is made of limestone, with a heavily barred door in the middle. "
-;
-
-//floor: Floor 'entryRoom1 Floor' 'floor of entryRoom1'
-//    desc = "You see an unremarkable dirt floor. In the center of the room is a lever. "
 ;
 
 
 +acmeLever: Lever, Fixture
-    //name = 'acme Lever' 
-    //vocabWords = 'lever' 
-   // location = redRoom
+    name = 'acme Lever' 
+    vocabWords = 'lever' 
+    
     desc = "<p> Standard,run of the mill dungeon lever. </p>"
     inRoomDesc = "<p> Standard run of the mill dungeon lever. </p>"
     
@@ -77,5 +51,29 @@ southWall: defaultSouthWall
 ;
 
 
-+redEntryDoor: Door; 
++redEntryDoor: Door 'door' 'door'; 
+
+/*
+  *   roomParts = static inherited -defaultEastWall +eastWall -defaultWestWall
+  *   +westWall -defaultNorthWall +northWall -defaultSouthWall + southWall
+  *   -defaultFloor +floor
+  */        
+;
+
+ 
+eastWall: defaultEastWall
+   desc = "The wall is made of limestone, and has the door you came in on in the middle. "
+;
+
+westWall: defaultWestWall
+   desc = "The wall is made of limestone."
+;
+
+northWall: defaultNorthWall
+   desc = "The wall is made of limestone, with a heavily barred door in the middle. "
+;
+
+southWall: defaultSouthWall
+   desc = "The wall is made of limestone, with a heavily barred door in the middle. "
+;
 

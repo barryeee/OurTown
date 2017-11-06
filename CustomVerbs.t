@@ -50,3 +50,4 @@ function totheAbyss ( )
     say (theAbyss.desc);
     finishGameMsg(ftDeath, finishOptionFullScore);
 }
+

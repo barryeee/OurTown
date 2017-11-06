@@ -46,7 +46,7 @@
     }
 
     
-    //Have Jingles change state to discovered  
+    //Have Jingles change state to discovered 
       dobjFor(TalkTo)
   {
      verify() { }

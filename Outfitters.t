@@ -9,12 +9,14 @@
 
 */     
 Outfitters: Room 
-    name = '<font color="#008800">Ollie\'s Outfitters</font>'
+    '<font color="#008800">Ollie\'s Outfitters</font>'
+    'outfitters'
     desc = "<hr/>You see an empty building, except for a few odds and ends left lying about.
         It is obvious that this place has been unused for quite some time."
     
     east = SouthMainStreet
     north = WestBroadway
+    brightness = 0
 ; 
  +KnickKnackShelf: Surface, Fixture
     'knickknack shelf'
@@ -36,9 +38,10 @@ Outfitters: Room
  ++OldLantern: LightSource
     'old lantern/lantern'
     'old lantern'
-    "An old brass lantern shines its flickering light into the shop."
+    "An old brass lantern sits on the shelf."
     isLit = true
-    brightness = 3
+    brightness = 1
+    
     weight = 1000 //it is too heavy to carry - we don't want anyone walking off with the lamp!      
   
    
