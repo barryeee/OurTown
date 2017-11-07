@@ -27,10 +27,37 @@ roomParts = static inherited -defaultEastWall +eastWall -defaultWestWall +westWa
 -defaultNorthWall +northWall -defaultSouthWall + southWall -defaultFloor +defaultFloor
 ;
 
-+ blackDoor2: Door ->blackDoor 'door''door';
+;
+
++blackDoor2: Door ->blackDoor 'door''door';
 blackEastWall: defaultEastWall
 desc = "This wall is covered in light moss. "
 ;
+
+
+
++endorasPicture: Thing 
+name = 'Endora\'s Picture'
+vocabWords = 'endora/picture'
+
+location = blackRoom
+weight = 1000
+desc 
+    {
+        
+    "<bold>Well that did not go to plan!</bold><br />
+    Having looked at the picture, your feet are turning to stone, it is impossible to move.<br />
+    As your body is turing into stone the eyes of Endora start to glow from the picture.
+    Endora's eyes are bright yellow like the sun.
+    The last sight you see is Endora's eyes as your chest, neck, and head turn to stone. <br />";
+    finishGameMsg(ftDeath, finishOptionFullScore); 
+    }
+;
+
+/* Trying to figure out a good quest to put in here. SR 10/2/2017*/
+
+
+
 
 blackWestWall: defaultWestWall
 desc = " Has the door you came in."
@@ -43,30 +70,4 @@ desc = "This wall looks like it held weapons at one time. "
 ;
 blackFloor: defaultFloor 'blackRoom Floor' 'floor of blackRoom'
 desc="Looks like a stuggle has occured. "
-
-
-
-
 ;
-
-+endorasPicture: Thing 
-name = 'Endoras Picture'
-vocabWords = 'endora/picture'
-/*desc = "<table><tr><td><img src=\"angel.jpg\"width=\"150\" height=\"200\" align=\"top\"></td><td>You see a large statue, apparently carved from granite. It appears to be ancient, showing signs of severe weathering.</td></tr></table>" */
-location = blackRoom
-weight = 1000
-actionDobjLook
-{
-"<bold>Well that did not go to plan!</bold><br />";
-"Having looked at the picture, your feet are turning to stone, it is impossible to move.<br />
-As your body is turing into stone the eyes of Endora start to glow from the picture.
-Endora's eyes are bright yellow like the sun.
-The last sight you see is Endora's eyes as your chest, neck, and head turn to stone. <br />";
-totheAbyss();
-}
-;
-
-/* Trying to figure out a good quest to put in here. SR 10/2/2017*/
-
-
-
