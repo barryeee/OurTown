@@ -9,7 +9,8 @@
  *      contains all definitions for anything Monsterish. All monsters should be
  *      contained in this file and should be defined as type monster. Monsters are
  *      non-verbal and should not contain any conversation abilities what so ever.
- *
+ *Mantenance Log
+ *	11/08/2017 Added the Grue.
  *
  */
 
