@@ -18,7 +18,7 @@ HighCathedral: Room
     destName = '<font color="#880000">High Cathedral</font>'
     desc = "<table><tr><td><img src=\"cathedral2.jpg\" width=\"145\" height=\"200\" align=\"top\"
         ></td><td>As your eyes adjust to the dim lighting, you notice that you are in a temple of very modest interior proportions. 
-        Before you lies the gilded High Altar. 
+        Before you lies the gilded High Altar. 8' 
         You are surrounded by stone statues of all kinds, some beautiful, some hideous.
         There is a notice attached to the wall.</td></tr></table>"
     
@@ -44,7 +44,7 @@ HighCathedral: Room
         }
 ;
 
-+Decoration
++Decoration 
     name = 'Notice on Cathedral Wall' 
     vocabWords = 'Notice'
     

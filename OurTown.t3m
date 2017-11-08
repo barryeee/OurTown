@@ -30,7 +30,12 @@
 -source whiteRoom
 -source whiteSwordRoom
 -source OurTown
+-source blackRoom
+-source redRoom
+-source whiteRoom
+-source whiteSwordRoom
 -source Abyss
+-source CustomVerbs
 -source BelowTheTomb
 -source blackknight
 -source Books
@@ -44,6 +49,7 @@
 -source Jail
 -source JailCell
 -source Merrick
+-source Monsters
 -source mrJingles
 -source NorthBridge
 -source NorthMainStreet
@@ -61,7 +67,6 @@
 -source Weapons
 -source WestBroadway
 -source whiteknight
--source CustomKnightVerb
 -lib system
 -lib adv3/adv3
 

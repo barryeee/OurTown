@@ -23,7 +23,7 @@ versionInfo: GameID
     byline = 'by Barry Eichelberger, et al.'
     htmlByline = 'by <a href="mailto:eichelbergerb@nicc.edu">
                   Barry Eichelberger</a>'
-    version = '1'
+    version = '3'
     authorEmail = 'Barry Eichelberger <eichelbergerb@nicc.edu>'
     desc = 'Demonstration Project for Progamming Support class.'
     htmlDesc = 'Demonstration Project for Progamming Support class.'
@@ -72,14 +72,7 @@ versionInfo: GameID
     }
     
 ;
-/* totheAbyss - a function which allows the player to be relocated to the Abyss, where he/she dies immediately*/
-function totheAbyss ( )
-{
-    me.moveIntoForTravel(theAbyss);
-    say (theAbyss.roomName); 
-    say (theAbyss.desc);
-    finishGameMsg(ftDeath, finishOptionFullScore);
-}
+
 
 gameMain: GameMainDef
     initialPlayerChar = me
@@ -87,8 +80,8 @@ gameMain: GameMainDef
    // maxScore = 46
     showIntro()
     {
-        "<p><br/><br/><br/><br/><br/><br/><br/>
-        <h1><font color=\"yellow\">Welcome to...<br /><br /></font></h1>";
+        "<p><br><br><br><br><br><br><br>
+        <h1><font color=\"yellow\">Welcome to...<br><br></font></h1>";
    
           
         "<center><img src=\"OurTown.png\"></center><br>";
@@ -109,7 +102,7 @@ gameMain: GameMainDef
 
 
 me: Actor
-//   location = BelowtheTomb //test location.
+  //location = BelowtheTomb //test location.
     location = TownSquare
     weightCapacity = 100
     bulkCapacity = 2
@@ -117,7 +110,8 @@ me: Actor
     strength = 5
     dexterity = 2
     health = 20
-     
+   ;
+
 ;
 // Increases ability for holding objects
 +LeatherPouch: BagOfHolding, Container, Wearable  //A pouch for holding items
@@ -128,7 +122,7 @@ me: Actor
     You have a leather pouch draped over your shoulder. </td></tr></table>"
     bulkCapacity = 3000 
     minBulk = 1 
-    
+
     dobjFor(PutIn)
     {
     }
@@ -182,3 +176,49 @@ me: Actor
         <font> </td></tr></table>"
     location = LeatherPouch
  ;
+magicCrystal: LightSource 'magic glowing eerie light/crystal*crystals' 'magic crystal'
+    "The crystal glows with a pure but eerie light. "
+    brightness = 0
+    location = LeatherPouch
+    
+    
+    dobjFor (Take)
+    {
+        verify() { }
+        check() { }
+        action()
+        {
+            gDobj.brightness = 3;
+            inherited;
+        }
+    }
+    
+    dobjFor (PutIn)
+    {
+        verify() { }
+        check() { }
+        action()
+        {
+            gDobj.brightness = 0;
+            inherited;
+        }
+    }
+     dobjFor (Drop)
+    {
+        verify() { }
+        check() { }
+        action()
+        {
+            gDobj.brightness = 0;
+            inherited;
+        }
+    }
+;
++MatchBox: Matchbook 'matchbook*matchsticks' 'matchbook'
+    location = LeatherPouch
+;
+++ Matchstick  'match' 'match';
+++ Matchstick  'match' 'match';
+++ Matchstick  'match' 'match';
+++ Matchstick  'match' 'match';
+++ Matchstick  'match' 'match';

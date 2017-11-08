@@ -27,7 +27,7 @@ BelowtheTomb: Room '<font color="#880000">Below the Tomb</font>'
     The crypts lay silent and ominous before you, aligned in a row against the south wall. 
     One of the crypts lies open, with its lid laying on the floor . </td></tr></table>"
 north = redDoor
-south = greenDoor
+//south = greenDoor
 east = blackDoor  
 west = whiteDoor    
  up = Tomb
@@ -65,10 +65,13 @@ west = whiteDoor
         material = adventium
 ;
 
-+ redDoor: Door ->redEntryDoor 'door''door' "The wall behind the tomb slowly vanishes away opening up into a hallway";  
-   + blackDoor: Door ->blackEntryDoor 'door''door' "The wall behind the tomb slowly vanishes away opening up into a hallway";  
-+ whiteDoor: Door ->whiteEntryDoor 'door''door' "The wall behind the tomb slowly vanishes away opening up into a hallway";  
-+ greenDoor: Door ->greenEntryDoor 'door''door' "The wall behind the tomb slowly vanishes away opening up into a hallway";  
++ redDoor: Door ->redEntryDoor  
+    'door'
+    'door' 
+;  
++ blackDoor: Door 'door''door' "The wall behind the tomb slowly vanishes away opening up into a hallway";  
++ whiteDoor: Door  'door''door' "The wall behind the tomb slowly vanishes away opening up into a hallway";  
++ greenDoor: Door  'door''door' "The wall behind the tomb slowly vanishes away opening up into a hallway";  
 
 
    
