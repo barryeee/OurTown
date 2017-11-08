@@ -55,10 +55,10 @@ theGrue: monster
     health = 2000
     damage = 500
     points = 1000
-    deathMsg = "<<properName>>, the <<name>> crumples to the ground, mortally wounded. With his final breath, he uuters these unforgettable words:
+    deathMsg = "<<properName>>, the <<name>> crumples to the ground, mortally wounded. With his final breath, he utters these unforgettable words:
         \"Ouch! That hurt!\" <<properName>> disolves into a puddle of green goo and disappears.<p>"
    
-   // setCurState(grueDiscovered); 
+   
    afterAction()
     {
         if (senseAmbientMax([sight]) <= 1)
@@ -70,8 +70,8 @@ theGrue: monster
     }
     attack()
         {
-            //if ((senseAmbientMax([sight]) <= 1) && (gPlayerChar.isIn(DarkRoom)))
-        if ((senseAmbientMax([sight]) <= 1) && !(gPlayerChar.canSee(theGrue)))
+        if ((senseAmbientMax([sight]) <= 1) && (gPlayerChar.location == theGrue.location))
+ //       if ((senseAmbientMax([sight]) <= 1) && !(gPlayerChar.canSee(theGrue)))
                 {
                    "The Grue launches itself at your head and immediately eats your face...followed by the rest of your body";
                    isDone = finishGameMsg(ftDeath, finishOptionFullScore);  

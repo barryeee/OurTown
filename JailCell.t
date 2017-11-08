@@ -19,7 +19,7 @@ JailCell: Room
         Occasionally, a rat scampers across the chains and the heavy clanking whispers of the room's darker history.</td></tr></table>";
         "<br />";       
     } 
-
+    brightness = 1
     south = CellDoor2
 ;
 + CellDoor2: Door ->CellDoor 'door''door'  
