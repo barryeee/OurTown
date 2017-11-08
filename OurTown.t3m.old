@@ -1,0 +1,74 @@
+# TADS 3 makefile
+#
+# Warning: this file was mechanically generated.  You may edit this file
+# manually, but your changes might be modified or discarded when
+# you load this file into a TADS development tool.  The TADS tools
+# generally retain the comment at the start of the file and the
+# comment marked "##sources" below, but other comments might be
+# discarded, the formatting might be changed, and some option
+# settings might be modified.
+
+# TADS 3 makefile
+#
+# Warning: this file was mechanically generated.  You may edit this file
+# manually, but your changes might be modified or discarded when
+# you load this file into a TADS development tool.  The TADS tools
+# generally retain the comment at the start of the file and the
+# comment marked "##sources" below, but other comments might be
+# discarded, the formatting might be changed, and some option
+# settings might be modified.
+
+-D LANGUAGE=en_us
+-D MESSAGESTYLE=neu
+-Fy obj
+-Fo obj
+-v
+
+##sources
+-source blackRoom
+-source redRoom
+-source whiteRoom
+-source whiteSwordRoom
+-source OurTown
+-source blackRoom
+-source redRoom
+-source whiteRoom
+-source whiteSwordRoom
+-source Abyss
+-source CustomVerbs
+-source BelowTheTomb
+-source blackknight
+-source Books
+-source CathedralGate
+-source EastBridge
+-source EastBroadway
+-source Endora
+-source EndorasMansion
+-source greenknight
+-source HighCathedral
+-source Jail
+-source JailCell
+-source Merrick
+-source Monsters
+-source mrJingles
+-source NorthBridge
+-source NorthMainStreet
+-source Outfitters
+-source redknight
+-source Scriptorium
+-source SevenSorrowsInn
+-source southexit
+-source southgate
+-source SouthMainStreet
+-source Tomb
+-source TownCemetery
+-source TownHall
+-source TownSquare
+-source Weapons
+-source WestBroadway
+-source whiteknight
+-lib system
+-lib adv3/adv3
+
+-res
+GameInfo.txt

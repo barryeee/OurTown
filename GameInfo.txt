@@ -1,12 +1,11 @@
-IFID: 69462502-a9b7-4112-9ce0-6b300d602969
-Name: Our Town
-Headline: An Interactive Sample
-Byline: by Barry Eichelberger, et al.
-HtmlByline: by <a href="mailto:eichelbergerb@nicc.edu"> Barry Eichelberger</a>
-AuthorEmail: Barry Eichelberger <eichelbergerb@nicc.edu>
-Desc: Demonstration Project for Progamming Support class.
-HtmlDesc: Demonstration Project for Progamming Support class.
-Version: 3
+IFID: e4806160-8cdc-492b-a848-56b45e04b9c4
+Name: Your New Game Title
+Byline: by Your Name
+HtmlByline: by <a href="mailto:your-email@host.com"> Your Name</a>
+AuthorEmail: Your Name <your-email@host.com>
+Desc: Put a brief "blurb" about your game here
+HtmlDesc: Put a brief "blurb" about your game here
+Version: 1
 ReleaseDate: 2017-11-08
 Language: en-US
 LicenseType: Freeware

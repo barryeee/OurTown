@@ -80,8 +80,8 @@ gameMain: GameMainDef
    // maxScore = 46
     showIntro()
     {
-        "<p><br><br><br><br><br><br><br>
-        <h1><font color=\"yellow\">Welcome to...<br><br></font></h1>";
+        "<p><br/><br/><br/><br/><br/><br/><br/>
+        <h1><font color=\"yellow\">Welcome to...<br /><br /></font></h1>";
    
           
         "<center><img src=\"OurTown.png\"></center><br>";
@@ -102,7 +102,7 @@ gameMain: GameMainDef
 
 
 me: Actor
-  //location = BelowtheTomb //test location.
+// location = BelowtheTomb //test location.
     location = TownSquare
     weightCapacity = 100
     bulkCapacity = 2
@@ -122,7 +122,7 @@ me: Actor
     You have a leather pouch draped over your shoulder. </td></tr></table>"
     bulkCapacity = 3000 
     minBulk = 1 
-
+    
     dobjFor(PutIn)
     {
     }
@@ -176,49 +176,3 @@ me: Actor
         <font> </td></tr></table>"
     location = LeatherPouch
  ;
-magicCrystal: LightSource 'magic glowing eerie light/crystal*crystals' 'magic crystal'
-    "The crystal glows with a pure but eerie light. "
-    brightness = 0
-    location = LeatherPouch
-    
-    
-    dobjFor (Take)
-    {
-        verify() { }
-        check() { }
-        action()
-        {
-            gDobj.brightness = 3;
-            inherited;
-        }
-    }
-    
-    dobjFor (PutIn)
-    {
-        verify() { }
-        check() { }
-        action()
-        {
-            gDobj.brightness = 0;
-            inherited;
-        }
-    }
-     dobjFor (Drop)
-    {
-        verify() { }
-        check() { }
-        action()
-        {
-            gDobj.brightness = 0;
-            inherited;
-        }
-    }
-;
-+MatchBox: Matchbook 'matchbook*matchsticks' 'matchbook'
-    location = LeatherPouch
-;
-++ Matchstick  'match' 'match';
-++ Matchstick  'match' 'match';
-++ Matchstick  'match' 'match';
-++ Matchstick  'match' 'match';
-++ Matchstick  'match' 'match';
