@@ -50,12 +50,12 @@ versionInfo: GameID
     {
         /* show our credits */
         "Created by the Programming Support Class at Northeast Iowa Community College.";
-        "<br>BE - Barry Eichelberger, Instructor, Fall 2013 - 2014";
+        "<br>BE - Barry Eichelberger, Instructor, Fall 2013 - 2017";
         "<br>BV - Brian Vorwald, Fall 2013";
         "<br>GL - Grayson Leigh, Fall 2013";
         "<br>LS - Laurie Starr, Fall 2014";
-        "<mr>MR - Mitch Roberts, Fall 2016";
-        "<aw>AW - Andy Wichell, Fall 2016";
+        "<br>MR - Mitch Roberts, Fall 2016";
+        "<br>AW - Andy Wichell, Fall 2016";
         /* 
          *   The game credits are displayed first, but the library will
          *   display additional credits for library modules.  It's a good
@@ -101,6 +101,7 @@ gameMain: GameMainDef
        
     }
 ;
+
 
 
 me: Actor
