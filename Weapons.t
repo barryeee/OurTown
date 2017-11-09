@@ -19,7 +19,7 @@ weapon : Thing 'generic weapon' 'generic weapon'
     damage = 1
     weight = 1
    
-    achievement = perInstance(new SimpleAchievement('Defeating the  ' + gDobj.name)) 
+   // achievement = perInstance(new SimpleAchievement('Defeating the  ' + gDobj.name)) 
     // modify examine verb to display weapon's damage and weight properties.
    dobjFor (Examine)
     {
@@ -40,10 +40,12 @@ weapon : Thing 'generic weapon' 'generic weapon'
         {
            
            //attack defender with weapon of choice
-            if (rand(me.accuracy) > rand(gDobj.dexterity)) 
+           // if (rand(me.accuracy) > rand(gDobj.dexterity)) 
+             if (rand(gActor.accuracy) > rand(gDobj.dexterity))
             { 
                     "You score a direct hit!<br>"; 
-                    gDobj.health = gDobj.health - rand(me.strength + damage);
+                    //gDobj.health = gDobj.health - rand(me.strength + damage);
+                 gDobj.health = gDobj.health - rand(me.strength + damage);
                 //check defender's health to see if he/she is still alive - health > 0
                 if (gDobj.health <= 0)
                 {
@@ -59,16 +61,16 @@ weapon : Thing 'generic weapon' 'generic weapon'
             }
             //Defender counterattacks
             "The <<gDobj.name>> ";
-            if (rand(gDobj.accuracy) > rand(me.dexterity)) 
+            if (rand(gDobj.accuracy) > rand(gActor.dexterity)) 
             {
                 " scores a hit against your pathetic body!";
-                me.health = me.health - rand(gDobj.strength + gDobj.damage);
+                gActor.health = gActor.health - rand(gDobj.strength + gDobj.damage);
             }
             else { "misses.";}
             //Check player health to see if he/she is still alive
-            if (me.health <= 0)
+            if (gActor.health <= 0)
             {
-                "<br/>Alas, your opponent has struck a fatal blow.<br/>Your body falls limply to the ground.<br/>";
+                "<br/><<gActor.name>> has lost the battle!<br/>";
                 finishGameMsg(ftDeath, finishOptionFullScore);
             }
          }

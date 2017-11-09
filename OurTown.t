@@ -105,8 +105,8 @@ gameMain: GameMainDef
 
 
 me: Actor
-  //location = BelowtheTomb //test location.
-    location = TownSquare
+location = BelowtheTomb //test location.
+//    location = TownSquare
     weightCapacity = 100
     bulkCapacity = 2
     accuracy = 5
