@@ -113,16 +113,7 @@ location = BelowtheTomb //test location.
     strength = 5
     dexterity = 2
     health = 20
-    properName = George
-    
-     makeProper(properName)   
-    {      
-        name = properName;      
-        isProperName = true;      
-        initializeVocabWith(properName.toLower());      
-        return name;   
-    }
-   ;
+    deathmsg = "You slump to the ground and utter your final words, \"Well, that was unexpected!\""
 
 ;
 // Increases ability for holding objects

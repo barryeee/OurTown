@@ -33,19 +33,28 @@ blackKnight: Person 'black knight' 'black knight'
     strength = 10
     dexterity = 5
     health = 20
-    damage = 5
+   
     points = 10
     deathMsg = "The seemingly invincible knight suddenly turns to stone and crumbles to the ground, leaving a pile of fine sand behind."
     
-/*    
- *   dobjFor (Appello) { verify () {} check () {} action () { "<<properName>>,
- *   the <<name>> rises from the crypt and salutes you.<br>";
- *   moveIntoForTravel(BelowtheTomb); blackScroll.sightPresence = true;
- *   setCurState(blackKnightFriendly); }
- *
- *   }
- */
- 
+   
+   dobjFor (Appello) 
+        { 
+            verify () {} 
+            check () {} 
+            action () 
+            { 
+                if (posture == lying)
+                {
+                    "<<properName>>, the <<name>> rises from the crypt and salutes you.<br>";
+                    moveIntoForTravel(BelowtheTomb); blackScroll.sightPresence = true;
+                    setCurState(blackKnightFriendly); 
+                }
+
+         }
+
+    }
+    
     dobjFor (AttackWith)
     {
         verify() { }
@@ -61,20 +70,11 @@ blackKnight: Person 'black knight' 'black knight'
                 setCurState(blackKnightHostile);
             }
         }
-        action() 
-        { 
-            
-                /*        
-     "<br>The black knight attacks and  ";
- *         
- *   if (rand(blackKnight.accuracy) > rand(me.dexterity)) { " scores a hit
- *   against your pathetic body!"; me.health = me.health -
- *   rand(blackKnight.strength + blackKnight.damage); } else { "misses.";}
- *   //Check player health to see if he/she is still alive if (me.health <= 0) {
- *   "<br/>Alas, your opponent has struck a fatal blow.<br/>Your body falls
- *   limply to the ground.<br/>"; finishGameMsg(ftDeath, finishOptionFullScore);
- }
- */
+        action() {
+          
+            "<br>";
+            nestedActorAction(blackKnight, AttackWith, gPlayerChar, onyxSword);
+            "<br>";
         }
     }
    
@@ -91,4 +91,5 @@ blackKnight: Person 'black knight' 'black knight'
   stateDesc = "He's standing beside you. " 
   accompanyTravel(leadActor, conn)  
     { return leadActor == gPlayerChar; } 
+  
 ; 

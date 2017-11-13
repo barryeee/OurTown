@@ -11,7 +11,8 @@
  *   11/19/2014 Added code for AttackWith verb to allow basic combat with player. BE
  *   11/19/2014 Created Diamond Dagger. BE 
  *   11/24/2014 Changed method for awarding points using weapons. BE
- *   12/15/2014 Remove points for ddefeating opponents. Points no longer used. BE
+ *   12/15/2014 Remove points for defeating opponents. Points no longer used. BE
+ *   11/13/2017 Created Onyx Sword. BE
  */
 
 weapon : Thing 'generic weapon' 'generic weapon' 
@@ -50,7 +51,11 @@ weapon : Thing 'generic weapon' 'generic weapon'
                 if (gDobj.health <= 0)
                 {
                     "<<gDobj.deathMsg>>";
-                 //   "<br> <<gActor.name>> has defeated their valiant opponent!";
+                    if (gDobj == gPlayerChar)
+                    {
+                         finishGameMsg(ftDeath, finishOptionFullScore);
+                    }
+                    else
                     gDobj.moveIntoForTravel(theAbyss);
                     exit;
                 }
@@ -63,8 +68,8 @@ weapon : Thing 'generic weapon' 'generic weapon'
             "The <<gDobj.name>> ";
             if (rand(gDobj.accuracy) > rand(gActor.dexterity)) 
             {
-                " scores a hit against <<gActor.name>>";
-                gActor.health = gActor.health - rand(gDobj.strength + gDobj.damage);
+                " <<gDobj.name>> scores a hit against <<gActor.name>>";
+                gActor.health = gActor.health - rand(gDobj.strength + gIobj.damage);
             }
             else { "misses.";}
             //Check player health to see if he/she is still alive
@@ -97,3 +102,8 @@ diamondDagger : weapon 'dimaond-studded dagger' 'diamond dagger'
     weight = 3
 ;
     
+onyxSword: weapon 'black onyx sword' 'onyx sword'
+    @blackKnight
+    damage = 100
+    weight = 5
+;
