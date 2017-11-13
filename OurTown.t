@@ -113,6 +113,15 @@ location = BelowtheTomb //test location.
     strength = 5
     dexterity = 2
     health = 20
+    properName = George
+    
+     makeProper(properName)   
+    {      
+        name = properName;      
+        isProperName = true;      
+        initializeVocabWith(properName.toLower());      
+        return name;   
+    }
    ;
 
 ;

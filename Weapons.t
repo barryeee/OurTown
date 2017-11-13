@@ -40,37 +40,37 @@ weapon : Thing 'generic weapon' 'generic weapon'
         {
            
            //attack defender with weapon of choice
-           // if (rand(me.accuracy) > rand(gDobj.dexterity)) 
+         
              if (rand(gActor.accuracy) > rand(gDobj.dexterity))
             { 
-                    "You score a direct hit!<br>"; 
+                    "A direct hit!<br>"; 
                     //gDobj.health = gDobj.health - rand(me.strength + damage);
-                 gDobj.health = gDobj.health - rand(me.strength + damage);
+                 gDobj.health = gDobj.health - rand(gDobj.strength + damage);
                 //check defender's health to see if he/she is still alive - health > 0
                 if (gDobj.health <= 0)
                 {
                     "<<gDobj.deathMsg>>";
-                    "<br>You have defeated your valiant opponent!";
+                 //   "<br> <<gActor.name>> has defeated their valiant opponent!";
                     gDobj.moveIntoForTravel(theAbyss);
                     exit;
                 }
              }
             else
             {
-                "You missed!<br>";
+                "Missed!<br>";
             }
             //Defender counterattacks
             "The <<gDobj.name>> ";
             if (rand(gDobj.accuracy) > rand(gActor.dexterity)) 
             {
-                " scores a hit against your pathetic body!";
+                " scores a hit against <<gActor.name>>";
                 gActor.health = gActor.health - rand(gDobj.strength + gDobj.damage);
             }
             else { "misses.";}
             //Check player health to see if he/she is still alive
             if (gActor.health <= 0)
             {
-                "<br/><<gActor.name>> has lost the battle!<br/>";
+               // "<br><<gActor.name>> has lost the battle!<br/>";
                 finishGameMsg(ftDeath, finishOptionFullScore);
             }
          }
@@ -89,10 +89,11 @@ cheapSword : weapon 'cheap brass sword' 'brass sword' @BelowtheTomb
 ;
 
 diamondDagger : weapon 'dimaond-studded dagger' 'diamond dagger'
-    @Outfitters
+//  @Outfitters
+    @BelowtheTomb
     " A beautifully hand-crafted weapon, with diamonds inset all long the handle. 
     It is long enough to double as a short sword in some instances. It looks like a very dangerous weapon."
-    damage = 50
+    damage = 500
     weight = 3
 ;
     

@@ -45,14 +45,7 @@ blackKnight: Person 'black knight' 'black knight'
  *
  *   }
  */
-    
-    actionDobjAppello
-    {
-      "<<properName>>,
-   the <<name>> rises from the crypt and salutes you.<br>";
-    moveIntoForTravel(BelowtheTomb); blackScroll.sightPresence = true;
-    setCurState(blackKnightFriendly);
-    } 
+ 
     dobjFor (AttackWith)
     {
         verify() { }
@@ -70,30 +63,27 @@ blackKnight: Person 'black knight' 'black knight'
         }
         action() 
         { 
-         "<br>The black knight attacks and  ";
-            if (rand(blackKnight.accuracy) > rand(me.dexterity)) 
-            {
-                " scores a hit against your pathetic body!";
-                me.health = me.health - rand(blackKnight.strength + blackKnight.damage);
-            }
-            else { "misses.";}
-            //Check player health to see if he/she is still alive
-            if (me.health <= 0)
-            {
-                "<br/>Alas, your opponent has struck a fatal blow.<br/>Your body falls limply to the ground.<br/>";
-                finishGameMsg(ftDeath, finishOptionFullScore);
-            }
+            
+                /*        
+     "<br>The black knight attacks and  ";
+ *         
+ *   if (rand(blackKnight.accuracy) > rand(me.dexterity)) { " scores a hit
+ *   against your pathetic body!"; me.health = me.health -
+ *   rand(blackKnight.strength + blackKnight.damage); } else { "misses.";}
+ *   //Check player health to see if he/she is still alive if (me.health <= 0) {
+ *   "<br/>Alas, your opponent has struck a fatal blow.<br/>Your body falls
+ *   limply to the ground.<br/>"; finishGameMsg(ftDeath, finishOptionFullScore);
+ }
+ */
         }
     }
    
 ;
-//
+
 
 +blackKnightFriendly: ActorState
     isInitState = true
-//    specialDesc = "{The bob/he} is standing in the street, looking in a shop
-//    window. "
-//    stateDesc = "He's looking in a shop window. "
+
 ;
 
 +blackKnightHostile  : AccompanyingState 
