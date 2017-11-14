@@ -7,8 +7,8 @@ build:ext resfile cnt:I:0
 line wrap:Weapons.t:S:0:N
 line wrap:OurTown.t:S:0:N
 build:defaults set:I:1
-watch win:vis:I:0
 watch win:pos:R:312,606,596,722
+watch win:vis:I:0
 key bindings:Text Editor:S:0:Ctrl+F3 = Edit.SearchIncremental
 key bindings:Text Editor:S:1:Down = Edit.LineDown
 key bindings:Text Editor:S:2:Ctrl+Down = Edit.LineScrollDown
@@ -72,9 +72,9 @@ key bindings:Text Editor:S:59:Ctrl+8 = Edit.CommentRegion
 key bindings:Text Editor:S:60:F6 = Edit.FindDefinition
 build:c ops:I:0
 SearchToolbar:rebarNewLine:I:0
-MenuBar:rebarVis:I:1
-log win pos::R:203,153,1156,558
 log win vis::I:0
+log win pos::R:203,153,1156,558
+MenuBar:rebarVis:I:1
 line wrap:knights.t:S:0:N
 DocToolbar:rebarIndex:I:3
 src win split:CustomVerbs.t:S:0:0.000000
@@ -99,14 +99,15 @@ build:include_files-sys:S:17:system
 build:include_files-sys:S:18:lib
 src win selrange:Monsters.t:S:0:0,0
 src win selrange:Monsters.t:S:1:528,528
-src win pos:Monsters.t:R:125,125,947,612
 DocToolbar:rebarWidth:I:-1
-src win split:blackknight.t:S:0:0.000000
+src win pos:Monsters.t:R:125,125,947,612
 line wrap:Abyss.t:S:0:N
+src win split:blackknight.t:S:0:0.000000
 DebugToolbar:rebarVis:I:1
 ask save on build::I:1
 build:zipfile:S:0:%tads%OurTown.zip
 watch win:sep xpos 0:I:142
+watch win:sep xpos 1:I:142
 key bindings:Global:S:0:Ctrl+A = Edit.SelectAll
 key bindings:Global:S:1:Ctrl+Insert = Edit.Copy
 key bindings:Global:S:2:Ctrl+C = Edit.Copy
@@ -150,45 +151,44 @@ key bindings:Global:S:39:Shift+F11 = Debug.StepOut
 key bindings:Global:S:40:Alt+J = Edit.PopBookmark
 key bindings:Global:S:41:Ctrl+Shift+J = Edit.JumpToNextBookmark
 key bindings:Global:S:42:Ctrl+J = Edit.JumpToNamedBookmark
-watch win:sep xpos 1:I:142
 watch win:sep xpos 2:I:142
+watch win:sep xpos 3:I:142
 build:installer options:S:0:name=OurTown
 build:installer options:S:1:savext=OurTown
-watch win:sep xpos 3:I:142
 search:start at top:I:0
 src win edit mode:Monsters.t:S:0:TADS 3
 src win selrange:CustomVerbs.t:S:0:0,0
-src win selrange:CustomVerbs.t:S:1:1811,1811
+src win selrange:CustomVerbs.t:S:1:1442,1442
 EditToolbar:rebarNewLine:I:1
 src win selrange:blackknight.t:S:0:0,0
-src win selrange:blackknight.t:S:1:2644,2644
+src win selrange:blackknight.t:S:1:2000,2000
 src win split:mrJingles.t:S:0:0.000000
 src win split:BelowTheTomb.t:S:0:0.000000
 proj search:exact case:I:0
-src win split:grue.t:S:0:0.000000
 DocToolbar:rebarVis:I:1
+src win split:grue.t:S:0:0.000000
 auto-script:quit sequences:S:0:<nocase>[<]line[>]<space>*q(uit)?<space>*
 auto-script:quit sequences:S:1:<nocase>[<]line[>]<space>*y.*
 SearchToolbar:rebarIndex:I:2
-src win edit mode:CustomVerbs.t:S:0:TADS 3
 search:wrap:I:1
-auto-script:next-id:I:30
-src win edit mode:blackknight.t:S:0:TADS 3
+src win edit mode:CustomVerbs.t:S:0:TADS 3
+auto-script:next-id:I:44
 SearchToolbar:rebarWidth:I:281
+src win edit mode:blackknight.t:S:0:TADS 3
+search:text:S:0:
+search:text:S:1:
 docking config::S:0:CL
 docking config::S:1:W0,193,270,2,580,302,730,D,L,project win
 docking config::S:2:W0,193,150,175,580,345,730,D,L,script win
 docking config::S:3:CB
 docking config::S:4:W3,270,170,304,580,604,730,D,B,watch win
 docking config::S:5:W3,270,170,2,580,302,730,D,B,locals win
-docking config::S:6:W-1,170,170,225,225,1207,712,M,R,help win
-docking config::S:7:W-1,170,170,200,200,1182,687,M,B,docsearch win
-docking config::S:8:W-1,170,170,0,0,969,443,M,R,log win
-docking config::S:9:W-1,170,170,50,50,1019,427,M,R,stack win
-search:text:S:0:
-search:text:S:1:
-locals win:vis:I:0
+docking config::S:6:W-1,170,170,50,50,1019,427,M,R,stack win
+docking config::S:7:W-1,170,170,0,0,969,443,M,R,log win
+docking config::S:8:W-1,170,170,200,200,1182,687,M,B,docsearch win
+docking config::S:9:W-1,170,170,225,225,1207,712,M,R,help win
 locals win:pos:R:10,606,294,722
+locals win:vis:I:0
 main win max::I:1
 proj search:collapse spaces:I:0
 src win selrange:mrJingles.t:S:0:0,0
@@ -197,42 +197,41 @@ src win selrange:BelowTheTomb.t:S:0:0,0
 src win selrange:BelowTheTomb.t:S:1:0,0
 search:exact case:I:0
 build on run::I:1
-build:webpage dir:S:0:web
-mdi win list::S:0:blackknight.t
-mdi win list::S:1:Weapons.t
-mdi win list::S:2:OurTown.t
+mdi win list::S:0:Weapons.t
+mdi win list::S:1:OurTown.t
+mdi win list::S:2::help
 mdi win list::S:3::docsearch
-mdi win list::S:4::help
-mdi win list::S:5:grue.t
-mdi win list::S:6:mrJingles.t
-mdi win list::S:7:BelowTheTomb.t
-mdi win list::S:8:Monsters.t
-mdi win list::S:9:CustomVerbs.t
+mdi win list::S:4:blackknight.t
+mdi win list::S:5:CustomVerbs.t
+mdi win list::S:6:Monsters.t
+mdi win list::S:7:grue.t
+mdi win list::S:8:mrJingles.t
+mdi win list::S:9:BelowTheTomb.t
 mdi win list::S:10:Abyss.t
+build:webpage dir:S:0:web
+main win pos::R:-8,-8,1608,868
 build:srczipfile:S:0:%tads%OurTownSource.zip
-main win pos::R:-8,-8,1448,868
+proj search:whole word:I:0
 src win selrange:grue.t:S:0:0,0
 src win selrange:grue.t:S:1:333,333
-proj search:whole word:I:0
-line wrap:Monsters.t:S:0:N
-help win pos::R:428,378,1394,827
 help win vis::I:1
+help win pos::R:428,378,1394,827
+line wrap:Monsters.t:S:0:N
 build:ignore case:I:0
 src win split:Weapons.t:S:0:0.000000
-src win split:OurTown.t:S:0:0.000000
-build:exe:S:0:%tads%OurTown.exe
-docsearch win pos::R:403,353,1369,802
 docsearch win vis::I:1
-script win:vis:I:1
+docsearch win pos::R:403,353,1369,802
+build:exe:S:0:%tads%OurTown.exe
+src win split:OurTown.t:S:0:0.000000
 script win:pos:R:2,705,186,835
+script win:vis:I:1
 build:use charmap:I:0
 EditToolbar:rebarIndex:I:1
-src win edit mode:mrJingles.t:S:0:TADS 3
 hist win vis::I:0
+src win edit mode:mrJingles.t:S:0:TADS 3
 src win edit mode:BelowTheTomb.t:S:0:TADS 3
 editor:cmdline:S:0:%f
 EditToolbar:rebarWidth:I:845
-src win edit mode:grue.t:S:0:TADS 3
 build:include_files:S:0:tads.h
 build:include_files:S:1:t3.h
 build:include_files:S:2:lookup.h
@@ -252,40 +251,40 @@ build:include_files:S:15:gramprod.h
 build:include_files:S:16:adv3.h
 build:include_files:S:17:strcomp.h
 build:include_files:S:18:en_us.h
+src win edit mode:grue.t:S:0:TADS 3
 SearchToolbar:rebarVis:I:1
 MenuBar:rebarNewLine:I:0
-src win split:knights.t:S:0:0.000000
 proj search:regex:I:0
+src win split:knights.t:S:0:0.000000
 locals win:sep xpos 0:I:142
 locals win:sep xpos 1:I:142
-line wrap:CustomVerbs.t:S:0:N
 search:whole word:I:0
+line wrap:CustomVerbs.t:S:0:N
 extensions dir::S:0:C:\Users\TEMP\Documents\TADS 3\Extensions
-line wrap:blackknight.t:S:0:N
-src win selrange:Weapons.t:S:0:0,0
-src win selrange:Weapons.t:S:1:1568,1568
 src win split:Abyss.t:S:0:0.000000
+src win selrange:Weapons.t:S:0:0,0
+src win selrange:Weapons.t:S:1:4331,4331
+line wrap:blackknight.t:S:0:N
 src win selrange:OurTown.t:S:0:0,0
-src win selrange:OurTown.t:S:1:4381,4381
-build:debug_image_file:S:0:OurTown_dbg.t3
+src win selrange:OurTown.t:S:1:4861,4861
 DebugToolbar:rebarNewLine:I:1
+build:debug_image_file:S:0:OurTown_dbg.t3
 editor:program:S:0:Notepad.EXE
 editor:open libs readonly:I:0
 find dialog:pos:R:953,322,1397,574
 src win edit mode:Weapons.t:S:0:TADS 3
-src win edit mode:OurTown.t:S:0:TADS 3
+search:regex:I:0
 src win selrange:knights.t:S:0:0,0
 src win selrange:knights.t:S:1:511,511
-search:regex:I:0
-mdi tab order::S:0:10,8,2,1,0,9,5,7,6,3,4
+src win edit mode:OurTown.t:S:0:TADS 3
+mdi tab order::S:0:10,6,1,0,4,5,7,9,8,3,2
 build:rlsgam:S:0:%tads%OurTown.t3
 EditToolbar:rebarVis:I:1
 key bindings:defaults loaded:I:1
 main win mdi max::I:1
+auto-script:default quit sequences set:I:1
 src win selrange:Abyss.t:S:0:0,0
 src win selrange:Abyss.t:S:1:0,0
-auto-script:default quit sequences set:I:1
-line wrap:mrJingles.t:S:0:N
 key bindings:Incremental Search:S:0:Ctrl+F = Edit.IncSearch.Next
 key bindings:Incremental Search:S:1:Ctrl+F3 = Edit.IncSearch.Next
 key bindings:Incremental Search:S:2:Ctrl+R = Edit.IncSearch.Prev
@@ -295,6 +294,7 @@ key bindings:Incremental Search:S:5:Ctrl+T = Edit.IncSearch.ToggleRegEx
 key bindings:Incremental Search:S:6:Ctrl+W = Edit.IncSearch.ToggleWord
 key bindings:Incremental Search:S:7:Ctrl+G = Edit.IncSearch.Cancel
 key bindings:Incremental Search:S:8:Esc = Edit.IncSearch.Exit
+line wrap:mrJingles.t:S:0:N
 line wrap:BelowTheTomb.t:S:0:N
 save on build::I:1
 searchbar history::S:0:dark room message
@@ -307,32 +307,32 @@ searchbar history::S:6:isSeen
 searchbar history::S:7:materials
 searchbar history::S:8:transparent
 searchbar history::S:9:determining player location
-line wrap:grue.t:S:0:
 DocToolbar:rebarNewLine:I:0
+line wrap:grue.t:S:0:
 src win edit mode:knights.t:S:0:TADS 3
 MenuBar:rebarIndex:I:0
-mdi win title::S:0:blackknight.t
-mdi win title::S:1:Weapons.t
-mdi win title::S:2:OurTown.t
+mdi win title::S:0:Weapons.t
+mdi win title::S:1:OurTown.t
+mdi win title::S:2:
 mdi win title::S:3:
-mdi win title::S:4:
-mdi win title::S:5:grue.t
-mdi win title::S:6:mrJingles.t
-mdi win title::S:7:BelowTheTomb.t
-mdi win title::S:8:Monsters.t
-mdi win title::S:9:CustomVerbs.t
+mdi win title::S:4:blackknight.t
+mdi win title::S:5:CustomVerbs.t
+mdi win title::S:6:Monsters.t
+mdi win title::S:7:grue.t
+mdi win title::S:8:mrJingles.t
+mdi win title::S:9:BelowTheTomb.t
 mdi win title::S:10:Abyss.t
-src win edit mode:Abyss.t:S:0:TADS 3
 search:dir:I:1
-build:installer prog:S:0:%tads%OurTown_Setup.exe
+src win edit mode:Abyss.t:S:0:TADS 3
 MenuBar:rebarWidth:I:-1
-project win:vis:I:1
+build:installer prog:S:0:%tads%OurTown_Setup.exe
 project win:pos:R:2,120,186,679
+project win:vis:I:1
 auto-script:dir:S:0:%tads%Scripts
-filesearch win pos::R:415,303,1610,752
-stack win vis::I:0
-filesearch win vis::I:0
 stack win pos::R:253,203,1206,542
+filesearch win vis::I:0
+stack win vis::I:0
+filesearch win pos::R:415,303,1610,752
 DebugToolbar:rebarIndex:I:4
 searchMode::I:1
 

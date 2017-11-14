@@ -113,6 +113,7 @@ location = BelowtheTomb //test location.
     strength = 5
     dexterity = 2
     health = 20
+    damage = 0 
     deathmsg = "You slump to the ground and utter your final words, \"Well, that was unexpected!\""
 
 ;

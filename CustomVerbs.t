@@ -33,6 +33,7 @@ DefineTAction(Appello);
                     mainReport('Strength = <<me.strength>><br>' ); 
                     mainReport('Accuracy = <<me.accuracy>><br>' ); 
                     mainReport('Dexterity = <<me.dexterity>><br>' ); 
+                    mainReport('Damage = <<me.damage>><br>' ); 
 }
 ;
     VerbRule(Stats)

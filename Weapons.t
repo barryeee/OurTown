@@ -33,6 +33,30 @@ weapon : Thing 'generic weapon' 'generic weapon'
         }
     }
    
+    dobjFor (Take) //Increase Player's damage points by the amount of weapon's damage points.
+    {
+        action()
+        {
+            inherited;
+            gActor.damage = gPlayerChar.damage + damage;
+        }
+    }
+    
+    dobjFor (Drop)  //Decrease Player's damage points by the amount of weapon's damage points.
+    {
+        action()
+        {
+            inherited;
+            gActor.damage = gPlayerChar.damage - damage;
+        }
+    }
+    
+   /*  
+    *   dobjFor (Put) //Decrease Player's damage points by the amount of
+    *   weapon's damage points. { action() { inherited; gPlayerChar.damage =
+    *   gPlayerChar - damage; }
+    }*/
+    
     iobjFor (AttackWith)
     {
         verify() { }
@@ -46,14 +70,14 @@ weapon : Thing 'generic weapon' 'generic weapon'
             { 
                     "A direct hit!<br>"; 
                     //gDobj.health = gDobj.health - rand(me.strength + damage);
-                 gDobj.health = gDobj.health - rand(gDobj.strength + damage);
+                 gDobj.health = gDobj.health - rand(gActor.strength + gActor.damage);
                 //check defender's health to see if he/she is still alive - health > 0
                 if (gDobj.health <= 0)
                 {
-                    "<<gDobj.deathMsg>>";
+                    "<br><<gDobj.deathMsg>>";
                     if (gDobj == gPlayerChar)
                     {
-                         finishGameMsg(ftDeath, finishOptionFullScore);
+                        finishGameMsg(ftDeath, finishOptionFullScore);
                     }
                     else
                     gDobj.moveIntoForTravel(theAbyss);
@@ -68,15 +92,22 @@ weapon : Thing 'generic weapon' 'generic weapon'
             "The <<gDobj.name>> ";
             if (rand(gDobj.accuracy) > rand(gActor.dexterity)) 
             {
-                " <<gDobj.name>> scores a hit against <<gActor.name>>";
-                gActor.health = gActor.health - rand(gDobj.strength + gIobj.damage);
+                " score/s a hit against <<gActor.name>>.";
+                gActor.health = gActor.health - rand(gDobj.strength + gDobj.damage);
             }
-            else { "misses.";}
+            else { "miss/es.";}
             //Check player health to see if he/she is still alive
             if (gActor.health <= 0)
             {
-               // "<br><<gActor.name>> has lost the battle!<br/>";
-                finishGameMsg(ftDeath, finishOptionFullScore);
+                "<br><<gActor.deathmsg>>";
+                if (gActor == gPlayerChar)
+                    {
+                        finishGameMsg(ftDeath, finishOptionFullScore);
+                    }
+                    else
+                    gActor.moveIntoForTravel(theAbyss);
+                    exit;
+                
             }
          }
         
@@ -98,7 +129,7 @@ diamondDagger : weapon 'dimaond-studded dagger' 'diamond dagger'
     @BelowtheTomb
     " A beautifully hand-crafted weapon, with diamonds inset all long the handle. 
     It is long enough to double as a short sword in some instances. It looks like a very dangerous weapon."
-    damage = 500
+    damage = 50
     weight = 3
 ;
     
