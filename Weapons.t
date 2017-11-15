@@ -68,13 +68,13 @@ weapon : Thing 'generic weapon' 'generic weapon'
          
              if (rand(gActor.accuracy) > rand(gDobj.dexterity))
             { 
-                    "A direct hit!<br>"; 
+                "<<gActor.name>> score{s} direct hit against <<gDobj.name>><br>"; 
                     //gDobj.health = gDobj.health - rand(me.strength + damage);
                  gDobj.health = gDobj.health - rand(gActor.strength + gActor.damage);
                 //check defender's health to see if he/she is still alive - health > 0
                 if (gDobj.health <= 0)
                 {
-                    "<br><<gDobj.deathMsg>>";
+                    "<br><<gDobj.deathMsg>><br>";
                     if (gDobj == gPlayerChar)
                     {
                         finishGameMsg(ftDeath, finishOptionFullScore);
@@ -86,16 +86,16 @@ weapon : Thing 'generic weapon' 'generic weapon'
              }
             else
             {
-                "Missed!<br>";
+                "<<gDobj.name>> miss{es}<br>";
             }
             //Defender counterattacks
-            "The <<gDobj.name>> ";
+            "<<gDobj.name>> ";
             if (rand(gDobj.accuracy) > rand(gActor.dexterity)) 
             {
-                " score/s a hit against <<gActor.name>>.";
+                " score{s} a hit against <<gActor.name>>.<br>";
                 gActor.health = gActor.health - rand(gDobj.strength + gDobj.damage);
             }
-            else { "miss/es.";}
+            else { "miss{es}.<br>";}
             //Check player health to see if he/she is still alive
             if (gActor.health <= 0)
             {

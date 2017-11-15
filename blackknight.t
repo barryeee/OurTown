@@ -20,7 +20,7 @@
 
 
     
-blackKnight: Person 'black knight' 'black knight'  
+blackKnight: Person ' the black knight' 'black knight'  
     "<table><tr><td><img src=\"blackknight.jpg\" height=\"100\" width=\"100\" align=\"top\"></td><td>A fierce-looking warrior, outfitted in gleaming black armor of unknown
     material. Although he has been dead for centuries, he has suffered no
     decay. He looks as though he could be sleeping. </td></tr></table>"
@@ -72,17 +72,17 @@ blackKnight: Person 'black knight' 'black knight'
                 isHostile = true;
             }
         }
-        action() {
-          
+        action() 
+        {
+                      
             "<br>";
            // inherited;
             "<br>";
+           
         }
     }
-  /*  
-   *   afterAction() { if (isHostile == true) { newActorAction(blackKnight,
-   *   AttackWith, gPlayerChar, onyxSword); }
-   }*/
+   
+   
 ;
 
 
@@ -96,5 +96,5 @@ blackKnight: Person 'black knight' 'black knight'
   stateDesc = "He's standing beside you. " 
   accompanyTravel(leadActor, conn)  
     { return leadActor == gPlayerChar; } 
-  //nestedActorAction(blackKnight, AttackWith, gPlayerChar, onyxSword);
+   
 ; 
