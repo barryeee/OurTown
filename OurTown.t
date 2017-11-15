@@ -109,10 +109,14 @@ location = BelowtheTomb //test location.
 //    location = TownSquare
     weightCapacity = 100
     bulkCapacity = 2
-    accuracy = 5
-    strength = 5
-    dexterity = 2
+    accuracy = 10
+    strength = 10
+    dexterity = 5
     health = 20
+//    accuracy = 5
+//    strength = 5
+//    dexterity = 2
+//    health = 20
     damage = 0 
     deathmsg = "You slump to the ground and utter your final words, \"Well, that was unexpected!\""
 

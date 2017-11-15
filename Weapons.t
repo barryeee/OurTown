@@ -125,16 +125,17 @@ cheapSword : weapon 'cheap brass sword' 'brass sword' @BelowtheTomb
 ;
 
 diamondDagger : weapon 'dimaond-studded dagger' 'diamond dagger'
-//  @Outfitters
-    @BelowtheTomb
+  @Outfitters
+//  @BelowtheTomb
     " A beautifully hand-crafted weapon, with diamonds inset all long the handle. 
     It is long enough to double as a short sword in some instances. It looks like a very dangerous weapon."
-    damage = 50
+    damage = 10
     weight = 3
 ;
     
-onyxSword: weapon 'black onyx sword' 'onyx sword'
+onyxSword : weapon 'black onyx sword' 'onyx sword'
     @blackKnight
-    damage = 100
+    "The sword is made of black onyx. It is obviously enchanted!"
+    damage = 10
     weight = 5
 ;

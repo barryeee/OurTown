@@ -28,13 +28,14 @@ blackKnight: Person 'black knight' 'black knight'
     posture = lying
     location = graniteCrypt
     properName = 'Borgion'
+    isHostile = nil
     isHim = true
     accuracy = 10
     strength = 10
     dexterity = 5
     health = 20
-    damage = 100
-    points = 10
+    damage = 10
+    points = 0
     deathMsg = "The seemingly invincible knight suddenly turns to stone and crumbles to the ground, leaving a pile of fine sand behind."
     
    
@@ -68,6 +69,7 @@ blackKnight: Person 'black knight' 'black knight'
                 moveIntoForTravel(BelowtheTomb);
                 blackScroll.sightPresence = true;
                 setCurState(blackKnightHostile);
+                isHostile = true;
             }
         }
         action() {
@@ -77,7 +79,10 @@ blackKnight: Person 'black knight' 'black knight'
             "<br>";
         }
     }
-   
+  /*  
+   *   afterAction() { if (isHostile == true) { newActorAction(blackKnight,
+   *   AttackWith, gPlayerChar, onyxSword); }
+   }*/
 ;
 
 
